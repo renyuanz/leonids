@@ -40,7 +40,7 @@
       {% if post.image.feature contains 'http' %}
       "{{ post.image.feature }}"
       {% else %}
-      "{{ site.url }}/img/{{ post.image.feature }}"
+      "{{ site.url }}{{ site.baseurl }}/img/{{ post.image.feature }}"
       {% endif %}
       alt="{{ post.title }} feature image">
 

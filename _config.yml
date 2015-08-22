@@ -6,7 +6,7 @@
 title: Renyuan
 email: zourenyuan@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  A simple and awesome blog theme build by jekyll. Inspired by PureCSS blog layout and using bootstrap 4.
+  A simple and awesome blog theme powered by jekyll. Inspired by PureCSS blog layout and build by bootstrap 4.
 # the subpath of your site, e.g. /blog/
 baseurl: "/leonids/"
 url: http://renyuanz.github.io # the base hostname & protocol for your site
