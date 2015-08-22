@@ -1,0 +1,11 @@
+# Authors
+
+leo:
+  name: Leo
+  email: example@domain.com
+  bio: "What do you want? Coffee, tea or coca cola?"
+
+mike:
+  name: Mike
+  email: example2@domain.com
+  bio: "How old are you?"

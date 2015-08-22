@@ -1,0 +1,29 @@
+ul.tag-cloud {
+  padding: 2em 0 3em;
+  margin: 0;
+  overflow: hidden;
+  list-style: none;
+
+  li {
+    display: inline-block;
+    margin-right: .5em;
+    a.post-tag {
+      border-radius: 0.2em;
+    }
+  }
+}
+
+.tag-list {
+  .tag-group {
+    margin-bottom: 2em;
+    .tag-group-title {
+      color: $text-color;
+      text-transform: uppercase;
+    }
+
+    .tag-item {
+      padding-left: 1em;
+      margin-bottom: .5em;
+    }
+  }
+}

@@ -1,0 +1,76 @@
+#
+###################################
+# Site wide configuration
+####################################
+#
+title: Renyuan
+email: your-email@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+# the subpath of your site, e.g. /blog/
+baseurl: ""
+url: http://localhost:4000 # the base hostname & protocol for your site
+
+#
+###################################
+# Jekyll configuration
+####################################
+#
+permalink:   /:categories/:title/
+markdown:    kramdown
+highlighter: pygments
+excerpt_separator: <!--more-->
+sass:
+  sass_dir: _sass
+  style: compressed
+gems:
+  - jekyll-sitemap
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: false
+
+#
+###################################
+# Jekyll configuration
+####################################
+#
+owner:
+  name: Renyuan
+  avatar: bio-photo.jpg
+  bio: "Work hard, play harder."
+  email: zourenyuan@gmail.com
+  disqus-shortname: renyuanzblog
+  twitter: alittlered3 #username
+  facebook: #username
+  google:
+    plus: #username
+    analytics:
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:
+  github: renyuanz #username
+  stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
+  linkedin: #username
+  xing: #username
+  instagram: alittlered0814 #username
+  lastfm: #username
+  tumblr: #username
+  pinterest: #username
+  foursquare: #username
+  steam: #username
+  dribbble: #username
+  youtube: #username
+  soundcloud: #username
+  weibo: #username
+  flickr: #username
+  codepen: #username
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
