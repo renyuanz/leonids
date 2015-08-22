@@ -18,6 +18,6 @@ permalink: /archive/
 {% endif %}
 {% endunless %}
 <li>
-  <span>{{ post.date | date: "%b %d" }}</span> » <a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
+  <span>{{ post.date | date: "%b %d" }}</span> » <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
 </ul>

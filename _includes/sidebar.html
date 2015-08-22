@@ -5,14 +5,14 @@
 <div class="header">
 
 
-  <a href="{{ site.baseurl }}/" class="brand-title">{{ author.name }}</a>
+  <a href="{{ site.url }}" class="brand-title">{{ author.name }}</a>
   <span class="brand-tagline">{{ author.bio }}</span>
 
   <nav class="nav">
     <ul class="nav-list">
       {% for page in site.pages %} {% if page.title %}
       <li class="nav-item">
-        <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% unless forloop.last %} <span>/</span>{% endunless %}
+        <a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a>{% unless forloop.last %} <span>/</span>{% endunless %}
       </li>
       {% endif %} {% endfor %}
     </ul>
