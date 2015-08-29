@@ -5,6 +5,7 @@ excerpt: "Just about everything you'll need to style in the theme: headings, par
 modified: 2013-05-31
 tags: [intro, beginner, jekyll, tutorial]
 comments: true
+pinned: true
 image:
   feature: sample-image-2.jpg
 ---

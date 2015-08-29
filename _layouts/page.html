@@ -1,13 +1,8 @@
 ---
 layout: default
 ---
-<div class="{{ page.title }}">
-
+<div class="{{ page.title | downcase }}">
   <h1 class="page-heading">{{ page.title }}</h1>
   <hr>
-
-  <article class="post-content">
-    {{ content }}
-  </article>
-
+  {{ content }}
 </div>

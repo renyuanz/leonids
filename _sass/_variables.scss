@@ -1,8 +1,8 @@
-@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro|Montserrat);
+@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro);
 
 // Our variables
-$base-font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$heading-font-family: 'Montserrat', 'Helvetica Neue', 'Hiragino Sans GB','WenQuanYi Micro Hei','Microsoft Yahei',sans-serif;
+$base-font-family: Arial, sans-serif;
+$heading-font-family: 'Helvetica Neue', Helvetica, $base-font-family;
 $monospace-font-family: 'Source Code Pro', Menlo, monospace;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;

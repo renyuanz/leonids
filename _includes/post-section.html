@@ -12,7 +12,9 @@
     {% endif %}
 
     {% if post.author %}
-      {% assign author = site.data.authors[post.author] %}{% else %}{% assign author = site.owner %}
+      {% assign author = site.data.authors[post.author] %}
+    {% else %}
+      {% assign author = site.owner %}
     {% endif %}
 
     <p class="post-meta">
@@ -51,3 +53,4 @@
     {% endif %}
 
 </section>
+<hr>

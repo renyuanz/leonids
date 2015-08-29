@@ -4,20 +4,29 @@ title:  Archive
 permalink: /archive/
 ---
 
-{% for post in site.posts %}
-{% unless post.next %}
-<h4 class="archive-year">{{ post.date | date: '%Y' }}</h4>
-<ul>
-{% else %}
-  {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-  {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
-{% if year != nyear %}
-</ul>
-<h4 class="archive-year">{{ post.date | date: '%Y' }}</h4>
-<ul>
-{% endif %}
-{% endunless %}
-<li>
-  <span>{{ post.date | date: "%b %d" }}</span> » <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>
-{% endfor %}
-</ul>
+<div class="timeline" id="timeline">
+  {% for post in site.posts %}
+  {% unless post.next %}
+  <div class="archive-title">
+    <h4 class="archive-year">{{ post.date | date: '%Y' }}</h4>
+  </div>
+
+  <ul>
+  {% else %}
+    {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+    {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+  {% if year != nyear %}
+  </ul>
+  <div class="archive-title">
+    <h4 class="archive-year">{{ post.date | date: '%Y' }}</h4>
+  </div>
+
+  <ul>
+  {% endif %}
+  {% endunless %}
+  <li>
+    <span>{{ post.date | date: "%m-%d" }}</span>&nbsp;<a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+  </ul>
+
+</div>
