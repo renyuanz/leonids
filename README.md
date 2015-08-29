@@ -1,23 +1,24 @@
 # Leonids Jekyll Themes
 
-**[Leonids](http://renyuanz.github.io/leonids)** is a two column responsive Jekyll theme perfect for powering your GitHub hosted blog. The idea is inspired by PureCSS blog layout and build with lastest bootstrap 4 framework.
+**[Leonids](http://renyuanz.github.io/leonids)** is a two column responsive Jekyll theme perfect for powering your GitHub hosted blog. The idea is inspired by PureCSS blog layout.
 
 ## What is Leonids?
 
 * Responsive templates. Looking good on mobile, tablet, and desktop.
-* Gracefully degrading in older browsers. Compatible with Internet Explorer 8+ and all modern browsers.
+* Gracefully degrading in older browsers. Compatible with Internet Explorer 9+ and all modern browsers.
 * Minimal embellishments -- content first.
-* Optional large feature images for posts and pages.
 * Simple and clear permalink structure.
-* [Custom 404 page](http://mmistakes.github.io/minimal-mistakes/404.html) to get you started.
 * Support for Disqus Comments
+* Support for multi-authors
 
-![screenshot of Minimal Mistakes theme](http://mmistakes.github.io/minimal-mistakes/images/mm-theme-post-600.jpg)
+![screenshot of Leonids theme](http://renyuanz.github.io/leonids/img/screenshot-1.jpg)
 
-See a [live version of Minimal Mistakes](http://mmistakes.github.io/minimal-mistakes/) hosted on GitHub.
+and ![full support for code syntax highlighting](http://renyuanz.github.io/leonids/img/screenshot-2.jpg)
+
+See a [live version of Leonids](http://renyuanz.github.io/leonids/) hosted on GitHub.
 
 ## Getting Started
 
-Minimal Mistakes takes advantage of Sass and data files to make customizing easier. These features require Jekyll 2.x and will not work with older versions of Jekyll.
+Leonids jekyll theme takes advantage of Sass and data files to make customizing easier. These features require Jekyll 2.x and will not work with older versions of Jekyll.
 
-To learn how to install and use this theme check out the [Setup Guide](http://mmistakes.github.io/minimal-mistakes/theme-setup/) for more information.
+To learn how to install and use this theme check out the [Setup Guide](http://renyuanz.github.io/leonids/theme-setup/) for more information.

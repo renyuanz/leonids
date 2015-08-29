@@ -16,7 +16,7 @@ img {
   height: auto;
 }
 
-#layout {
+#main-layout {
   padding: 0;
 }
 
@@ -30,6 +30,7 @@ img {
 .sidebar {
   background: $background-color;
   color: $text-color;
+
   .social-links {
     margin-top: 0.5em;
     ul {
@@ -248,7 +249,7 @@ footer {
   }
 }
 
-@include media-query($screen-sm-min) {
+@include media-query($screen-md-min) {
   .content {
     padding: 2em 3em 0;
     margin-left: 25%;

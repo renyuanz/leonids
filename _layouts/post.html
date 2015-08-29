@@ -30,13 +30,10 @@ layout: default
   </ul>
 </div>
 
-
-
 {% if site.owner.disqus-shortname and page.comments == true %}
 <div id="disqus_thread"></div>
-{% endif %}
-
 {% include disqus.html %}
+{% endif %}
 
 
 {% if site.related_posts.size > 0 %}

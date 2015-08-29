@@ -1,0 +1,193 @@
+---
+layout: page
+title: Theme Setup
+permalink: /theme-setup/
+comments: true
+---
+## Installation
+
+Minimal Mistakes now requires [Jekyll](http://jekyllrb.com/) 2.2+. Make sure to run `gem update jekyll` if you aren't on the latest version or `gem install jekyll` if this is your first time installing it.
+
+If you are creating a new Jekyll site using Leonids follow these steps:
+
+1. Fork the [Leonids](http://github.com/renyuanz/leonids/fork).
+2. Clone the repo you just forked and rename it.
+3. Update `config.yml`, add navigation, and replace demo posts and pages with your own. Full details below.
+
+If you want to use Minimal Mistakes with an existing Jekyll site follow these steps:
+
+1. [Download Leonids](https://github.com/renyuanz/leonids/archive/master.zip) and unzip.
+2. Rename `leonids-master` to something meaningful ie: `my_blog`
+3. Remove demo posts/pages and replace with your own posts, pages, and any other content you want to move over.
+4. Update posts' and pages' YAML to match variables used by Leonids. Full details below.
+5. Update `_config.yml` and add navigation links. Full details below.
+
+**Pro-tip:** Delete the `gh-pages` branch after cloning and start fresh by branching off `master`. There is a bunch of garbage in `gh-pages` used for the theme's demo site that I'm guessing you won't want.
+{: .notice}
+
+---
+
+## Running Jekyll
+
+If `jekyll build` and `jekyll serve` throw errors you may have to run Jekyll with `bundled exec` instead.
+
+> In some cases, running executables without bundle exec may work, if the executable happens to be installed in your system and does not pull in any gems that conflict with your bundle.
+>
+>However, this is unreliable and is the source of considerable pain. Even if it looks like it works, it may not work in the future or on another machine.
+
+{% highlight text %}
+bundle exec jekyll build
+
+bundle exec jekyll serve
+{% endhighlight %}
+
+---
+
+## Scaffolding
+
+How Leonids is organized and what the various files are. All posts, layouts, includes, stylesheets, assets, and whatever else is grouped nicely under the root folder. The compiled Jekyll site outputs to `_site/`.
+
+{% highlight text %}
+minimal-mistakes/
+├── _includes/
+|    ├── disqus.html   # Disqus comments script
+|    ├── footer.html            # site footer
+|    ├── head.html              # site head
+|    ├── sidebar.html           # site sidebar/top navigation
+|    ├── social-links.html      # site owner social links management
+|    ├── post-section.html      # post section
+|    └── js.html                # site javascripts
+├── _layouts/
+|    ├── default.html            # default layout
+|    ├── page.html               # page layout
+|    ├── post-index.html         # post index layout
+|    └── post.html               # single post layout
+├── _posts/                      # MarkDown formatted posts
+├── _sass/                       # Sass stylesheets
+|    └── pages/                  # Sass stylesheets for specific pages
+├── css/                         # compiled stylesheets
+├── fonts/                       # fontawesome 4.4.0
+├── js/
+|    ├── main.js                 # main JavaScript file
+|    └── jquery-2.1.4.min.js     # jQuery 2.1.4 min file
+├── img/                         # images for posts and pages
+├── feed.xml                     # Atom feed template
+├── index.md                     # sample homepage.
+├── archive.html                 # sample archive page. lists all posts in reverse chronology
+├── tags.html                    # sample tags page. lists all tags included in the site
+└── theme-setup.md               # theme setup page. safe to remove
+{% endhighlight %}
+
+---
+
+## Site Setup
+
+A quick checklist of the files you'll want to edit to get up and running.
+
+### Site Wide Configuration
+
+`_config.yml` is your friend. Open it up and personalize it. Most variables are self explanatory but here's an explanation of each if needed:
+
+#### title
+
+The title of your site... shocker!
+
+Example `title: My Awesome Site`
+
+#### url
+
+Used to generate absolute urls in `sitemap.xml`, `feed.xml`, and for generating canonical URLs in `<head>`. When developing locally either comment this out or use something like `http://localhost:4000` so all assets load properly. *Don't include a trailing `/`*.
+
+Examples:
+
+{% highlight yaml %}
+url: http://renyuanz.github.io/leonids
+url: http://localhost:4000
+url: //cooldude.github.io
+url:
+{% endhighlight %}
+
+#### Google Analytics and Webmaster Tools
+
+Will be working on it in the future.
+
+### New Post
+
+Just create a markdown file named something like: `year-month-day-your-post-title.md` in the directory `_posts`, and here you go.
+
+### New Page
+
+You can create a page by adding directly a markdown file or html file under the root path or a directory with a index page inside. You can check [this page](http://jekyllrb.com/docs/pages/) for more details.
+
+---
+
+## Layouts and Content
+
+Explanations of the various `_layouts` included with the theme and when to use them.
+
+### Post and Page
+
+These two layouts are very similar. Both have an author sidebar and optional Disqus comments. The only real difference is the post layout includes related posts at the end of the page.
+
+### Post Index Page
+
+A [sample index page]({{ site.url }}/) listing all posts grouped by the year they were published has been provided. The name can be customized to your liking by editing a few references.
+
+### Author Override
+
+By making use of data files you can assign different authors for each post.
+
+Start by modifying `authors.yml` file in the `_data` folder and add your authors using the following format.
+
+{% highlight yaml %}
+# Authors
+
+billy_rick:
+  name: Billy Rick
+  web: http://thewhip.com
+  email: billy@rick.com
+  bio: "What do you want, jewels? I am a very extravagant man."
+  avatar: bio-photo-2.jpg
+  twitter: extravagantman
+  google:
+    plus: +BillyRick
+
+cornelius_fiddlebone:
+  name: Cornelius Fiddlebone
+  email: cornelius@thewhip.com
+  bio: "I ordered what?"
+  avatar: bio-photo.jpg
+  twitter: rhymeswithsackit
+  google:
+    plus: +CorneliusFiddlebone
+{% endhighlight %}
+
+To assign Billy Rick as an author for our post. We'd add the following YAML front matter to a post:
+
+{% highlight yaml %}
+author: billy_rick
+{% endhighlight %}
+
+### Social Sharing Links
+
+Social sharing links for Twitter, Facebook, and Google+ are included on posts/pages by default. If you'd like to use different social networks modify `_includes/social-links.html` to your liking. Icons are set using [Font Awesome](http://fontawesome.io).
+
+---
+
+## Further Customization
+
+Jekyll 2.x added support for Sass files making it much easier to modify a theme's fonts and colors. By editing values found in `_sass/variables.scss` you can fine tune the site's colors and typography.
+
+For example if you wanted a red background instead of white you'd change `$text-color: #444;` to `$text-color: $cc0033;`.
+
+---
+
+## Questions?
+
+Found a bug or aren't quite sure how something works? By all means Ping me on Twitter [@mmistakes](http://twitter.com/alittlered3) or [file a GitHub Issue](https://github.com/renyuanz/leonids/issues/new). And if you make something cool with this theme feel free to let me know.
+
+---
+
+## License
+
+This theme is free and open source software, distributed under the MIT License. So feel free to use this Jekyll theme on your site without linking back to me or including a disclaimer.

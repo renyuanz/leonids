@@ -4,12 +4,9 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <h1>Recent Posts</h1>
 
   <div class="posts">
-
-    <h4 class="content-subhead">Recent Posts <i class="fa fa-bug"></i></h4>
-    <hr>
     {% for post in site.posts %}
     {% include post-section.html %}
     {% endfor %}
