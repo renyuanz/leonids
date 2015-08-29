@@ -10,6 +10,7 @@
 * Simple and clear permalink structure.
 * Support for Disqus Comments
 * Support for multi-authors
+* Random color for Tags
 
 ![screenshot of Leonids theme](http://renyuanz.github.io/leonids/img/screenshot-1.jpg)
 
