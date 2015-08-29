@@ -12,9 +12,9 @@
 * Support for multi-authors
 * Random color for Tags
 
-![screenshot of Leonids theme](http://renyuanz.github.io/leonids/img/screenshot-1.jpg)
+![screenshot of Leonids theme](https://raw.githubusercontent.com/renyuanz/leonids/gh-pages/img/screenshot-1.jpg)
 
-and ![full support for code syntax highlighting](http://renyuanz.github.io/leonids/img/screenshot-2.jpg)
+and ![full support for code syntax highlighting](https://raw.githubusercontent.com/renyuanz/leonids/gh-pages/img/screenshot-2.jpg)
 
 See a [live version of Leonids](http://renyuanz.github.io/leonids/) hosted on GitHub.
 
