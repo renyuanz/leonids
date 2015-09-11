@@ -1,0 +1,71 @@
+#
+###################################
+# Site wide configuration
+####################################
+#
+title: Leonids
+email: zourenyuan@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  A simple and awesome blog theme powered by jekyll. Inspired by PureCSS blog layout and build by bootstrap 4.
+url: http://renyuanz.github.io/leonids # the base hostname & protocol for your site
+
+#
+###################################
+# Jekyll configuration
+####################################
+#
+markdown:    kramdown
+highlighter: pygments
+excerpt_separator: <!--more-->
+sass:
+  sass_dir: _sass
+  style: compressed
+gems:
+  - jekyll-sitemap
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: false
+
+#
+###################################
+# Jekyll configuration
+####################################
+#
+owner:
+  name: Renyuan
+  avatar: bio-photo.jpg
+  bio: "Work hard, play harder."
+  email: zourenyuan@gmail.com
+  disqus-shortname: renyuanzblog
+  twitter: alittlered3 #username
+  facebook: #username
+  google:
+    plus: #username
+    analytics:
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:
+  github: renyuanz #username
+  stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
+  linkedin: #username
+  xing: #username
+  instagram: alittlered0814 #username
+  lastfm: #username
+  tumblr: #username
+  pinterest: #username
+  foursquare: #username
+  steam: #username
+  dribbble: #username
+  youtube: #username
+  soundcloud: #username
+  weibo: #username
+  flickr: #username
+  codepen: #username
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
