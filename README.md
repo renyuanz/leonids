@@ -1,25 +1,14 @@
-# Leonids Jekyll Themes
+# My personal blog
 
-**[Leonids](http://renyuanz.github.io/leonids)** is a two column responsive Jekyll theme perfect for powering your GitHub hosted blog. The idea is inspired by PureCSS blog layout.
+## About the blog
 
-## What is Leonids?
+I'll share regularly my life and interesting things with you. This blog supposed to be a multi-languages one, so that I can write everything here. Hope you enjoy!
 
-* Responsive templates. Looking good on mobile, tablet, and desktop.
-* Gracefully degrading in older browsers. Compatible with Internet Explorer 9+ and all modern browsers.
-* Minimal embellishments -- content first.
-* Simple and clear permalink structure.
-* Support for Disqus Comments
-* Support for multi-authors
-* Random color for Tags
+## About the blog theme
 
-![screenshot of Leonids theme](http://renyuanz.github.io/leonids/img/screenshot-1.jpg)
+If you like this theme, you can find it [here](https://github.com/renyuanz/leonids) and a [live demo](http://renyuanz.github.io/leonids). This is a Jekyll blog theme, if you don't know what Jekyll is, check its [official site](http://jekyllrb.com/). You gonna love it! Otherwise, I'll keep working on this theme and make it better, so any reviews or suggestions are welcome!
 
-and ![full support for code syntax highlighting](http://renyuanz.github.io/leonids/img/screenshot-2.jpg)
+You can contact me by [email](mailto:zourenyuan@gmail.com) or [open an issue](https://github.com/renyuanz/leonids/issues/new).
 
-See a [live version of Leonids](http://renyuanz.github.io/leonids/) hosted on GitHub.
-
-## Getting Started
-
-Leonids jekyll theme takes advantage of Sass and data files to make customizing easier. These features require Jekyll 2.x and will not work with older versions of Jekyll.
-
-To learn how to install and use this theme check out the [Setup Guide](http://renyuanz.github.io/leonids/theme-setup/) for more information.
+Cheers,
+Renyuan

@@ -53,6 +53,13 @@ img {
   }
 }
 
+.author-avatar {
+  border-radius: 50%;
+  width: 128px;
+  border: .4em solid #fff;
+  float: right;
+}
+
 .brand-title,
 .brand-tagline {
   margin: 0;
@@ -120,12 +127,6 @@ section.post {
 a.post-title {
   color: $text-color;
   margin-bottom: 0.2em;
-}
-
-.post-avatar {
-  border-radius: 50px;
-  float: right;
-  margin-left: 1em;
 }
 
 a.post-author {
