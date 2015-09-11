@@ -4,20 +4,24 @@
 
 <div class="header">
 
-
-  <a href="{{ site.url }}/" class="brand-title">{{ author.name }}</a>
-  <span class="brand-tagline">{{ author.bio }}</span>
-
-  <nav class="nav">
-    <ul class="nav-list">
-      {% for page in site.pages %} {% if page.title %}
-      <li class="nav-item">
-        <a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a>{% unless forloop.last %} <span>/</span>{% endunless %}
-      </li>
-      {% endif %} {% endfor %}
-    </ul>
-  </nav>
-
-  {% include social-links.html %}
+  {% if author.avatar %}
+  <div class="row visible-md-block visible-lg-block">
+    <img class="author-avatar" src="{{ site.url }}/img/avatar.jpg" alt="{{ author.name | downcase }}">
+  </div>
+  {% endif %}
+  <div class="row">
+    <a href="{{ site.url }}/" class="brand-title">{{ author.name }}</a>
+    <span class="brand-tagline">{{ author.bio }}</span>
+    <nav class="nav">
+      <ul class="nav-list">
+        {% for page in site.pages %} {% if page.title %}
+        <li class="nav-item">
+          <a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a>{% unless forloop.last %} <span>/</span>{% endunless %}
+        </li>
+        {% endif %} {% endfor %}
+      </ul>
+    </nav>
+    {% include social-links.html %}
+  </div>
 
 </div>
