@@ -231,6 +231,36 @@ a.post-tag {
   }
 }
 
+.hacker-news {
+  background-color: #FF6600;
+  color: $white;
+  border-color: #FF6600;
+  &:visited {
+    color: $white;
+    border-color: #FF6600;
+  }
+  &:hover {
+    background-color: $white;
+    color: #FF6600;
+    border-color: #FF6600;
+  }
+}
+
+.reddit {
+  background-color: #5F99CF;
+  color: $white;
+  border-color: #5F99CF;
+  &:visited {
+    color: $white;
+    border-color: #5F99CF;
+  }
+  &:hover {
+    background-color: $white;
+    color: #5F99CF;
+    border-color: #5F99CF;
+  }
+}
+
 // footer
 footer {
   text-align: center;
