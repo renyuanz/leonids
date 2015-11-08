@@ -3,25 +3,25 @@
 # Site wide configuration
 ####################################
 #
-title: Renyuan's blog
-email: zourenyuan@gmail.com
+title:       "Renyuan's blog"
 description: 'A backend developer who loves design awesome things. Working for RendezvousCheznous atm in Marseille, France.'
-url: renyuanz.github.io # the base hostname & protocol for your site
+url:         http://renyuanz.github.io # the base hostname & protocol for your site
+permalink:   pretty
 
 #
 ###################################
 # Jekyll configuration
 ####################################
 #
-markdown:    kramdown
-highlighter:  pygments
+markdown:          kramdown
+highlighter:       pygments
 excerpt_separator: <!--more-->
 
 kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
+  auto_ids:       true
+  footnote_nr:    1
+  entity_output:  as_char
+  toc_levels:     1..6
   enable_coderay: false
 
 #
