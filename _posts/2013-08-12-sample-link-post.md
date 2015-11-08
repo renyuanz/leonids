@@ -3,7 +3,6 @@ layout: post
 title: "Sample Link Post"
 excerpt: "Try click on the link icon."
 tags: [sample post, link post]
-categories: [news]
 link: http://renyuanz.github.io
 share: true
 ---
