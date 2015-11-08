@@ -1,25 +1,30 @@
 # Leonids Jekyll Themes
 
-**[Leonids](http://renyuanz.github.io/leonids)** is a two column responsive Jekyll theme perfect for powering your GitHub hosted blog. The idea is inspired by PureCSS blog layout.
+**[Leonids](http://renyuanz.github.io/leonids)** is a clean Jekyll theme perfect for powering your GitHub hosted blog.
 
 ## What is Leonids?
 
 * Responsive templates. Looking good on mobile, tablet, and desktop.
-* Gracefully degrading in older browsers. Compatible with Internet Explorer 9+ and all modern browsers.
-* Minimal embellishments -- content first.
 * Simple and clear permalink structure.
-* Support for Disqus Comments
-* Support for multi-authors
-* Random color for Tags
+* Support for Disqus Comments.
+* Support for multi-authors.
+* **And** the Leonids (/ˈliːənɪdz/ lee-ə-nidz) are a prolific meteor shower associated with the comet [Tempel-Tuttle](https://en.wikipedia.org/wiki/55P/Tempel%E2%80%93Tuttle).
 
-![screenshot of Leonids theme](https://raw.githubusercontent.com/renyuanz/leonids/gh-pages/img/screenshot-1.jpg)
+See a [demo](http://renyuanz.github.io/leonids/) hosted on GitHub.
 
-and ![full support for code syntax highlighting](https://raw.githubusercontent.com/renyuanz/leonids/gh-pages/img/screenshot-2.jpg)
+## Quick setup
 
-See a [live version of Leonids](http://renyuanz.github.io/leonids/) hosted on GitHub.
+`git clone https://github.com/renyunz/leonids`
 
-## Getting Started
+`cd leonids`
 
-Leonids jekyll theme takes advantage of Sass and data files to make customizing easier. These features require Jekyll 2.x and will not work with older versions of Jekyll.
+`jekyll server`
 
-To learn how to install and use this theme check out the [Setup Guide](http://renyuanz.github.io/leonids/theme-setup/) for more information.
+Check out your awesome blog at `http://localhost:4000` and Cheers!
+
+## TODO
+
+- [ ] Build a timeline page.
+- [ ] Build a portfolio page.
+- [ ] Redesign categories page. Ref: [dribbble: blog category section By Ilja Miskov](https://dribbble.com/shots/2274792-Blog-Category-Selection)
+- [ ] Multi languages support.

@@ -4,10 +4,9 @@
 ####################################
 #
 title: Leonids
-email: zourenyuan@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  A simple and awesome blog theme powered by jekyll. Inspired by PureCSS blog layout and build by bootstrap 4.
-url: http://renyuanz.github.io/leonids # the base hostname & protocol for your site
+email: 
+description: A simple and awesome blog theme powered by jekyll.
+url: # the base hostname & protocol for your site
 
 #
 ###################################
@@ -15,13 +14,8 @@ url: http://renyuanz.github.io/leonids # the base hostname & protocol for your s
 ####################################
 #
 markdown:    kramdown
-highlighter: pygments
+highlighter:  rouge
 excerpt_separator: <!--more-->
-sass:
-  sass_dir: _sass
-  style: compressed
-gems:
-  - jekyll-sitemap
 
 kramdown:
   auto_ids: true
@@ -32,16 +26,17 @@ kramdown:
 
 #
 ###################################
-# Jekyll configuration
+# Site Owner configuration
 ####################################
 #
 owner:
-  name: Renyuan
-  avatar: bio-photo.jpg
-  bio: "Work hard, play harder."
-  email: zourenyuan@gmail.com
-  disqus-shortname: renyuanzblog
-  twitter: alittlered3 #username
+  name: Leonids
+  avatar: avatar.jpg
+  job: "PHP & Ruby Developer"
+  bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+  email:
+  disqus-shortname:
+  twitter: #username
   facebook: #username
   google:
     plus: #username
@@ -50,11 +45,11 @@ owner:
     ad-client:
     ad-slot:
   bing-verify:
-  github: renyuanz #username
+  github: #username
   stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
   linkedin: #username
   xing: #username
-  instagram: alittlered0814 #username
+  instagram: #username
   lastfm: #username
   tumblr: #username
   pinterest: #username
@@ -66,6 +61,3 @@ owner:
   weibo: #username
   flickr: #username
   codepen: #username
-
-include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]

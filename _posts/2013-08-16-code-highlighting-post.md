@@ -3,6 +3,7 @@ layout: post
 title: Syntax Highlighting Post
 excerpt: "Demo post displaying the various ways of highlighting code in Markdown."
 tags: [sample post, code, highlighting]
+categories: [coding]
 modified: 2014-09-14
 comments: true
 ---
@@ -113,9 +114,3 @@ module Jekyll
   end
 end
 ~~~
-
-### GitHub Gist Embed
-
-An example of a Gist embed below.
-
-{% gist mmistakes/6589546 %}

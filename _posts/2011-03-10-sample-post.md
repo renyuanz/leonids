@@ -4,10 +4,13 @@ title: Sample Post
 excerpt: "Just about everything you'll need to style in the theme: headings, paragraphs, blockquotes, tables, code blocks, and more."
 modified: 2013-05-31
 tags: [intro, beginner, jekyll, tutorial]
+categories: [design]
 comments: true
 pinned: true
 image:
   feature: sample-image-2.jpg
+  creditlink: https://unsplash.com/photos/Ki0dpxd3LGc
+  credit: thomas shellberg
 ---
 
 ## HTML Elements
@@ -59,16 +62,15 @@ HTML and CSS are our tools. Mauris a ante. Suspendisse quam sem, consequat at, c
 
 ## Tables
 
-| Header1 | Header2 | Header3 |
+| Header 1 | Header 2 | Header 3 |
 |:--------|:-------:|--------:|
-| cell1   | cell2   | cell3   |
-| cell4   | cell5   | cell6   |
+| cell 1   | cell 2   | cell 3   |
+| cell 4   | cell 5   | cell 6   |
 |----
-| cell1   | cell2   | cell3   |
-| cell4   | cell5   | cell6   |
+| cell 1   | cell 2   | cell 3   |
+| cell 4   | cell 5   | cell 6   |
 |=====
-| Foot1   | Foot2   | Foot3
-{: rules="groups"}
+| Foot 1   | Foot 2   | Foot 3   |
 
 ## Code Snippets
 

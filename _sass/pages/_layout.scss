@@ -1,298 +1,97 @@
-a {
-  text-decoration: none;
-  color: $primary;
-}
-
-a:hover,
-a:focus {
-  color: lighten($primary, 10%);
-  text-decoration: none;
-}
-
-
 /* LAYOUT CSS */
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-#main-layout {
-  padding: 0;
-}
-
-.header {
+.cover {
+  background-color: #454260;
+  position: fixed;
   text-align: center;
-  top: auto;
-  margin: 0 auto;
-  padding: 2em 1em;
+  width: 100%;
+  min-height: 400px;
+  padding: 30px 20px 20px;
+  @include media-query($small-screen) {
+    background-position: center;
+    padding: 30px 50px;
+  }
+  @include media-query($medium-screen) {
+    background-image: url("/img/sidebar-bg.jpg");
+    background-position: center bottom;
+    background-size: cover;
+    height: 100vh;
+    position: initial;
+    width: 100%;
+  }
 }
-
-.sidebar {
-  background: $background-color;
-  color: $text-color;
-
-  .social-links {
-    margin-top: 0.5em;
-    ul {
-      margin: 0;
-      padding: 0;
-      li {
-        list-style: none;
-        display: inline-block;
-        margin-left: 1em;
-        font-size: 80%;
-        a.social-link-item {
-          color: $secondary;
-          &:hover,
-          &:focus {
-            background: none;
-          }
+.cover-card {
+  color: $white;
+  .avatar {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    float: none;
+    @include media-query($medium-screen) {
+      display: none;
+    }
+  }
+  .author_name {
+    display: block;
+    color: #dce3ef;
+    font-size: 3em;
+    font-weight: 700;
+    text-transform: lowercase;
+    font-style: italic;
+    @include text-shadow;
+  }
+  .author_job {
+    display: block;
+    color: #8d7edc;
+    font-size: 0.8em;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: -10px auto 20px;
+    @include text-shadow;
+  }
+  .author_bio {
+    display: block;
+  }
+  @include media-query($medium-screen) {
+    margin: 0 auto;
+    padding: 0 20px 80px;
+  }
+}
+.social-links {
+  margin-top: 0.5em;
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      list-style: none;
+      display: inline-block;
+      margin-left: 1em;
+      a.social-link-item {
+        color: $secondary;
+        &:hover,
+        &:focus {
+          color: lighten($secondary, 14%);
         }
       }
     }
   }
 }
-
-.author-avatar {
-  border-radius: 50%;
-  width: 128px;
-  float: right;
-}
-
-.brand-title,
-.brand-tagline {
-  margin: 0;
-}
-
-a.brand-title {
-  color: $text-color;
-  font-size: 2em;
-  font-family: $heading-font-family;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.brand-tagline {
-  display: block;
-  margin-top: 0.5em;
-  font-weight: 300;
-  color: $text-color;
-}
-
-.nav {
-  margin-top: 0.725em;
-}
-
 .nav-list {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-.nav-item {
-  display: inline-block;
-  *display: inline;
-  zoom: 1;
-}
-
-.nav-item a {
-  background: transparent;
-  color: $secondary;
-  margin-top: 1em;
-  letter-spacing: 0.05em;
-  text-transform: capitalize;
-  font-size: 85%;
-}
-
-.content-subhead {
-  text-transform: uppercase;
-  color: #aaa;
-  padding: 0.4em 0;
-  font-size: 80%;
-  font-weight: 500;
-  letter-spacing: 0.1em;
-}
-
-.content {
-  padding: 2em 2em 0;
-}
-
-section.post {
-  padding-bottom: 1em;
-  margin: 1em auto;
-}
-
-
-a.post-title {
-  color: $text-color;
-  margin-bottom: 0.2em;
-}
-
-a.post-author {
-  color: $secondary;
-}
-
-.post-description {
-  line-height: 1.8em;
-}
-
-.post-meta {
-  color: #999;
-  font-size: 90%;
-  margin: 1em 0;
-}
-
-a.post-tag {
-  text-transform: capitalize;
-  margin: 0.1em;
-  padding: 0.3em 1em;
-  color: $white;
-  background-color: $primary;
-  font-size: 80%;
-  display: inline-block;
-}
-
-
-.post-images {
-  margin: 1em 0;
-}
-
-.post-image-meta {
-  margin-top: -3.5em;
-  margin-left: 1em;
-  color: #fff;
-  text-shadow: 0 1px 1px #333;
-}
-
-// share buttons
-.share-icons {
-  padding-top: 1em;
-  border-top: 1px solid #ddd;
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    li {
-      display: inline-block;
-      margin-right: .5em;
-      span {
-        display: none;
-        @include media-query($screen-sm-min) {
-          display: inline;
-          margin: .5em;
-        }
+  .nav-item {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    & a {
+      margin-top: 1em;
+      text-transform: lowercase;
+      font-size: 85%;
+      color: $secondary;
+      &:hover,
+      &:focus {
+        color: lighten($secondary, 14%);
       }
     }
-  }
-}
-
-.twitter {
-  background-color: #77BCF1;
-  color: $white;
-  border-color: #77BCF1;
-  &:visited {
-    color: $white;
-    border-color: #77BCF1;
-  }
-  &:hover {
-    background-color: $white;
-    color: #77BCF1;
-    border-color: #77BCF1;
-  }
-}
-
-.facebook {
-  background-color: #627AAC;
-  color: $white;
-  border-color: #627AAC;
-  &:visited {
-    color: $white;
-    border-color: #627AAC;
-  }
-  &:hover {
-    background-color: $white;
-    color: #627AAC;
-    border-color: #627AAC;
-  }
-}
-
-.google-plus {
-  background-color: #E36F60;
-  color: $white;
-  border-color: #E36F60;
-  &:visited {
-    color: $white;
-    border-color: #E36F60;
-  }
-  &:hover {
-    background-color: $white;
-    color: #E36F60;
-    border-color: #E36F60;
-  }
-}
-
-.hacker-news {
-  background-color: #FF6600;
-  color: $white;
-  border-color: #FF6600;
-  &:visited {
-    color: $white;
-    border-color: #FF6600;
-  }
-  &:hover {
-    background-color: $white;
-    color: #FF6600;
-    border-color: #FF6600;
-  }
-}
-
-.reddit {
-  background-color: #5F99CF;
-  color: $white;
-  border-color: #5F99CF;
-  &:visited {
-    color: $white;
-    border-color: #5F99CF;
-  }
-  &:hover {
-    background-color: $white;
-    color: #5F99CF;
-    border-color: #5F99CF;
-  }
-}
-
-// footer
-footer {
-  text-align: center;
-  padding: 3em 0;
-}
-
-.related-articles {
-  margin-top: 2em;
-  h4 {
-    font-family: $base-font-family;
-  }
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-}
-
-@include media-query($screen-md-min) {
-  .content {
-    padding: 2em 3em 0;
-    margin-left: 25%;
-  }
-
-  .header {
-    margin: 80% 0 0;
-    text-align: right;
-  }
-
-  .sidebar {
-    position: fixed;
-    top: 0;
-    bottom: 0;
   }
 }

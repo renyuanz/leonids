@@ -3,6 +3,7 @@ layout: post
 title: "Testing Readability with a Bunch of Text"
 excerpt: "A ton of text to test readability."
 tags: [sample post, readability, test]
+categories: [life]
 author: leo
 comments: true
 ---
