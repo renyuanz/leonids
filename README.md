@@ -1,14 +1,36 @@
-# My personal blog
+# About
 
-## About the blog
+This one is my personal site, if you were attracted by its awesome design, this is the right place! The theme is made by me and called `leonids`, check out the following instructions to set up your own one!
 
-I'll share regularly my life and interesting things with you. This blog supposed to be a multi-languages one, so that I can write everything here. Hope you enjoy!
+The leonids theme is free to use and modify, I'll be really appreciated if you give me a star.
 
-## About the blog theme
+# Leonids Jekyll Themes
 
-If you like this theme, you can find it [here](https://github.com/renyuanz/leonids) and a [live demo](http://renyuanz.github.io/leonids). This is a Jekyll blog theme, if you don't know what Jekyll is, check its [official site](http://jekyllrb.com/). You gonna love it! Otherwise, I'll keep working on this theme and make it better, so any reviews or suggestions are welcome!
+**[Leonids](http://renyuanz.github.io/leonids)** is a clean Jekyll theme perfect for powering your GitHub hosted blog.
 
-You can contact me by [email](mailto:zourenyuan@gmail.com) or [open an issue](https://github.com/renyuanz/leonids/issues/new).
+## What is Leonids?
 
-Cheers,
-Renyuan
+* Responsive templates. Looking good on mobile, tablet, and desktop.
+* Simple and clear permalink structure.
+* Support for Disqus Comments.
+* Support for multi-authors.
+* **And** the Leonids (/ˈliːənɪdz/ lee-ə-nidz) are a prolific meteor shower associated with the comet [Tempel-Tuttle](https://en.wikipedia.org/wiki/55P/Tempel%E2%80%93Tuttle).
+
+See a [demo](http://renyuanz.github.io/leonids/) hosted on GitHub.
+
+## Quick setup
+
+`git clone https://github.com/renyunz/leonids`
+
+`cd leonids`
+
+`jekyll server`
+
+Check out your awesome blog at `http://localhost:4000` and Cheers!
+
+## TODO
+
+- [ ] Build a timeline page.
+- [ ] Build a portfolio page.
+- [ ] Redesign categories page. Ref: [dribbble: blog category section By Ilja Miskov](https://dribbble.com/shots/2274792-Blog-Category-Selection)
+- [ ] Multi languages support.

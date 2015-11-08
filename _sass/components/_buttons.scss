@@ -1,13 +1,13 @@
-/*
- * Buttons
- */
+/* Buttons
+   ========================================================================== */
 
+// General
 .btn {
   display: inline-block;
   margin-bottom: 20px;
   padding: 8px 20px;
   font-size: 0.875em;
-  font-family: $heading-font-family;
+  font-family: $base-font-family;
   font-weight: 700;
   background-color: $primary;
   color: $white;
@@ -16,6 +16,7 @@
   border-color: $primary;
   text-decoration: none !important;
   border-radius: 5px;
+  @include box-shadow;
   &:visited {
     color: $white;
     border-color: $primary;
@@ -27,8 +28,7 @@
   }
 }
 
-/* Success button */
-
+// Success button
 .btn-success {
   background-color: $success;
   color: $white;
@@ -44,8 +44,7 @@
   }
 }
 
-/* Warning button */
-
+// Warning button
 .btn-warning {
   background-color: $warning;
   color: $white;
@@ -61,8 +60,7 @@
   }
 }
 
-/* Danger button */
-
+// Danger button
 .btn-danger {
   background-color: $danger;
   color: $white;
@@ -78,8 +76,7 @@
   }
 }
 
-/* Information button */
-
+// Information button
 .btn-info {
   background-color: $info;
   color: $white;
@@ -93,17 +90,4 @@
     color: $info;
     border-color: $info;
   }
-}
-
-/*
- * Tables
- */
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-  margin-bottom: 1.5em;
-  width: 100%;
-  margin: 1em 0;
-  min-width: 300px; // adjust to your needs
 }

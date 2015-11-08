@@ -1,6 +1,6 @@
-/**
- * Syntax highlighting styles
- */
+/* ==========================================================================
+   Syntax highlighting
+   ========================================================================== */
 
 pre, code {
   font-family: $monospace-font-family;
@@ -37,6 +37,7 @@ pre code {
   }
 }
 .highlight {
+  margin: 0;
   pre code {
     color: #ddd;
   }

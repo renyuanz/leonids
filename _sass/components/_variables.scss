@@ -1,0 +1,54 @@
+/*
+ * Global Variables
+ */
+
+/*** Google font import ***/
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:700,400,700italic,400italic);
+
+/*** Custom variables ***/
+
+// fonts & typo
+$base-font-family:      'Source Sans Pro', 'Helvetica Neue', Helvetica;
+$heading-font-family:   $base-font-family;
+$monospace-font-family: 'Source Code Pro', Menlo, monospace;
+$base-font-size:        16px;
+$small-font-size:       $base-font-size * 0.875;
+$base-line-height:      1.5;
+$base-space-unit:       1.5em;
+
+// Header Styles
+$h1-fontsize: 2.49rem !default;
+$h2-fontsize: 2.18rem !default;
+$h3-fontsize: 1.88rem !default;
+$h4-fontsize: 1.54rem !default;
+$h5-fontsize: 1.25rem !default;
+$h6-fontsize: 1rem !default;
+
+
+// Colors
+$text-color:       rgba(0, 0, 0, 0.87) !default;
+$background-color: #f0f2f2;
+
+$white:            #fff;
+$primary:          #8d7edc;
+$secondary:        #F36170;
+$success:          #65e892;
+$danger:           #f83e4b;
+$warning:          #F5A623;
+$info:             #09ABF6;
+
+/*** Tables ***/
+$table-border-color: #d0d0d0 !default;
+$table-striped-color: #f2f2f2 !default;
+
+/*** Grid Variables ***/
+$num-cols: 12 !default;
+$gutter-width: 1.5rem !default;
+$element-top-margin: $gutter-width/3 !default;
+$element-bottom-margin: ($gutter-width*2)/3 !default;
+
+/*** Media Query Ranges ***/
+$small-screen: 600px !default;
+$medium-screen: 992px !default;
+$large-screen: 1200px !default;
+$larger-screen: 1600px !default;

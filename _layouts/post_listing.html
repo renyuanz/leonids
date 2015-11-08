@@ -1,15 +1,17 @@
+---
+layout: two-col
+---
+
+{% for post in site.posts %}
 <section class="post">
   <header class="post-header">
-    {% if post.link %}
-      <h2>
-        <a class="post-title" href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-        <a class="post-title" href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-gg-circle"></i></a>
-      </h2>
-    {% else %}
-      <h2>
-        <a class="post-title" href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-      </h2>
-    {% endif %}
+
+    <h4>
+      <a class="post-title" href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+      {% if post.link %}
+      <a class="post-title-link" href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-external-link"></i></a>
+      {% endif %}
+    </h4>
 
     {% if post.author %}
       {% assign author = site.data.authors[post.author] %}
@@ -18,12 +20,13 @@
     {% endif %}
 
     <p class="post-meta">
-      By
-      <a class="post-author" href="{{ author.site }}">{{ author.name }}</a>
-      {% if post.tags.size > 0 %}
-      under
-      {% for tag in post.tags %}
-      <a class="post-tag {{ tag | slugize }}" href="{{ site.url }}/tags/#{{ tag }}">{{ tag }}</a>
+      <span class="post-date">
+        {{ post.date | date: "%-d %b %Y" | upcase }}
+      </span>
+      {% if post.categories.size > 0 %}
+      •
+      {% for cat in post.categories %}
+      <a class="post-cat" href="{{ site.url }}/categories/#{{ cat }}">{{ cat }}</a>
       {% endfor %}
       {% endif %}
     </p>
@@ -32,7 +35,7 @@
 
     <div class="post-description">
       <p>
-        {{ post.excerpt }}
+        {{ post.excerpt | truncate: 240 }}
       </p>
     </div>
 
@@ -53,3 +56,4 @@
     {% endif %}
 
 </section>
+{% endfor %}
