@@ -3,10 +3,10 @@
 # Site wide configuration
 ####################################
 #
-title: Leonids
-email:
-description: A simple and awesome blog theme powered by jekyll.
-url: # the base hostname & protocol for your site
+title: Renyuan's blog
+email: zourenyuan@gmail.com
+description: 'A backend developer who loves design awesome things. Working for RendezvousCheznous atm in Marseille, France.'
+url: //renyuanz.github.io # the base hostname & protocol for your site
 
 #
 ###################################
@@ -36,7 +36,7 @@ owner:
   bio: "A backend developer who loves design awesome things. Working for RendezvousCheznous atm in Marseille, France."
   email: zourenyuan@gmail.com
   disqus-shortname: renyuanzblog
-  twitter: #username
+  twitter: alittlered3 #username
   facebook: #username
   google:
     plus: #username
