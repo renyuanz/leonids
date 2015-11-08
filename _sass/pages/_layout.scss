@@ -11,7 +11,7 @@
     padding: 30px 50px;
   }
   @include media-query($medium-screen) {
-    background-image: url("/img/sidebar-bg.jpg");
+    background-image: url("../img/sidebar-bg.jpg");
     background-position: center bottom;
     background-size: cover;
     height: 100vh;
