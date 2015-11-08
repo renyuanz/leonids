@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Theme Setup
-permalink: /theme-setup/
+permalink: /theme-setup
 comments: true
 ---
 ### Get started
