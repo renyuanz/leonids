@@ -1,7 +1,6 @@
 ---
 layout: post
 title: New site new life
-categories: [leonids]
 comments: true
 ---
 
