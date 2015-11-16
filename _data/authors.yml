@@ -5,8 +5,10 @@ leo:
   name: Leo
   email: example@domain.com
   bio: "What do you want? Coffee, tea or coca cola?"
+  avatar: avatar-leo.jpg
 
 mike:
   name: Mike
   email: example2@domain.com
   bio: "How old are you?"
+  avatar: avatar-mike.jpg

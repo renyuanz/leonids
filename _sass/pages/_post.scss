@@ -5,7 +5,10 @@
   top: 400px;
   z-index: 2;
   width: 100%;
-  padding: 50px 50px 0;
+  padding: 20px 20px 0;
+  @include media-query($small-screen) {
+    padding: 50px 50px 0;
+  }
   @include media-query($medium-screen) {
     height: 100vh;
     overflow-y: scroll;
@@ -50,7 +53,7 @@ section.post {
 	.post-date {
 		color: $secondary;
 	}
-	.post-cat {
+	.post-author {
 		text-transform: uppercase;
 		color: $warning;
 	}

@@ -1,26 +1,24 @@
 /* LAYOUT CSS */
 .cover {
-  background-color: #454260;
+  background-color: $background-color;
   position: fixed;
   text-align: center;
   width: 100%;
   min-height: 400px;
-  padding: 30px 20px 20px;
+  padding: 30px 15px 20px;
   @include media-query($small-screen) {
     background-position: center;
-    padding: 30px 50px;
+    padding: 30px 15px;
   }
   @include media-query($medium-screen) {
-    background-image: url("../img/sidebar-bg.jpg");
-    background-position: center bottom;
-    background-size: cover;
     height: 100vh;
     position: initial;
     width: 100%;
   }
 }
 .cover-card {
-  color: $white;
+  color: $text-color;
+  padding: 0 50px;
   .avatar {
     border-radius: 50%;
     width: 100px;
@@ -32,28 +30,27 @@
   }
   .author_name {
     display: block;
-    color: #dce3ef;
-    font-size: 3em;
+    color: $primary;
+    font-size: 2.2em;
     font-weight: 700;
     text-transform: lowercase;
     font-style: italic;
-    @include text-shadow;
   }
   .author_job {
     display: block;
-    color: #8d7edc;
+    color: $secondary;
     font-size: 0.8em;
     font-weight: 700;
     text-transform: uppercase;
     margin: -10px auto 20px;
-    @include text-shadow;
   }
   .author_bio {
     display: block;
   }
   @include media-query($medium-screen) {
+    text-align: right;
     margin: 0 auto;
-    padding: 0 20px 80px;
+    padding: 0 0px 80px;
   }
 }
 .social-links {
