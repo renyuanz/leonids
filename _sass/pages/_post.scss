@@ -5,7 +5,10 @@
   top: 400px;
   z-index: 2;
   width: 100%;
-  padding: 50px 50px 0;
+  padding: 20px 20px 0;
+  @include media-query($small-screen) {
+    padding: 50px 50px 0;
+  }
   @include media-query($medium-screen) {
     height: 100vh;
     overflow-y: scroll;
@@ -50,7 +53,11 @@ section.post {
 	.post-date {
 		color: $secondary;
 	}
-	.post-cat {
+	.post-author {
+		text-transform: uppercase;
+		color: $warning;
+	}
+  .post-cat {
 		text-transform: uppercase;
 		color: $warning;
 	}
@@ -64,14 +71,15 @@ section.post {
 #post {
   padding-bottom: 50px;
   .post-header {
-    margin: 50px auto;
+    margin: 0 auto 50px;
   }
 }
 
 #page {
   padding-bottom: 50px;
+  min-height: 70vh;
   .page-header {
-    margin: 50px auto;
+    margin: 0 auto 50px;
   }
 }
 

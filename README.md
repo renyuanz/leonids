@@ -1,9 +1,3 @@
-# About
-
-This one is my personal site, if you were attracted by its awesome design, this is the right place! The theme is made by me and called `leonids`, check out the following instructions to set up your own one!
-
-The leonids theme is free to use and modify, I'll be really appreciated if you give me a star.
-
 # Leonids Jekyll Themes
 
 **[Leonids](http://renyuanz.github.io/leonids)** is a clean Jekyll theme perfect for powering your GitHub hosted blog.

@@ -2,17 +2,18 @@
 layout: post
 title: "Customizing Your iTerm2"
 excerpt: "Just about everything you'll need to customize your iTerm2 or the default Mac OS X Terminal."
+categories: MAC
 tags: [terminal, iTerm2, OS X]
 date: 2015-04-29T21:32:27+02:00
 comments: true
 ---
 Since we're going to be spending a lot of time in the command-line, let's install a better terminal than the default one.
 
-### Are you looking for something like this?
+#### Are you looking for something like this?
 
 ![Preview]({{ site.url }}/img/preview.png)
 
-### iTerm2
+#### iTerm2
 
 Download and install iTerm2 (the newest version, even if it says "beta release").
 
@@ -26,7 +27,7 @@ In the tab **Profiles**, create a new one with the "+" icon, and rename it to yo
 
 When done, hit the red "X" in the upper left (saving is automatic in OS X preference panes). Close the window and open a new one to see the size change.
 
-### Beautiful terminal
+#### Beautiful terminal
 
 Throughout a normal day, you'll see your prompt thousands of times. Customizing it with relevant information can drastically improve your workflow.
 
