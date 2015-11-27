@@ -16,7 +16,7 @@ See a [demo](http://renyuanz.github.io/leonids/) hosted on GitHub.
 
 ## Quick setup
 
-`git clone https://github.com/renyunz/leonids`
+`git clone https://github.com/renyuanz/leonids`
 
 `cd leonids`
 
