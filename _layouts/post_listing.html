@@ -31,11 +31,28 @@ layout: two-col
       {% endif %}
     </p>
 
-    </header>
+  </header>
+
+    {% if post.video %}
+    {% assign video_embed = post.video | remove:'https://www.youtube.com/watch?v=' %}
+    <article>
+      <iframe width="940" height="529" src="//www.youtube.com/embed/{{ video_embed }}?theme=light&amp;color=white" frameborder="0" allowfullscreen> </iframe>
+    </article>
+    {% endif %}
 
     <div class="post-description">
       <p>
-        {{ post.excerpt | truncate: 240 }}
+	{% if post.content contains '<!--more-->' %}
+         {{ post.content | split:'<!--more-->' | first }}
+       {% else %}
+         {% assign truncatedContent = '' %}
+         {% assign paragraphs = post.content | split:'</p>' %}
+         {% for paragraph in paragraphs limit:1 %}
+           {{ truncatedContent | append: paragraph }}
+           {{ truncatedContent | append: '</p>' }}
+         {% endfor %}
+<!--     {{ post.excerpt }} -->
+       {% endif %}
       </p>
     </div>
 
