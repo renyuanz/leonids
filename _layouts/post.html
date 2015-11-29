@@ -33,6 +33,10 @@ layout: default
     </header>
 
     <article class="post-content">
+      {% if page.video %}
+      {% assign video_embed = page.video | remove:'https://www.youtube.com/watch?v=' %}
+      <iframe width="940" height="529" src="//www.youtube.com/embed/{{ video_embed }}?theme=light&amp;color=white" frameborder="0" allowfullscreen> </iframe>
+      {% endif %}
       {{ content }}
     </article>
   </div>
