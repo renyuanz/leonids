@@ -3,11 +3,12 @@
 # Site wide configuration
 ####################################
 #
-title: Leonids
-email: zourenyuan@gmail.com
+title: Segun
+email: segunfamisa@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  A simple and awesome blog theme powered by jekyll. Inspired by PureCSS blog layout and build by bootstrap 4.
-url: http://renyuanz.github.io/leonids # the base hostname & protocol for your site
+  Hey, I'm an android developer, I love to create :)
+#url: http://renyuanz.github.io/leonids # the base hostname & protocol for your site
+url: http://127.0.0.1:4000
 
 #
 ###################################
@@ -22,6 +23,7 @@ sass:
   style: compressed
 gems:
   - jekyll-sitemap
+  - jekyll-gist
 
 kramdown:
   auto_ids: true
@@ -36,25 +38,25 @@ kramdown:
 ####################################
 #
 owner:
-  name: Renyuan
-  avatar: bio-photo.jpg
-  bio: "Work hard, play harder."
-  email: zourenyuan@gmail.com
-  disqus-shortname: renyuanzblog
-  twitter: alittlered3 #username
-  facebook: #username
+  name: Segun
+  avatar: avatar.jpg
+  bio: "Do. Something. Awesome."
+  email: segunfamisa@gmail.com
+  disqus-shortname: segunfamisa-site
+  twitter: segunfamisa #username
+  facebook: segunfamisa #username
   google:
-    plus: #username
+    plus: OluwasegunFamisa #username
     analytics:
     verify:
     ad-client:
     ad-slot:
   bing-verify:
-  github: renyuanz #username
+  github: segunfamisa #username
   stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
-  linkedin: #username
+  linkedin: segunfamisa #username
   xing: #username
-  instagram: alittlered0814 #username
+  instagram: segunfamisa #username
   lastfm: #username
   tumblr: #username
   pinterest: #username

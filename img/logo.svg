@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="242px" height="325px" viewBox="0 0 242 325" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.1.1 (8761) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle 1 + SF</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Rectangle-1-+-SF" sketch:type="MSLayerGroup" transform="translate(-128.000000, -113.000000)">
+            <rect id="Rectangle-1" stroke-opacity="0" stroke="#FFFFFF" sketch:type="MSShapeGroup" x="0" y="0" width="512" height="512"></rect>
+            <text id="SF" sketch:type="MSTextLayer" font-family="Engine" font-size="424" font-weight="normal" sketch:alignment="middle" fill="#000C8D">
+                <tspan x="104.208" y="427">SF</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
