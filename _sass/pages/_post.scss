@@ -31,6 +31,14 @@ section.post {
 	margin-bottom: 80px;
 }
 
+// Back home button
+
+.back-home a {
+  color: $info;
+  text-decoration: underline;
+  font-family: $font-family-monospace;
+}
+
 // Post title
 .post-title {
 
