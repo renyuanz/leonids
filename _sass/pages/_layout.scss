@@ -9,7 +9,7 @@
   z-index: 1;
   @include media-query($small-screen) {
     background-position: center;
-    padding: 30px 15px;
+    padding: 30px;
   }
   @include media-query($medium-screen) {
     height: 100vh;
@@ -19,7 +19,7 @@
 }
 .cover-card {
   color: $text-color;
-  padding: 0 50px;
+  padding: 0 30px;
   .avatar {
     border-radius: 50%;
     width: 100px;

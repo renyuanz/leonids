@@ -2,6 +2,7 @@
 layout: post
 title: New site new life
 categories: Life
+excerpt: "Timeline between June and September. And what I learned."
 comments: true
 ---
 

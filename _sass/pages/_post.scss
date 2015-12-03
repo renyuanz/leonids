@@ -7,7 +7,7 @@
   width: 100%;
   padding: 20px 20px 0;
   @include media-query($small-screen) {
-    padding: 50px 50px 0;
+    padding: 50px 30px 0;
   }
   @include media-query($medium-screen) {
     height: 100vh;
@@ -66,6 +66,12 @@ section.post {
   }
 }
 
+// Read more buttons
+
+a.read-more {
+  padding: 5px 8px;
+}
+
 // Post content
 
 #post {
@@ -116,6 +122,7 @@ section.post {
   }
 }
 .post-image-feature {
+  margin-bottom: 40px;
   .feature-image {
     width: 100%;
     max-height: 500px;

@@ -2,6 +2,36 @@
    Typography
    ========================================================================== */
 
+//
+// Global
+//
+
+html {
+  line-height: $base-line-height;
+  font-family: $font-family-base;
+  font-weight: normal;
+  color: $text-color;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-size: $font-size-base;
+}
+
+//
+// Blockquote
+//
+
+blockquote {
+  display: block;
+	position: relative;
+  padding-left: 20px;
+  font-style: italic;
+  border-left: 5px solid $secondary;
+}
+
+//
+// Links
+//
+
 a {
    text-decoration: none;
    color: $primary;
@@ -12,40 +42,14 @@ a {
    }
 }
 
-html {
-  line-height: $base-line-height;
-  font-family: $base-font-family;
-  font-weight: normal;
-  color: $text-color;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  @media only screen and (min-width: 0) {
-    font-size: $small-font-size;
-  }
-
-  @media only screen and (min-width: $small-screen) {
-    font-size: $base-font-size;
-  }
-
-  @media only screen and (min-width: $large-screen) {
-    font-size: $base-font-size * 1.1;
-  }
-}
-
-blockquote {
-  display: block;
-	position: relative;
-  padding-left: 20px;
-  font-style: italic;
-  border-left: 5px solid $secondary;
-}
-
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
-	line-height: 1.1;
 }
 
+//
 // Header Styles
+//
+
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   font-weight: inherit;
   color: $text-color;
@@ -54,14 +58,54 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     color: lighten($text-color, 24%);
   }
 }
-h1 { font-size: $h1-fontsize; line-height: 110%; margin: ($h1-fontsize / 2) 0 ($h1-fontsize / 2.5) 0;}
-h2 { font-size: $h2-fontsize; line-height: 110%; margin: ($h2-fontsize / 2) 0 ($h2-fontsize / 2.5) 0;}
-h3 { font-size: $h3-fontsize; line-height: 110%; margin: ($h3-fontsize / 2) 0 ($h3-fontsize / 2.5) 0;}
-h4 { font-size: $h4-fontsize; line-height: 110%; margin: ($h4-fontsize / 2) 0 ($h4-fontsize / 2.5) 0;}
-h5 { font-size: $h5-fontsize; line-height: 110%; margin: ($h5-fontsize / 2) 0 ($h5-fontsize / 2.5) 0;}
-h6 { font-size: $h6-fontsize; line-height: 110%; margin: ($h6-fontsize / 2) 0 ($h6-fontsize / 2.5) 0; text-transform: uppercase;}
+h1 { font-size: $font-size-h1; line-height: 110%; margin: ($font-size-h1 / 2) 0 ($font-size-h1 / 2.5) 0;}
+h2 { font-size: $font-size-h2; line-height: 110%; margin: ($font-size-h2 / 2) 0 ($font-size-h2 / 2.5) 0;}
+h3 { font-size: $font-size-h3; line-height: 110%; margin: ($font-size-h3 / 2) 0 ($font-size-h3 / 2.5) 0;}
+h4 { font-size: $font-size-h4; line-height: 110%; margin: ($font-size-h4 / 2) 0 ($font-size-h4 / 2.5) 0;}
+h5 { font-size: $font-size-h5; line-height: 110%; margin: ($font-size-h5 / 2) 0 ($font-size-h5 / 2.5) 0;}
+h6 { font-size: $font-size-h6; line-height: 110%; margin: ($font-size-h6 / 2) 0 ($font-size-h6 / 2.5) 0; text-transform: uppercase;}
 
+//
+// Display styling
+//
+.display-1 {
+  font-size: $display1-size;
+  font-weight: $display1-weight;
+}
+.display-2 {
+  font-size: $display2-size;
+  font-weight: $display2-weight;
+}
+.display-3 {
+  font-size: $display3-size;
+  font-weight: $display3-weight;
+}
+.display-4 {
+  font-size: $display4-size;
+  font-weight: $display4-weight;
+}
+
+//
+// Horizontal rules
+//
+
+hr {
+  margin-top: $spacer-y;
+  margin-bottom: $spacer-y;
+  border: 0;
+  border-top: $hr-border-width solid $hr-border-color;
+}
+
+//
 // Text Styles
+//
+
 em { font-style: italic; }
+
 strong { font-weight: 700; }
-small { font-size: 75%; }
+
+small,
+.small {
+  font-size: 80%;
+  font-weight: normal;
+}
