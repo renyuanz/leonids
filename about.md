@@ -12,9 +12,13 @@ image:
 
 Hi, I am Segun Famisa. I am a Software Engineer.
 
-I program in java, python, c#, matlab, LabVIEW and a number of others and I'm currently an Android Developer at [Truppr][truppr].
+I program in java, python, c#, matlab, LabVIEW.
 
-I'm interested in `Android`, `research`, `artificial intelligence`, `robotics`, `IoT`
+Formerly an Android Developer at [Truppr][truppr], now I build awesome stuff at [Konga](https://konga.com)
+
+I'm interested in `Android`, `research`, `artificial intelligence`, `computing` `robotics`, `IoT`
+
+I am Budding Karateka. :D
 
 ### Contact me
 
@@ -22,6 +26,7 @@ Interested in connecting? Drop an email at segunfamisa at gmail dot com or find
 me on
 ---
 
-{% include social-links.html %}
+[![Contact me on Codementor](https://cdn.codementor.io/badges/contact_me_github.svg)](https://www.codementor.io/segunfamisa?utm_source=github&utm_medium=button&utm_term=segunfamisa&utm_campaign=github)
+
 
 [truppr]:https://truppr.com
