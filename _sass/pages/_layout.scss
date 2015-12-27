@@ -28,11 +28,9 @@
   }
   .author_name {
     display: block;
-    color: $primary;
-    font-size: 2.2em;
-    font-weight: 700;
+    color: #F36170;
+    font-size: 1.75em;
     text-transform: lowercase;
-    font-style: italic;
   }
   .author_job {
     display: block;
@@ -43,7 +41,7 @@
     margin: -5px auto 10px;
   }
   .author_bio {
-    font-size: 80%;
+    font-size: 90%;
     display: block;
   }
   @include media-query($medium-screen) {

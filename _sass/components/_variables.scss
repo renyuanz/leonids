@@ -3,7 +3,7 @@
  */
 
 // Google font import
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,400italic|Ubuntu+Mono);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:600,400,400italic|Ubuntu+Mono);
 
 // Custom variables
 
@@ -27,29 +27,19 @@ $font-family-monospace:      "Ubuntu Mono", "Courier New", monospace !default;
 $font-family-base:           $font-family-sans-serif !default;
 
 // Pixel value used to responsively scale all typography. Applied to the `<html>` element.
-$font-size-root:             16px !default;
+$font-size-root:             15px !default;
 
-$font-size-base:             1rem !default;
-$font-size-lg:               1.25rem !default;
-$font-size-sm:               .85rem !default;
-$font-size-xs:               .75rem !default;
+$font-size-base:             $font-size-root !default;
+$font-size-lg:               $font-size-root * 1.25 !default;
+$font-size-sm:               $font-size-root * 0.875 !default;
+$font-size-xs:               $font-size-root * 0.75 !default;
 
-$font-size-h1:               2.5rem !default;
-$font-size-h2:               2rem !default;
-$font-size-h3:               1.75rem !default;
-$font-size-h4:               1.5rem !default;
-$font-size-h5:               1.25rem !default;
+$font-size-h1:               2rem !default;
+$font-size-h2:               1.75rem !default;
+$font-size-h3:               1.5rem !default;
+$font-size-h4:               1.25rem !default;
+$font-size-h5:               1.15rem !default;
 $font-size-h6:               1rem !default;
-
-$display1-size:               3.5rem !default;
-$display2-size:               4.5rem !default;
-$display3-size:               5.5rem !default;
-$display4-size:               6rem !default;
-
-$display1-weight:             300 !default;
-$display2-weight:             300 !default;
-$display3-weight:             300 !default;
-$display4-weight:             300 !default;
 
 $base-line-height:            1.5;
 $base-space-unit:             1.5em;
@@ -65,7 +55,7 @@ $text-color:       rgba(0, 0, 0, 0.87) !default;
 $background-color: #f5f5f5;
 
 $white:            #fff;
-$primary:          #F36170;
+$primary:          #42b983;
 $secondary:        #8d7edc;
 $success:          #65e892;
 $danger:           #f83e4b;
