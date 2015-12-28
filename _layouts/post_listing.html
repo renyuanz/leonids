@@ -6,12 +6,12 @@ layout: two-col
 <section class="post">
   <header class="post-header">
 
-    <h4>
+    <h2>
       <a class="post-title" href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
       {% if post.link %}
       <a class="post-title-link" href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-external-link"></i></a>
       {% endif %}
-    </h4>
+    </h2>
 
     {% if post.author %}
       {% assign author = site.data.authors[post.author] %}
@@ -40,21 +40,13 @@ layout: two-col
     </article>
     {% endif %}
 
+    {% if post.excerpt %}
     <div class="post-description">
       <p>
-	{% if post.content contains '<!--more-->' %}
-         {{ post.content | split:'<!--more-->' | first }}
-       {% else %}
-         {% assign truncatedContent = '' %}
-         {% assign paragraphs = post.content | split:'</p>' %}
-         {% for paragraph in paragraphs limit:1 %}
-           {{ truncatedContent | append: paragraph }}
-           {{ truncatedContent | append: '</p>' }}
-         {% endfor %}
-<!--     {{ post.excerpt }} -->
-       {% endif %}
+        {{ post.excerpt }}
       </p>
     </div>
+    {% endif %}
 
     {% if post.image.feature %}
     <div class="post-feature-image">

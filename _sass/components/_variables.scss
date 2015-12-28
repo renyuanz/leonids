@@ -3,25 +3,24 @@
  */
 
 /*** Google font import ***/
-@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:700,400,700italic,400italic);
-
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:600,400,400italic|Ubuntu+Mono);
 /*** Custom variables ***/
 
 // fonts & typo
 $base-font-family:      'Source Sans Pro', 'Helvetica Neue', Helvetica;
 $heading-font-family:   $base-font-family;
-$monospace-font-family: 'Source Code Pro', Menlo, monospace;
-$base-font-size:        16px;
+$monospace-font-family: 'Ubuntu Mono', Menlo, monospace;
+$base-font-size:        15px;
 $small-font-size:       $base-font-size * 0.875;
 $base-line-height:      1.5;
 $base-space-unit:       1.5em;
 
 // Header Styles
-$h1-fontsize: 2.49rem !default;
-$h2-fontsize: 2.18rem !default;
-$h3-fontsize: 1.88rem !default;
-$h4-fontsize: 1.54rem !default;
-$h5-fontsize: 1.25rem !default;
+$h1-fontsize: 2rem !default;
+$h2-fontsize: 1.75rem !default;
+$h3-fontsize: 1.5rem !default;
+$h4-fontsize: 1.25rem !default;
+$h5-fontsize: 1.15rem !default;
 $h6-fontsize: 1rem !default;
 
 
