@@ -31,13 +31,13 @@ kramdown:
 ####################################
 #
 owner:
-  name: Renyuan
-  avatar: avatar.jpg
+  name: Leonids
+  avatar: leonids-logo.png
   job: "PHP & Ruby Developer"
   bio: "A backend developer who loves design awesome things. Working for RendezvousCheznous atm in Marseille, France."
   email: zourenyuan@gmail.com
   disqus-shortname: renyuanzblog
-  twitter: #username
+  twitter: renyuan814 #username
   facebook: #username
   google:
     plus: #username
@@ -46,9 +46,9 @@ owner:
     ad-client:
     ad-slot:
   bing-verify:
-  github: #username
+  github: renyuanz #username
   stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
-  linkedin: #username
+  linkedin: renyuan-zou-69b7038a #username
   xing: #username
   instagram: #username
   lastfm: #username
