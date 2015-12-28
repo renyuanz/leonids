@@ -42,6 +42,7 @@ blockquote {
 
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 600;
+  line-height: 1.7;
 }
 
 // Header Styles
@@ -53,12 +54,12 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     color: lighten($text-color, 24%);
   }
 }
-h1 { font-size: $h1-fontsize; line-height: 110%; margin: ($h1-fontsize / 2) 0 ($h1-fontsize / 2.5) 0;}
-h2 { font-size: $h2-fontsize; line-height: 110%; margin: ($h2-fontsize / 2) 0 ($h2-fontsize / 2.5) 0;}
-h3 { font-size: $h3-fontsize; line-height: 110%; margin: ($h3-fontsize / 2) 0 ($h3-fontsize / 2.5) 0;}
-h4 { font-size: $h4-fontsize; line-height: 110%; margin: ($h4-fontsize / 2) 0 ($h4-fontsize / 2.5) 0;}
-h5 { font-size: $h5-fontsize; line-height: 110%; margin: ($h5-fontsize / 2) 0 ($h5-fontsize / 2.5) 0;}
-h6 { font-size: $h6-fontsize; line-height: 110%; margin: ($h6-fontsize / 2) 0 ($h6-fontsize / 2.5) 0; text-transform: uppercase;}
+h1 { font-size: $h1-fontsize; margin: ($h1-fontsize / 2) 0 ($h1-fontsize / 2.5) 0;}
+h2 { font-size: $h2-fontsize; margin: ($h2-fontsize / 2) 0 ($h2-fontsize / 2.5) 0;}
+h3 { font-size: $h3-fontsize; margin: ($h3-fontsize / 2) 0 ($h3-fontsize / 2.5) 0;}
+h4 { font-size: $h4-fontsize; margin: ($h4-fontsize / 2) 0 ($h4-fontsize / 2.5) 0;}
+h5 { font-size: $h5-fontsize; margin: ($h5-fontsize / 2) 0 ($h5-fontsize / 2.5) 0;}
+h6 { font-size: $h6-fontsize; margin: ($h6-fontsize / 2) 0 ($h6-fontsize / 2.5) 0; text-transform: uppercase;}
 
 // Text Styles
 em { font-style: italic; }
