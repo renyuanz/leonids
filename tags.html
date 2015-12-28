@@ -22,7 +22,7 @@ permalink: /tags/
     <h5 class="tag-group-title" id="{{ tag_name | slugize }}">{{ tag_name }}</h5>
     {% for post in site.tags[tag_name] %}
     <article class="tag-item">
-      <a class="tag-item-title" href="{{ site.url }}{{ post.url }}">{{post.title}}</a>
+      <a class="tag-item-title" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
     </article>
     {% endfor %}
   </div>

@@ -21,7 +21,7 @@ layout: default
 <div class="container">
   <div id="post">
     <header class="post-header">
-      <h2 title="{{ page.title }}">{{ page.title }}</h2>
+      <h1 title="{{ page.title }}">{{ page.title }}</h1>
       <span class="post-meta">
         <span class="post-date">
           {{ page.date | date: "%-d %b %Y" | upcase }}
@@ -33,6 +33,10 @@ layout: default
     </header>
 
     <article class="post-content">
+      {% if page.video %}
+      {% assign video_embed = page.video | remove:'https://www.youtube.com/watch?v=' %}
+      <iframe width="940" height="529" src="//www.youtube.com/embed/{{ video_embed }}?theme=light&amp;color=white" frameborder="0" allowfullscreen> </iframe>
+      {% endif %}
       {{ content }}
     </article>
   </div>

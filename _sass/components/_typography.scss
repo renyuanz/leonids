@@ -41,8 +41,7 @@ blockquote {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-weight: 700;
-	line-height: 1.1;
+	font-weight: 600;
 }
 
 // Header Styles
@@ -63,5 +62,10 @@ h6 { font-size: $h6-fontsize; line-height: 110%; margin: ($h6-fontsize / 2) 0 ($
 
 // Text Styles
 em { font-style: italic; }
-strong { font-weight: 700; }
-small { font-size: 75%; }
+strong { font-weight: 600; }
+small { font-size: 80%; }
+p {
+  margin: 1.2em 0;
+  word-spacing: 0.05em;
+  line-height: 1.6em;
+}

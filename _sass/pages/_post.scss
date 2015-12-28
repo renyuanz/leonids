@@ -5,7 +5,9 @@
   top: 400px;
   z-index: 233;
   width: 100%;
-  padding: 50px 50px 0;
+  padding: 20px 20px 0;
+  -webkit-transform: translate3d(0,0,1px);
+  transform: translate3d(0,0,1px);
   @include media-query($medium-screen) {
     height: 100vh;
     overflow-y: scroll;
@@ -66,6 +68,21 @@ section.post {
   .post-header {
     margin: 50px auto;
   }
+  
+  h1 {
+    margin: 0.5em 0 1em;
+  }
+  
+  h2 {
+    margin: 2em 0 0.8em;
+    padding-bottom: 0.7em;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  h3 {
+    margin: 1.75em 0 1.2em;
+    position: relative;
+  }
 }
 
 #page {
@@ -110,6 +127,14 @@ section.post {
 .post-image-feature {
   .feature-image {
     width: 100%;
+    max-height: 500px;
+  }
+}
+.page-image-feature {
+  .feature-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     max-height: 500px;
   }
 }

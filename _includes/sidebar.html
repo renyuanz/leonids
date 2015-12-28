@@ -9,12 +9,20 @@
   <span class="author_bio mbm">{{ author.bio }}</span>
   <nav class="nav">
     <ul class="nav-list">
-      {% for page in site.pages %} {% if page.title %}
+      {% assign first = '' %}
+
+      {% for page in site.pages %} 
+      {% if page.title %}
       <li class="nav-item">
-        <a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a>{% unless forloop.last %}
-        <span>/</span>{% endunless %}
+        {% unless first == '' %}
+        <span>/</span>
+        {% endunless %}
+        {% assign first = 'no' %}
+
+        <a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a>
       </li>
-      {% endif %} {% endfor %}
+      {% endif %} 
+      {% endfor %}
     </ul>
   </nav>
   {% include social-links.html %}
