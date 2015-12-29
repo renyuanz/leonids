@@ -1,6 +1,49 @@
-/* ==========================================================================
-   Typography
-   ========================================================================== */
+// Typography --------------------
+
+// HTML --------------------
+
+html {
+  line-height: $base-line-height;
+  font-family: $base-font-family;
+  font-weight: normal;
+  color: $text-color;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+// Headings --------------------
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+  margin-top: $base-space-unit;
+  margin-bottom: $base-space-unit/3;
+  color: $strong-color;
+}
+
+h1 { font-size: 2.4em; font-weight: 300; }
+h2 { font-size: 1.8em; font-weight: 300; }
+h3 { font-size: 1.5em; font-weight: 600; }
+h4 { font-size: 1.2em; font-weight: 600; }
+h5 { font-size: 1.1em; font-weight: 600; }
+h6 { font-size: 1.0em; font-weight: 600; }
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  font-weight: inherit;
+  color: $text-color;
+  &:hover,
+  &:focus {
+    color: lighten($text-color, 24%);
+  }
+}
+
+// Paragraph --------------------
+
+p {
+  margin-top: 0;
+  margin-bottom: $base-space-unit;
+}
+
+// Links --------------------
 
 a {
    text-decoration: none;
@@ -12,61 +55,29 @@ a {
    }
 }
 
-html {
-  line-height: $base-line-height;
-  font-family: $base-font-family;
-  font-weight: normal;
-  color: $text-color;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  @media only screen and (min-width: 0) {
-    font-size: $small-font-size;
-  }
-
-  @media only screen and (min-width: $small-screen) {
-    font-size: $base-font-size;
-  }
-
-  @media only screen and (min-width: $large-screen) {
-    font-size: $base-font-size * 1.1;
-  }
-}
+// Blockquotes --------------------
 
 blockquote {
-  display: block;
-	position: relative;
-  padding-left: 20px;
+  margin: $base-space-unit 0;
+  font-size: inherit;
+  color: $subtle-color;
+  padding-left: $base-space-unit;
   font-style: italic;
   border-left: 5px solid $secondary;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	font-weight: 600;
-  line-height: 1.7;
-}
+// Strong, em and small --------------------
 
-// Header Styles
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-  font-weight: inherit;
-  color: $text-color;
-  &:hover,
-  &:focus {
-    color: lighten($text-color, 24%);
-  }
+strong {
+  color: $strong-color;
 }
-h1 { font-size: $h1-fontsize; margin: ($h1-fontsize / 2) 0 ($h1-fontsize / 2.5) 0;}
-h2 { font-size: $h2-fontsize; margin: ($h2-fontsize / 2) 0 ($h2-fontsize / 2.5) 0;}
-h3 { font-size: $h3-fontsize; margin: ($h3-fontsize / 2) 0 ($h3-fontsize / 2.5) 0;}
-h4 { font-size: $h4-fontsize; margin: ($h4-fontsize / 2) 0 ($h4-fontsize / 2.5) 0;}
-h5 { font-size: $h5-fontsize; margin: ($h5-fontsize / 2) 0 ($h5-fontsize / 2.5) 0;}
-h6 { font-size: $h6-fontsize; margin: ($h6-fontsize / 2) 0 ($h6-fontsize / 2.5) 0; text-transform: uppercase;}
-
-// Text Styles
 em { font-style: italic; }
-strong { font-weight: 600; }
 small { font-size: 80%; }
-p {
-  margin: 1.2em 0;
-  word-spacing: 0.05em;
-  line-height: 1.6em;
+
+
+// List --------------------
+
+ul,
+ol {
+  margin-bottom: $base-space-unit;
 }

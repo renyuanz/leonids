@@ -1,9 +1,6 @@
-/* Utility mixins
-   ========================================================================== */
+// Utility mixins --------------------
 
-/**
- * Clearfix for clearing floats like a boss h5bp.com/q
- */
+// Clearfix for clearing floats like a boss h5bp.com/q --------------------
 
 @mixin clearfix {
   *zoom: 1;
@@ -18,9 +15,7 @@
   }
 }
 
-/**
- * Media query
- */
+// Media query --------------------
 
 @mixin media-query($device) {
     @media only screen and (min-width: $device) {
@@ -28,9 +23,7 @@
     }
 }
 
-/**
- * Webkit-style focus
- */
+// Webkit-style focus --------------------
 
 @mixin tab-focus() {
   /* Default */
@@ -40,9 +33,7 @@
   outline-offset: -2px;
 }
 
-/**
- * Center-align a block level element
- */
+// Center-align a block level element --------------------
 
 @mixin center-block() {
   display: block;
@@ -51,9 +42,7 @@
 }
 
 
-/**
- * Hide text overflow and end with ...
- */
+// Hide text overflow and end with ... --------------------
 
 @mixin text-overflow() {
   overflow: hidden;
@@ -62,8 +51,7 @@
 }
 
 
-/* Gradient mixins
-   ========================================================================== */
+// Gradient mixins --------------------
 
 @mixin horizontal($startColor : $white, $endColor : $lightergrey) {
   background-color: $endColor;
@@ -105,8 +93,7 @@
   border-bottom : solid 1px $bottom-color;
 }
 
-/* Rounded corners
-   ========================================================================== */
+// Rounded corners --------------------
 
 /**
  * Round all corners
@@ -171,8 +158,7 @@ text-shadow: $shadow; }
   opacity: $opacity;
 }
 
-/* Transformations
-   ========================================================================== */
+// Transformations --------------------
 
 /**
  * @include rotate(VALUEdeg);
@@ -262,19 +248,39 @@ text-shadow: $shadow; }
 }
 
 
-/**
- * Hide from visual and speaking browsers
- */
+// Hide from visual and speaking browsers --------------------
 
 @mixin hidden {
   display: none;
   visibility: hidden;
 }
 
-/**
- * Hide but maintain layout
- */
+// Hide but maintain layout --------------------
 
 @mixin invisible() {
   visibility: hidden;
+}
+
+// Contrast function --------------------
+
+$dark-text-default: #000 !default;
+$light-text-default: #fff !default;
+
+// Calculeate brightness of a given color --------------------
+@function brightness($color) {
+  @return ((red($color) * .299) + (green($color) * .587) + (blue($color) * .114)) / 255 * 100%;
+}
+
+// Compares contrast of a given color to the light/dark arguments and returns whichever is most "contrasty" --------------------
+@function contrast($color, $dark: $dark-text-default, $light: $light-text-default) {
+  @if $color == null {
+    @return null;
+  }
+  @else {
+    $color-brightness: brightness($color);  
+    $light-text-brightness: brightness($light);
+    $dark-text-brightness: brightness($dark);
+    
+    @return if(abs($color-brightness - $light-text-brightness) > abs($color-brightness - $dark-text-brightness), $light, $dark);  
+  }
 }

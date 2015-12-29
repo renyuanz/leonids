@@ -1,6 +1,4 @@
-/**
-  * Global setting
-  */
+// Global setting --------------------
 *,
 *:before,
 *:after {
@@ -16,7 +14,7 @@ img {
   max-width: 100%;
 }
 
-// Tables
+// Tables --------------------
 table,
 th,
 td {
@@ -81,7 +79,7 @@ tfoot {
   border-top: 1px solid $table-border-color;
 }
 
-// Global transition
+// Global transition --------------------
 b,
 i,
 strong,
@@ -100,7 +98,7 @@ a {
   @include transition(all .1s ease);
 }
 
-// Footer
+// Footer --------------------
 footer {
   text-align: center;
   padding: 3em 0;

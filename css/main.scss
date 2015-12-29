@@ -3,16 +3,16 @@
 ---
 @charset "UTF-8";
 
-// Mixins
+// Mixins --------------------
 @import "components/mixins";
 
-// Variables
+// Variables --------------------
 @import "components/variables";
 
-// Reset
+// Reset --------------------
 @import "components/normalize";
 
-// Components
+// Components --------------------
 @import "components/global";
 @import "components/helpers";
 @import "components/grid";
@@ -20,7 +20,7 @@
 @import "components/buttons";
 @import "components/syntax-highlighting";
 
-// Pages styling
+// Pages styling --------------------
 @import "pages/layout";
 @import "pages/tags";
 @import "pages/archive";

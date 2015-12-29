@@ -1,8 +1,6 @@
-/**
-  * Helpers
-  */
+// Helpers --------------------
 
-// Displays
+// Displays --------------------
 .block { display: block }
 .inline-block { display: inline-block }
 
@@ -35,7 +33,7 @@
   border-top-right-radius: 10px;
 }
 
-// Margin helpers
+// Margin helpers --------------------
 .m0            { margin: 0 }
 .mt0           { margin-top: 0 }
 .mr0           { margin-right: 0 }
@@ -66,7 +64,8 @@
 .mr2           { margin-right: $base-space-unit*2 }
 .ml2           { margin-left: $base-space-unit*2 }
 
-// Padding helpers
+// Padding helpers --------------------
+
 .p0            { padding: 0 }
 .pt0           { padding-top: 0 }
 .pr0           { padding-right: 0 }
@@ -99,52 +98,52 @@
 
 .pb5           { padding-bottom: 1em*5 }
 
-// Padding small
+// Padding small --------------------
 .pads           { padding: .25em }
 
-// Padding medium
+// Padding medium --------------------
 .padm           { padding: .5em }
 
-// Padding large
+// Padding large --------------------
 .padl           { padding: 1em }
 
-// Padding small left :: right
+// Padding small left :: right --------------------
 .padsx {
  padding-left: .25em;
  padding-right: .25em;
 }
 
-// Padding medium left :: right
+// Padding medium left :: right --------------------
 .padmx {
  padding-left: .5em;
  padding-right: .5em;
 }
 
-// Padding large left :: right
+// Padding large left :: right --------------------
 .padlx {
  padding-left: 1em;
  padding-right: 1em;
 }
 
-// Padding small top :: bottom
+// Padding small top :: bottom --------------------
 .padsy {
  padding-top: .25em;
  padding-bottom: .25em;
 }
 
-// Padding medium top :: bottom
+// Padding medium top :: bottom --------------------
 .padmy {
  padding-top: .5em;
  padding-bottom: .5em;
 }
 
-// Padding large top :: bottom
+// Padding large top :: bottom --------------------
 .padly {
  padding-top: 1em;
  padding-bottom: 1em;
 }
 
-// Colors helpers
+// Colors helpers --------------------
 .primary-text-color {
   color: $primary;
 }
