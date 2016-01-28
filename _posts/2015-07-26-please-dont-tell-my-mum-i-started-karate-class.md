@@ -4,7 +4,7 @@ title: "Please don't tell my mum. I started karate class"
 date: 2015-07-26 23:33:05
 description: My first day doing Karate
 permalink: /posts/please-dont-tell-my-mum-i-started-karate-class
-tags: [karate journal, fitness journal, rants]
+tags: [karate, fitness]
 excerpt: "First day at learning karate"
 #image:
 #  feature: banner-please-dont-tell-my-mum.jpg
