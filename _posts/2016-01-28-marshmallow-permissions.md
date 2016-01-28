@@ -5,7 +5,7 @@ date: 2016-01-28 03:05:30
 description: Quick update on using the new runtime permissions on Android 6.0 (Marshmallow)
 permalink: /posts/marshmallow-permissions
 tags: [android, tips]
-excerpt: "First day at learning karate"
+excerpt: "Quick update on using the new runtime permissions on Android 6.0 (Marshmallow)"
 comments: true
 ---
 
