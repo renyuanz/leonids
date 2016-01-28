@@ -3,7 +3,7 @@ layout: post
 title: "Please don't tell my mum. I started karate class"
 date: 2015-07-26 23:33:05
 description: My first day doing Karate
-permalink: please-dont-tell-my-mum-i-started-karate-class
+permalink: /posts/please-dont-tell-my-mum-i-started-karate-class
 tags: [karate journal, fitness journal, rants]
 excerpt: "First day at learning karate"
 #image:

@@ -4,6 +4,7 @@ title:  "Hello jekyll!"
 date:   2015-07-17 10:20:02
 description: My first post
 excerpt: "First post with jekyll."
+permalink: /posts/my-first-post
 tags: [welcome, jekyll]
 ---
 
