@@ -6,6 +6,7 @@ description: Quick update on using the new runtime permissions on Android 6.0 (M
 permalink: /posts/marshmallow-permissions
 tags: [android, tips]
 excerpt: "Quick update on using the new runtime permissions on Android 6.0 (Marshmallow)"
+twitter_card_image: /img/android-marshmallow.png
 comments: true
 ---
 
