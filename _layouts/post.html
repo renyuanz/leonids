@@ -3,6 +3,31 @@ layout: default
 ---
 <div class="post">
 
+  <!--  twitter card meta data -->
+  <!--  page title -->
+  {% if page.title %}
+    <meta name="twitter:title" content="{{ page.title }}" >
+  {% else %}
+    <meta name="twitter:title" content="{{ site.title }}" >
+  {% endif %}
+
+  <!--  twitter site -->
+  {% if site.owner.twitter %}
+    <meta name="twitter:site" content="@{{ site.owner.twitter }}">
+  {% endif %}
+
+  <!--  description -->
+  {% if page.excerpt %}
+    <meta name="twitter:description" content="{{ page.excerpt }}" >
+  {% endif %}
+
+  <!--  twitter image -->
+  {% if page.twitter_card_image %}
+    <meta name="twitter:image" content="{{ site.url }}{{ page.twitter_card_image }}" >
+    <meta name="twitter:card" content="summary_large_image" >
+  {% else %}
+    <meta name="twitter:card" content="summary">
+  {% endif %}
 
   <header class="post-header">
     <h1>{{ page.title }}</h1>
