@@ -31,17 +31,17 @@ kramdown:
 ####################################
 #
 owner:
-  name: Renyuan
+  name: Your name
   avatar: avatar.jpg
-  job: "PHP & Ruby Developer"
-  bio: "A backend developer who loves design awesome things. Working for RendezvousCheznous atm in Marseille, France."
-  email: zourenyuan@gmail.com
-  disqus-shortname: renyuanzblog
-  twitter: alittlered3 #username
-  facebook: #username
+  job: "Your job"
+  bio: "Write about yourself"
+  email:
+  disqus-shortname:
+  twitter:
+  facebook:
   google:
-    plus: #username
-    analytics: UA-62251910-1
+    plus:
+    analytics:
     verify:
     ad-client:
     ad-slot:
