@@ -3,8 +3,8 @@
 # Site wide configuration
 ####################################
 #
-title:       "Renyuan's blog"
-description: 'A backend developer who loves design awesome things. Working for RendezvousCheznous atm in Marseille, France.'
+title:       "Leonids Jekyll theme"
+description: "Clean Jekyll blog theme called Leonids."
 url:         # the base hostname & protocol for your site
 
 #
@@ -46,7 +46,7 @@ owner:
     ad-client:
     ad-slot:
   bing-verify:
-  github: renyuanz #username
+  github: #username
   stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
   linkedin: #username
   xing: #username
