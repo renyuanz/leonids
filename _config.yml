@@ -15,7 +15,7 @@ url: http://renyuanz.github.io/leonids # the base hostname & protocol for your s
 ####################################
 #
 markdown:           kramdown
-highlighter:        pygments
+highlighter:        rouge
 excerpt_separator:  <!--more-->
 timezone:           Europe/Paris
 
