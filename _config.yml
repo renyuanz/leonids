@@ -24,6 +24,12 @@ kramdown:
   entity_output:  as_char
   toc_levels:     1..6
   enable_coderay: false
+  
+# list of page that is showed on sidebar. fix the sidebar bug
+pages_list:       
+  about me : '/about me '
+  archive: '/archive'
+  categories: '/categories'
 
 #
 ###################################
