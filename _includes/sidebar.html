@@ -7,6 +7,7 @@
   <a href="{{ site.url }}/" class="author_name">{{ author.name }}</a>
   <span class="author_job">{{ author.job }}</span>
   <span class="author_bio mbm">{{ author.bio }}</span>
+  <!-- ffix the sidebar bug-->
   <nav class="nav">
     <ul class="nav-list">
       {% for page in site.pages %} {% if page.title %}
@@ -17,5 +18,6 @@
       {% endif %} {% endfor %}
     </ul>
   </nav>
+  <!--ffix the sidebar bug- -->
   {% include social-links.html %}
 </div>
