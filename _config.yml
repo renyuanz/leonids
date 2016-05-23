@@ -5,7 +5,7 @@
 #
 title: Strawberry Swing Forever
 email: julianborrey@gmail.com
-description: Ideas and projects on random interests.
+description:
 url: # http://jborrey.github.io # comment out URL for development
 
 #
@@ -33,7 +33,7 @@ owner:
   name: "Strawberry Swing Forever"
   # avatar:
   job: ""
-  bio: "A blog on random projects and interests."
+  bio: ""
   email: julianborrey@gmail.com
   disqus-shortname:
   twitter: BorreyJulian
