@@ -36,9 +36,12 @@ section.post {
 // Back home button
 
 .back-home a {
+  font-size: 13px;
+  font-weight: bold;
   color: $info;
-  text-decoration: underline;
-  font-family: $font-family-monospace;
+  border: 1px solid lighten($text-color, 45%);
+  border-radius: 0.4em;
+  padding: 0.5em 1em;
 }
 
 // Post title
