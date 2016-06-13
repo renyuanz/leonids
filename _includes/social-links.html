@@ -1,6 +1,22 @@
+<script type="text/javascript">
+  // based on http://stackoverflow.com/a/10300743/280842
+  function gen_mail_to_link(hs, subject) {
+    var lhs,rhs;
+    var p = hs.split('@');
+    lhs = p[0];
+    rhs = p[1];
+    document.write("<a class=\"social-link-item\" target=\"_blank\" href=\"mailto");
+    document.write(":" + lhs + "@");
+    document.write(rhs + "?subject=" + subject + "\"><i class=\"fa fa-fw fa-envelope\"></i><\/a>");
+  }
+</script>
 <div class="social-links">
   <ul>
-    {% if author.email %}<li><a href="mailto:{{ author.email }}" class="social-link-item" target="_blank"><i class="fa fa-fw fa-envelope"></i></a></li>{% endif %}
+    {% if author.email %}
+      <li>
+      <script>gen_mail_to_link('{{ author.email }}', 'Hello from website');</script>
+      </li>
+    {% endif %}
     {% if author.twitter %}<li><a href="http://twitter.com/{{ author.twitter }}" class="social-link-item" target="_blank"><i class="fa fa-fw fa-twitter"></i></a></li>{% endif %}
     {% if author.facebook %}<li><a href="http://facebook.com/{{ author.facebook }}" class="social-link-item" target="_blank"><i class="fa fa-fw fa-facebook"></i></a></li>{% endif %}
     {% if author.google.plus %}<li><a href="http://plus.google.com/+{{ author.google.plus }}" class="social-link-item" target="_blank"><i class="fa fa-fw fa-google-plus"></i> Google+</a></li>{% endif %}
