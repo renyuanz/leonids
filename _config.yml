@@ -14,10 +14,11 @@ url: http://renyuanz.github.io/leonids # the base hostname & protocol for your s
 # Jekyll configuration
 ####################################
 #
-markdown:           kramdown
-highlighter:        rouge
-excerpt_separator:  <!--more-->
-timezone:           Europe/Paris
+timezone:          Europe/Paris
+markdown:          kramdown
+highlighter:       rouge
+excerpt_separator: <!--more-->
+permalink:         /articles/:year-:month/:title
 
 kramdown:
   auto_ids: true
