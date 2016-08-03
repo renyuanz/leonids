@@ -2,3 +2,4 @@ _site
 .sass-cache
 _config.yml
 _drafts
+.ruby-version
