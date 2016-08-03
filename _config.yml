@@ -4,9 +4,9 @@
 ####################################
 #
 title: Leonids
-email: zourenyuan@gmail.com
+email:
 description: A simple and awesome blog theme powered by jekyll.
-url: http://renyuanz.github.io/leonids # the base hostname & protocol for your site
+url: # the base hostname & protocol for your site
 
 
 #
@@ -14,10 +14,11 @@ url: http://renyuanz.github.io/leonids # the base hostname & protocol for your s
 # Jekyll configuration
 ####################################
 #
-markdown:           kramdown
-highlighter:        rouge
-excerpt_separator:  <!--more-->
-timezone:           Europe/Paris
+timezone:          Europe/Paris
+markdown:          kramdown
+highlighter:       rouge
+excerpt_separator: <!--more-->
+permalink:         /articles/:year-:month/:title
 
 kramdown:
   auto_ids: true
@@ -34,22 +35,22 @@ kramdown:
 owner:
   name: Leonids
   avatar: leonids-logo.png
-  job: "PHP & Ruby Developer"
-  bio: "A backend developer who loves design awesome things. Working for RendezvousCheznous atm in Marseille, France."
-  email: zourenyuan@gmail.com
-  disqus-shortname: renyuanzblog
-  twitter: renyuan814 #username
+  job: "A jekyll theme"
+  bio: "A simple and awesome blog theme powered by jekyll."
+  email:
+  disqus-shortname:
+  twitter: #username
   facebook: #username
   google:
     plus: #username
-    analytics: UA-62251910-2
+    analytics:
     verify:
     ad-client:
     ad-slot:
   bing-verify:
-  github: renyuanz #username
+  github: #username
   stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
-  linkedin: renyuan-zou-69b7038a #username
+  linkedin: #username
   xing: #username
   instagram: #username
   lastfm: #username

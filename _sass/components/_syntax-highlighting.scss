@@ -8,15 +8,15 @@ pre, code {
   color: #525252;
   font-size: 0.9em;
   background-color: #f8f8f8;
-  font-size: ($font-size-base - 2);
+  font-size: ($font-size-base - 3);
 }
 code {
   color: #e96900;
-  padding: 3px 5px;
-  margin: 0 2px;
   border-radius: 2px;
   white-space: nowrap;
 }
+
+
 pre { // only apply for code blocks
   overflow: auto;
   display: block;
@@ -40,8 +40,25 @@ pre code {
 }
 .highlight {
   margin: 0;
+  pre {
+    position: relative;
+  }
   pre code {
     color: #525252;
+    &::before {
+      content: attr(data-lang);
+      position: absolute;
+      top: 0;
+      right: 0;
+      color: #ccc;
+      text-align: right;
+      text-transform: uppercase;
+      font-size: 0.85em;
+      padding: 5px 10px 0;
+      line-height: 20px;
+      height: 20px;
+      font-weight: 600;
+    }
   }
   .hll { background-color: #ffffcc }
   .c { color: #B0B2B0; font-style: italic } /* Comment */
