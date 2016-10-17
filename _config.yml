@@ -3,9 +3,9 @@
 # Site wide configuration
 ####################################
 #
-title: Leonids
-email:
-description: A simple and awesome blog theme powered by jekyll.
+title: vic hargrave
+email: vichargrave@gmail.com
+description: never code in the dark
 url: # the base hostname & protocol for your site
 
 
@@ -14,7 +14,7 @@ url: # the base hostname & protocol for your site
 # Jekyll configuration
 ####################################
 #
-timezone:          Europe/Paris
+timezone:          America/Los_Angeles
 markdown:          kramdown
 highlighter:       rouge
 excerpt_separator: <!--more-->
@@ -33,26 +33,26 @@ kramdown:
 ####################################
 #
 owner:
-  name: Leonids
-  avatar: leonids-logo.png
-  job: "A jekyll theme"
-  bio: "A simple and awesome blog theme powered by jekyll."
-  email:
-  disqus-shortname:
-  twitter: #username
+  name: vic hargrave
+  avatar: coffee.png
+  job: "never code in the dark"
+  bio: "Software developer, blogger and family man enjoying life one cup of coffee at a time."
+  email: vichargrave@gmail.com
+  disqus-shortname: vichargrave
+  twitter: vichargrave
   facebook: #username
   google:
-    plus: #username
+    plus: 
     analytics:
     verify:
     ad-client:
     ad-slot:
   bing-verify:
-  github: #username
+  github: vichargrave
   gitlab: #username
   stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
-  linkedin: #username
-  skype: #username
+  linkedin: vichargrave
+  skype: vichargrave
   xing: #username
   instagram: #username
   lastfm: #username
