@@ -6,8 +6,8 @@
 title: vic hargrave
 email: vichargrave@gmail.com
 description: never code in the dark
-url: # the base hostname & protocol for your site
-
+#url: http://localhost:4000
+url: http://vichargrave.github.io
 
 #
 ###################################
