@@ -2,7 +2,7 @@
 layout: post
 title:  "Running Elasticsearch on Kubernetes"
 date:   2016-10-16 12:40:37
-categories: [tutorial]
+categories: [Tutorial]
 tags: Elastisearch Kubernetes 
 comments: true
 ---
