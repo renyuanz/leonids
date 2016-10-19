@@ -6,7 +6,7 @@ categories: [Tutorial]
 tags: Elastisearch Kubernetes 
 comments: true
 ---
-[Kubernetes](http://kubernetes.io/){:target="_blank"} gives you the capabilities to easily spin up clusters to run your Docker application containers. As such, Kubernetes is an ideal environment for running [Elasticsearch](https://www.elastic.co/){:target="_blank"} clusters in the cloud.  
+<img class="image-left" src="/img/Elasticsearch-on-Kubernetes.png" width="100px"/>[Kubernetes](http://kubernetes.io/){:target="_blank"} gives you the capabilities to easily spin up clusters to run your Docker application containers. As such, Kubernetes is an ideal environment for running [Elasticsearch](https://www.elastic.co/){:target="_blank"} clusters in the cloud.
 
 I’ve been working with Elasticsearch on Kubernetes quite a bit lately so I thought I’d share with you how you can deploy your own Elasticsearch cluster with all the latest bells and whistles.
 
@@ -18,7 +18,7 @@ I’ve been working with Elasticsearch on Kubernetes quite a bit lately so I tho
 
 ### Build a Kubernetes Ready Elasticsearch Container
 For starters, you’ll need an Elasticsearch Docker container that is tailored for Kubernetes, which you can get from the [pires/docker-elasticsearch-kubernetes](https://github.com/pires/docker-elasticsearch-kubernetes){:target="_blank"} repo on Github.  The Dockerfile for this container installs all the necessary components for Elasticsearch including Elasticsearch itself (version 2.3.5_1 as of this writing) and the io.fabric8/elasticsearch-cloud-kubernetes plugin that enables the Elasticsearch nodes to discover each other without having to specify the IP addresses of the nodes in the elasticsearch.yml configuration file.  Get a copy of the [pires/docker-elasticsearch-kubernetes](https://github.com/pires/docker-elasticsearch-kubernetes){:target="_blank"} repo then build your Elasticsearch image by running this command in the docker-elasticsearch-kubernetes directory:
-
+ø
 {% highlight bash %}
 docker build –t gcr.io/my_gke_project/elasticsearch:latest .
 {% endhighlight %}
