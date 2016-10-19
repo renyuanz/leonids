@@ -13,7 +13,7 @@ I’ve been working with Elasticsearch on Kubernetes quite a bit lately so I tho
 <!--more-->
 
 **Contents**
-* TOC
+* auto-gen TOC:
 {:toc}
 
 ### Build a Kubernetes Ready Elasticsearch Container
