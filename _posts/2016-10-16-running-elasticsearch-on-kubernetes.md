@@ -2,11 +2,11 @@
 layout: post
 title:  "Running Elasticsearch on Kubernetes"
 date:   2016-10-16 12:40:37
-categories: [Tutorial]
+categories: Tutorials
 tags: Elastisearch Kubernetes 
 comments: true
 ---
-<img class="image-left" src="/img/Elasticsearch-on-Kubernetes.png" width="100px"/>[Kubernetes](http://kubernetes.io/){:target="_blank"} gives you the capabilities to easily spin up clusters to run your Docker application containers. As such, Kubernetes is an ideal environment for running [Elasticsearch](https://www.elastic.co/){:target="_blank"} clusters in the cloud.
+<img class="image-left" src="/img/Elasticsearch-on-Kubernetes.png" width="150px"/>[Kubernetes](http://kubernetes.io/){:target="_blank"} gives you the capabilities to easily spin up clusters to run your Docker application containers. As such, Kubernetes is an ideal environment for running [Elasticsearch](https://www.elastic.co/){:target="_blank"} clusters in the cloud.
 
 I’ve been working with Elasticsearch on Kubernetes quite a bit lately so I thought I’d share with you how you can deploy your own Elasticsearch cluster with all the latest bells and whistles.
 
