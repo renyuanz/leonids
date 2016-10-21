@@ -3,7 +3,7 @@ layout: post
 title:  "Running Elasticsearch on Kubernetes"
 date:   2016-10-16 12:40:37
 categories: Tutorials
-tags: Elastisearch Kubernetes 
+tags: Elasticsearch Kubernetes 
 comments: true
 ---
 <img class="image-left" src="/img/Elasticsearch-on-Kubernetes.png" width="150px"/>[Kubernetes](http://kubernetes.io/){:target="_blank"} gives you the capabilities to easily spin up clusters to run your Docker application containers. As such, Kubernetes is an ideal environment for running [Elasticsearch](https://www.elastic.co/){:target="_blank"} clusters in the cloud.
