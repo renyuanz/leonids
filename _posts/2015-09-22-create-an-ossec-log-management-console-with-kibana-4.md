@@ -137,7 +137,8 @@ The dashboard can now be assembled by combining the saved visualizations that ha
 9. Click on the disc icon in the upper right corner to save the dashboard.
 10. Save the dashboard as *OSSEC Dashboard*.
 11. Click on the **Save** button.
-12. You now have a fully working Kibana 4 style OSSEC Alerts Dashboard. From here you can share the link to other folks or you can create an iframe of the dashboard to include in other HTML pages. To share a dashboard click on the share icon in the upper right hand corner of the Kibana console.
+
+You now have a fully working Kibana 4 style OSSEC Alerts Dashboard. From here you can share the link to other folks or you can create an iframe of the dashboard to include in other HTML pages. To share a dashboard click on the share icon in the upper right hand corner of the Kibana console.
    ![](/img/share-dashboard.png)
 
 You can then copy the iframe component in the **Embed this dashboard** field and paste it into a web page or copy the link in the **Share a link** field and paste into an email.
