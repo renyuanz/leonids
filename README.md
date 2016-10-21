@@ -1,1 +1,1 @@
-Future website code for vichargrave.githyb.io.
+Future website code for vichargrave.github.io.
