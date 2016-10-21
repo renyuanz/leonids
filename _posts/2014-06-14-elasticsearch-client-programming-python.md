@@ -6,7 +6,7 @@ categories: Programming
 tags: Elasticsearch Python 
 comments: true
 ---
-<img class="image-left" src="/img/Elasticsearch-Python.png" width="150px"/>The first article in this two part series focused on developing Elasticsearch clients with Perl. Elasticsearch also has an excellent Python library which lets you search for and analyze your data with one of the many mathematics and machine learning libraries available for Python.
+<img class="image-left" src="/img/Elasticsearch-Python.png" width="150px"/>The [first article](/articles/2014-06/elasticsearch-client-programming-perl) in this two part series focused on developing Elasticsearch clients with Perl. Elasticsearch also has an excellent Python library which lets you search for and analyze your data with one of the many mathematics and machine learning libraries available for Python.
 
 In this article I’ll cover how to create an Elasticsearch client using Python that has the same capabilities as the Perl client from the part 1 article.
 
@@ -53,3 +53,153 @@ Now let’s do some programming. First create a new Perl project and client appl
 7. Enter the file name on the S*elect Wizard* panel.  Let’s call it `tweet_search.py`.
 8. Click on **Finish**.
 9. Double click on `tweet_search.pl`, then start by entering the following code.
+
+{% highlight python %}
+from elasticsearch import Elasticsearch
+import sys
+import logging
+ 
+logging.basicConfig()
+ 
+es = Elasticsearch(['10.1.1.1:9200','10.1.1.2:9200'])
+{% endhighlight %}
+
+**Lines [1-5]** Import the Elasticsearch client as well as the sys and logging modules.
+
+**Line [7]** Create an Elasticsearch client object. Specify the IP addresses and default Elasticsearch ports of the nodes to which the client will attempt to connect.
+
+### Do an Elasticsearch Query
+
+Tweets are structured in JSON format as specified in [Twitter’s documentation](https://dev.twitter.com/docs/platform-objects/tweets). The fields that will be retrieved from Elasticsearch include the Twitter user ID string, the date the tweet was created and the expanded URL – after *unshortening* – that was sent in the text of the tweet. Let’s take a look how that data will appear in an index.
+
+Here is a partial JSON structure that shows the placement of the tweet fields that will be included in each query response, namely the ID string of the user who sent the tweet, the date the tweet was created and the expanded URL that was sent in the text of the tweet.
+
+{% highlight json %}
+"coordinates": {},
+"created_at": "2014-05-24T03:42:22.000Z",
+"entities": {
+    "hashtags": [],
+    "urls": [
+        {
+            "url": "hxxp://t.co/9Bt38zRSMr",
+            "display_url": "Grd5.com",
+            "expanded_url": "hxxp://Grd5.com"
+        }
+     ],
+     "user_mentions": [
+        {
+            "id": 868880934,
+            "name": "whatever",
+            "screen_name": "galatk123456"
+        }
+     ]
+},
+"favorite_count": 0,
+  ...
+"user": {
+    "contributors_enabled": false,
+    "created_at": "2012-10-08T23:48:20.000Z",
+    "description": "whatever",
+    "favourites_count": 327,
+    "followers_count": 167,
+    "friends_count": 280,
+    "id_str": "868880934",
+ 
+  ...
+{% endhighlight %}
+
+Looking at this tweet snippet you can see that these fields are referenced by the JSON names as: `user.id_str`, `created_at` and `entities.urls.expanded_url`.
+
+The query in this example will involve two indices, `2014-04-12` and `2014-04-13`, looking for any expanded URL that comes from a Russian hosted domain (*.ru). To do the Elasticsearch client `search()` method is called as follows.
+
+{% highlight python linenos %}
+rs = es.search(index=['tweets-2014-04-12','tweets-2014-04-13'], 
+               scroll='60s', 
+               search_type='scan', 
+               size=100, 
+               body={
+                 "fields" : ["created_at", "entities.urls.expanded_url", "user.id_str"],
+                   "query" : {
+                     "wildcard" : { "entities.urls.expanded_url" : "*.ru" }
+                   }
+               }
+           )
+{% endhighlight %}
+
+**[Lines 1-4]** One or more indices are specified in the index field which is an array of strings. The inclusion of the scroll and size fields creates what amounts to a cursor that indicates how many seconds Elasticsearch should cache results to be scrolled through and how many results are returned by each scroll operation, `100` tweets at a time in this case. Specifying search_type as `scan` disables sorting of search results to improve the efficiency of scrolling through result sets.
+
+**[Lines 5-10]** The type of query and fields involved are specified in the body field. The fields array includes the tweet fields that we want in the query response. The query does a wildcard search for expanded URLs that contain the characters `*.ru`.
+
+### Retrieve the Query Results
+
+The query results are retrieved `100` tweets at a time by successive calls to `scroll()` using the scroll ID returned from the original query.
+
+{% highlight python linenos %}
+tweets = []
+scroll_size = rs['hits']['total']
+while (scroll_size > 0):
+    try:
+        scroll_id = rs['_scroll_id']
+        rs = es.scroll(scroll_id=scroll_id, scroll='60s')
+        tweets += rs['hits']['hits']
+        scroll_size = len(rs['hits']['hits'])
+    except: 
+        break
+{% endhighlight %}
+
+**[Lines 1-2]** Create an array to hold all the retrieve tweets then retrieve successive sets of tweets in a while loop. Then set the `scroll_size` variable that will track the number of records returned during each scan loop. To start off `scroll_size` is set to the total number of documents that will be returned.
+
+**[Lines 3]** While loop that gets the number of documents specified in the first search() call each time through. The while loop continues until `scroll_size` goes to `0`.
+
+**[Lines 4-7]** The scroll ID can change from scan to scan, so set the ID for subsequent scrolls to the one returned by the previous `search()` or `scroll()` call. Each time through the loop, the search results are returned in the `rs['hits']['hits]` array which is appended to the tweets array.
+
+**[Line 8]** Update the `scroll_size` variable to the number of tweets returned. When the scanning is done, `scroll()` returns `0`.
+
+**[Line 9-10]** Catch any exceptions then break.
+
+### Display the Query Results
+
+All that’s left to do is display the entire set of tweets returned. For queries where certain fields are specified, Elasticsearch conveniently returns just the fields specified, placing them in a JSON section labeled `fields` as shown here.
+
+{% highlight json %}
+"hits": {
+   "hits": [
+      {
+         "_index": "tweets-2014-04-12",
+         "_type": "status",
+         "_id": "470047633969782784",
+         "_score": 1,
+            "fields": {
+               "user.id_str": [
+                  "2481821394"
+               ],
+               "created_at": [
+                  "2014-05-24T03:44:23.000Z"
+               ],
+               "entities.urls.expanded_url": [
+                  "hxxp://www.zzzz.ru/top-ehnergetiki/2013-07-26-55"
+               ]
+            }
+      },
+...
+{% endhighlight %}
+
+To display the tweet fields, just loop through the `tweets` array referencing the returned fields as shown here.
+
+{% highlight python %}
+for tweet in tweets:
+    print tweet['_id'], tweet['fields']['user.id_str'], 
+    tweet['fields']['created_at'],
+    tweet['fields']['entities.urls.expanded_url']
+{% endhighlight %}
+
+Using this client program you can experiment with other types of queries by simply changing the fields and body field contents.
+
+
+
+
+
+
+
+
+
