@@ -32,7 +32,7 @@ The PyDev project produces a plug-in for Eclipse that provides assistance for Py
    ![](/img/Available-Software-PyDev.png)
 6. Click on the Finish button. Note the button in this illustration is greyed out since I have already installed the PyDev plug-in on my system, but for first installations the
 
-To add the Elasticsearch client library for Python on either Linux, Windows or Mac OS, simply run pip as follows
+To add the Elasticsearch client library for Python on either Linux, Windows or Mac OS, simply run pip as follows:
 
 {% highlight bash %}
 pip install Elasticsearch
@@ -40,7 +40,7 @@ pip install Elasticsearch
 
 ### Connecting to Elasticsearch
 
-Let’s say we have an Elasticsearch cluster comprised of indices that contain data collected from Twitter’s 1% sample feed. The tweets are collected in a new index each day.  The format of the index name is `yyyy-mm-dd`. The server nodes that are exposed to clients is 10.1.1.1 and 10.1.1.2 .
+Let’s say we have an Elasticsearch cluster comprised of indices that contain data collected from Twitter’s 1% sample feed. The tweets are collected in a new index each day.  The format of the index name is `tweets-yyyy-mm-dd`. The server nodes that are exposed to clients is 10.1.1.1 and 10.1.1.2 .
 
 Now let’s do some programming. First create a new Perl project and client application file.
 
@@ -110,7 +110,7 @@ Here is a partial JSON structure that shows the placement of the tweet fields th
 
 Looking at this tweet snippet you can see that these fields are referenced by the JSON names as: `user.id_str`, `created_at` and `entities.urls.expanded_url`.
 
-The query in this example will involve two indices, `2014-04-12` and `2014-04-13`, looking for any expanded URL that comes from a Russian hosted domain (*.ru). To do the Elasticsearch client `search()` method is called as follows.
+The query in this example will involve two indices, `tweets-2014-04-12` and `tweets-2014-04-13`, looking for any expanded URL that comes from a Russian hosted domain `*.ru`. To do the Elasticsearch client `search()` method is called as follows:
 
 {% highlight python linenos %}
 rs = es.search(index=['tweets-2014-04-12','tweets-2014-04-13'], 
@@ -126,7 +126,7 @@ rs = es.search(index=['tweets-2014-04-12','tweets-2014-04-13'],
            )
 {% endhighlight %}
 
-**[Lines 1-4]** One or more indices are specified in the index field which is an array of strings. The inclusion of the scroll and size fields creates what amounts to a cursor that indicates how many seconds Elasticsearch should cache results to be scrolled through and how many results are returned by each scroll operation, `100` tweets at a time in this case. Specifying search_type as `scan` disables sorting of search results to improve the efficiency of scrolling through result sets.
+**[Lines 1-4]** One or more indices are specified in the index field which is an array of strings. The inclusion of the `scroll` and `size` fields creates what amounts to a cursor that indicates how many seconds Elasticsearch should cache results to be scrolled through and how many results are returned by each scroll operation, `100` tweets at a time in this case. Specifying search_type as `scan` disables sorting of search results to improve the efficiency of scrolling through result sets.
 
 **[Lines 5-10]** The type of query and fields involved are specified in the body field. The fields array includes the tweet fields that we want in the query response. The query does a wildcard search for expanded URLs that contain the characters `*.ru`.
 
@@ -194,6 +194,41 @@ for tweet in tweets:
 {% endhighlight %}
 
 Using this client program you can experiment with other types of queries by simply changing the fields and body field contents.
+
+{% highlight python %}
+my $rs = $es->search(
+        index => ['tweets-2014-04-12','tweets-2014-04-13'],
+        scroll => '60s',
+        size => 100,
+        search_type => 'scan',
+        body => {
+            'fields' => ['user.id_str','created_at','entities.urls.expanded_url'],
+            'query' => {
+                'wildcard' => { 
+                    'entities.urls.expanded_url' => '*.ru'
+                }
+            }   
+        }
+    );
+{% endhighlight %}
+
+**[Lines 1-5]** One or more indices are specified in the index field which is an array of strings. The inclusion of the `scroll` and `size` field creates what amounts to a cursor that indicates how many seconds Elasticsearch should cache results to be scrolled through and how many results are returned by each scroll operation, `100` tweets at a time in this case. Specifying search_type as `scan` disables sorting of search results to improve the efficiency of scrolling through result sets.
+
+**[Lines 6-10]** The type of query and fields involved are specified in the body field. The fields array includes the tweet fields that we want in the query response. The query does a wildcard search for expanded URLs that contain the characters `.ru`.
+
+### Display the Query Results
+
+All that’s left to do is display the entire set of tweets returned. For queries where certain fields are specified, Elasticsearch conveniently returns just the fields specified, placing them in a JSON section labeled `fields` as shown here.
+
+{% highlight python %}
+for tweet in tweets:
+    print tweet['_id'], tweet['fields']['user.id_str'], 
+    tweet['fields']['created_at'],
+    tweet['fields']['entities.urls.expanded_url']
+{% endhighlight %}
+   
+Using this client program you can experiment with other types of queries by simply changing the fields and body field contents.
+
 
 
 
