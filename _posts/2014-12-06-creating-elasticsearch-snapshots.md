@@ -78,5 +78,99 @@ At this point you have an SMB file server running on the shared storage node.  N
    ```
     mount //<SMB server IP>/snaps
    ```
+   
+### Repositories and Snapshots
 
+Elasticsearch snapshots are organized into containers known as repositories. You can store 1 or more snapshots in any given repository. Each repository maps to a shared drive on the shared storage node.
 
+![](/img/Repositories-and-Snapshots.png)
+
+Let’s say we are ingesting and indexing Twitter data – *tweets* – with our example Elasticsearch cluster. To create a repository called twitter_backup, run this command on one of the Elasticsearch nodes:
+
+{% highlight bash %}
+curl -XPUT 'localhost:9200/_snapshot/twitter_backup' -d '
+{
+      "type": "fs",
+      "settings": {
+          "location": "/media/snaps",
+          "compress": "true"
+      }
+}'
+{% endhighlight %}
+
+The file type in this example is defined as fs meaning file system. There are also types for Hadoop HDFS (*hdfs*), Amazon S3 (*s3*) and others. The location is defined to be the shared storage mount point on the cluster node and the snapshot data is stored in compressed form.
+
+As of Elasticsearch 1.7, you have to set the path.repo field in the elasticsearch.yml file to one or more paths where snapshots are to be stored. This is similar to the path.data field which is set to the path where Elasticsearch data files are stored. The SMB server is configured to store snapshots in /data/snapshots, the value of path in */etc/smb.conf*, so the  path.repo field should be set to the same path.
+
+{% highlight bash %}
+path.repo: /data/snapshots
+{% endhighlight %}
+
+Note you will have to restart Elasticsearch for this setting to take affect.
+
+### Create a Snapshot
+
+When you create a snapshot, you can either include all or specific indices. Continuing with the example of ingesting tweet data, let’s say you are creating a new index every hour and that the format of the index name is tweets-YYYY-MM-DD. If you want to snapshot the index created on 2014-11-01 in the twitter_backup repository run this command:
+
+{% highlight bash %}
+curl -XPUT 'localhost:9200/_snapshot/twitter_backup/2014-11-01?pretty&wait_for_completion' -d '
+{
+      "indices": "tweets-2014-11-01",
+      "ignore_unavailable": "true",
+      "include_global_state": "false"
+   }
+}'
+{% endhighlight %}
+
+The indices to include in the snapshot are passed as a JSON array in the indices field. Setting `ignore_unavailable` to true ensures that the command will not fail if 1 or more of the specified indices is missing. This is handy for situations where the command is run in a cronjob or some other automated way. Setting `include_global_state` to `false` prevents any of the cluster state information from being included in the snapshot which allows you to restore the snapshot to another cluster with different attributes.
+
+The `pretty` directive formats the command output in human readable form instead of one big messy line.
+
+The `wait_for_completion` directive tells the command to wait for the snapshot to complete before returning status information. This may not be desirable if you are snapshotting a lot of data. By omitting this directive the command will return immediately without waiting for the snapshot to finish.
+
+To check the status of a snapshot command use this command specifying the repository and snapshot names:
+
+{% highlight bash %}
+curl -XGET 'localhost:9200/_snapshot/twitter_backup/2014-11-01?pretty
+{% endhighlight %}
+
+This command will indicate whether the given snapshot is in progress, finish and successful, or finished and failed.
+
+### Restore and Delete a Snapshot
+
+Restoring the snapshot that you just made is simple with this command:
+
+{% highlight bash %}
+curl -XPOST 'localhost:9200/_snapshot/twitter_backup/2014-11-01/_restore?pretty'
+{% endhighlight %}
+
+Since snapshot was created with the `include_global_state` set to `false`, the snapshotted indices can be restored to any cluster.
+
+To delete a snapshot and the snapshot files on the shared storage drive use this command:
+
+{% highlight bash %}
+curl -XDELETE 'localhost:9200/_snapshot/twitter_backup/2014-11-01?pretty'
+{% endhighlight %}
+
+### Snapshot Management with Kopf
+
+[Kopf](https://github.com/lmenezes/elasticsearch-kopf){:target="_blank"} is an open-source Elasticsearch plugin that provides a browser console interface to manage your cluster. Here’s an example of the cluster management console. The color of the top menu bar reflects the health of the cluster: `green`, `yellow` or `red`. The status bar below the menu bar shows top-level cluster metrics: number of cluster nodes, number of indices, number of shares, number of unassigned shards, total number of documents and the amount of data in the cluster – primary plus replica shards.
+
+![](/img/Kopf-Cluster-Console.png)
+
+n this example there are 4 cluster nodes as shown in the left hand column. The cluster table shows the first four indices that I use to store tweets. The dark green squares in each node/index box are the primary shards and the lighter green squares are the replica shares. You can scroll though all the indices to see where the shards reside.
+
+To create snapshots, you click on the snapshot item in the top menu bar which takes you to the snapshot management console shown below:
+
+![](/img/Kopf-Snapshot-Management-Console.png)
+
+The steps to create a snapshot are shown in the diagram:
+
+1. Create repository, if necessary
+2. Select a repository to contain the snapshot
+3. Enter a name for the snapshot
+4. Set the snapshot flags
+5. Select the indices to be included in the snapshot
+6. Click the Create button to start the snapshot creation process
+
+The Kopf console will return immediately with an indication of whether the snapshot was successfully initiated.
