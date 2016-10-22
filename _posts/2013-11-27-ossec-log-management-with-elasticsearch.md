@@ -24,11 +24,10 @@ The OSSEC log management system I’ll discuss here relies on three open source 
 
 Logstash is configured to receive OSSEC syslog output then parse it and forward to Elasticsearch for indexing and long terms storage. Kibana is designed to easily submit queries to Elasticsearch and display results in a number of user designed dashboards. So the steps involved for developing an OSSEC log management system with Elasticsearch are:
 
-### Configure OSSEC to output alerts to syslog.
-
-1. Install and configure Logstash to input OSSEC alerts, parse them and input the fields to Elasticsearch.
-2. Install and configure Elasticsearch to store OSSEC alerts from Logstash.
-3. Install and configure Kibana to work with Elasticsearch.
+1. Configure OSSEC to output alerts to syslog
+2. Install and configure Logstash to input OSSEC alerts, parse them and input the fields to Elasticsearch.
+3. Install and configure Elasticsearch to store OSSEC alerts from Logstash.
+4. Install and configure Kibana to work with Elasticsearch.
 
 ### Configure OSSEC Syslog Output
 
@@ -36,27 +35,22 @@ To keep this article as brief as possible, I won’t go over how to install OSSE
 
 1. Login as root to the OSSEC server.
 2. Open */var/ossec/etc/ossec.conf* in an editor.
-3, Let’s assume you want to send the alerts to a syslog server at `10.0.0.1` listening on `UDP` port `9000`.  Add these lines to ossec.conf right above the `</ossec_config>` statment:
-
-{% highlight xml %}
-<syslog_output>
-   <server>10.0.0.1</server>
-   <port>9000</port>
-   <format>default</format>
-</syslog_output>
-{% endhighlight %}
-
-Enable syslog output with this command:
-
-{% highlight bash %}
-/var/ossec/bin/ossec-control enable client-syslog
-{% endhighlight %}
-
-Restart the OSSEC server with this command:
-
-{% highlight bash %}
-/var/ossec/bin/ossec-control start
-{% endhighlight %}
+3. Let’s assume you want to send the alerts to a syslog server at `10.0.0.1` listening on `UDP` port `9000`.  Add these lines to ossec.conf right above the `</ossec_config>` statment:
+   ```
+    <syslog_output>
+       <server>10.0.0.1</server>
+       <port>9000</port>
+       <format>default</format>
+    </syslog_output>
+   ```
+4. Enable syslog output with this command:
+   ```
+    /var/ossec/bin/ossec-control enable client-syslog
+   ```
+5. Restart the OSSEC server with this command:
+   ```
+    /var/ossec/bin/ossec-control start
+   ```
 
 ### Install and Configure Logstash
 
