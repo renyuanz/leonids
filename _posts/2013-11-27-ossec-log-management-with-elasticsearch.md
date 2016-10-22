@@ -29,6 +29,8 @@ Logstash is configured to receive OSSEC syslog output then parse it and forward 
 3. Install and configure Elasticsearch to store OSSEC alerts from Logstash.
 4. Install and configure Kibana to work with Elasticsearch.
 
+All of these components could run on different systems, but to keep things simple, let's install them on a single system.
+
 ### Configure OSSEC Syslog Output
 
 To keep this article as brief as possible, I won’t go over how to install OSSEC. That is well documented on the [OSSEC Project website](https://ossec.github.io){:target="_blank"}. To configure OSSEC to send alerts to another system via syslog follow these steps:
@@ -54,6 +56,19 @@ To keep this article as brief as possible, I won’t go over how to install OSSE
 
 ### Install and Configure Logstash
 
+The easiest way to install Elasticsearch is from RPMs or DEB packages. I use CentOS most of the time so I’ll discuss how to install from RPMs.  Let's start with Logstash.
+
+1. Download the [Logstash RPM](https://www.elastic.co/downloads/logstash){:target="_blank"}.
+2. Login as root.
+3. Install the RPMs with this command:
+   ``` 
+    rpm -Uvh logstash-<version>.rpm
+   ```
+4. You can start and stop Logstash with the *service* command:
+   ```
+    service elasticsearch start
+   ```
+   
 Now Logstash needs to be configured to receive OSSEC syslog output on UDP port 9000 or whatever port you decide to use. The configuration file you need to capture and parse syslog input is an rsyslog recipe with a few tweaks for OSSEC derived from the [blog](http://ddpbsd.blogspot.tw/2011/10/3woo-you-got-your-ossec-in-my-logstash_26.html){:target="_blank"} by Dan Parriott, my colleague on the OSSEC Project team, who was an early adopter of Logstash and Elasticsearch:
 
 {% highlight ruby linenos %}
@@ -114,22 +129,16 @@ If you store the Logstash configuration in your home directory in a file called 
 
 ### Install and Configure Elasticsearch
 
-The easiest way to install Elasticsearch is from RPMs or DEB packages. I use CentOS most of the time so I’ll discuss how to install from RPMs. You can install Elasticsearch in a cluster, but to keep things simple,  I’ll cover installation on a single server and will assume that is the same system where Logstash is installed.
-
-With that said, here is how you install and configure Elasticsearch:
+You can install Elasticsearch in a cluster, but to keep things simple,  I’ll cover a single node installation.
 
 1. Download the [Elasticsearch RPM](https://www.elastic.co/downloads/elasticsearch){:target="_blank"}. 
 2. Login as root.
 3. Install the RPMs with this command:
    ``` 
-    rpm -Uvh elasticsearch-<version>.noarch.rpm
+    rpm -Uvh elasticsearch-<version>.rpm
    ```
-4. The RPM will install Elasticsearch in */usr/share/elasticsearch* and the configuration files */etc/elasticsearch/elasticsearch.yml* and */etc/sysconfig/elasticsearch*. It also creates a service script to start, stop and check the status of Elasticsearch. Start Elasticsearch with the service command:
-   ```
-    service elasticsearch start
-   ```
-   
-5. By default, the Elasticsearch files are maintained in */var/lib/elasticsearch* and logs in */var/log/elasticsearch*. You can change that in *elasticsearch.yml*, but for now leave them as is. However let’s set the name of the Elasticsearch cluster to `mycluster` to match the cluster name setting from the Logstash config file of the previous section.  To do that open */etc/elasticsearch/elasticsearch.yml* and set the following line as shown:
+
+4. By default, the Elasticsearch files are maintained in */var/lib/elasticsearch* and logs in */var/log/elasticsearch*. You can change that in *elasticsearch.yml*, but for now leave them as is. However let’s set the name of the Elasticsearch cluster to `mycluster` to match the cluster name setting from the Logstash config file of the previous section.  To do that open */etc/elasticsearch/elasticsearch.yml* and set the following line as shown:
    ``` 
     # Cluster name identifies your cluster for auto-discovery. If you're running
     # multiple clusters on the same network, make sure you're using unique names.
@@ -137,12 +146,22 @@ With that said, here is how you install and configure Elasticsearch:
     cluster.name: mycluster
    ```
 
-With no other configuration, the default Elasticsearch installation will consist of a single node. If you want to create a multi-node cluster checkout the [Elasticsearch Definitive Guild chapter on Configuration](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-configuration.html){:target="_blank"}.
+5. The RPM will install Elasticsearch in */usr/share/elasticsearch* and the configuration files */etc/elasticsearch/elasticsearch.yml* and */etc/sysconfig/elasticsearch*. It also creates a service script to start, stop and check the status of Elasticsearch. You can start and stop Elasticsearch with the *service* command:
+   ```
+    service elasticsearch start
+   ```
+   
+If you want to create a multi-node cluster checkout the [Elasticsearch Definitive Guild chapter on Configuration](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-configuration.html){:target="_blank"}.
 
 ### Install and Configure Kibana
 
 At this point you are able to collect OSSEC alerts and query them with the Elasticsearch RESTful API. But Elasticsearch provides a web console called Kibana which enables you to build consoles that post queries automatically to your Elasticsearch backend. To install and configure Kibana follow this procedure.
 
 1. Download the [Kibana RPM](https://www.elastic.co/downloads/kibana){:target="_blank"}.
+2. Login as root.
+3. Install the RPMs with this command:
+   ``` 
+    rpm -Uvh kibana-<version>.rpm
+   ```
 
 
