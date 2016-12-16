@@ -3,12 +3,12 @@ layout: post
 title: Networked Unattended WinXP installation
 date: 2008-11-12 13:14:15.000000000 +00:00
 categories:
-- Other
-- network
-- oem
-- preinstallation
+- Administration
+tags:
 - unattended
-- windows
+- integration
+- maintenance
+
 ---
 <p>Hola!</p>
 <p>Recently I have been doing an XP preinstallation for a remote software deployment project. In this post i'm putting all the interesting links I have found and the problems I had during the software preparation.</p>

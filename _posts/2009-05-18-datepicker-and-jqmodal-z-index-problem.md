@@ -1,27 +1,13 @@
 ---
 layout: post
 title: datePicker and jqModal z-index problem
-date: 2009-05-18 16:32:09.000000000 +00:00
+date: 2009-05-18 
 categories:
-- Zend 
-- PHP
+- Software Development
 tags:
+- Zend
+- PHP
 - jQuery
-status: publish
-type: post
-published: true
-meta:
-  _edit_last: '1'
-  _sexybookmarks_shortUrl: http://b2l.me/ann3cw
-  _sexybookmarks_permaHash: 8ed276cf9d4e439190be8be8030e352b
-author:
-  login: radek.antoniuk@gmail.com
-  email: radek.antoniuk@gmail.com
-  display_name: warden
-  first_name: r
-  last_name: a
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
 ---
 <p>It appears that jqModal and datePicker have z-index problems. My datepicker appeared below the form inside jqModal. The fix for this is very simple. We have to modify CSS for UI and jqmodal.<br />
 This is because they don't set z-index property properly. But we can change it on our own...<br />

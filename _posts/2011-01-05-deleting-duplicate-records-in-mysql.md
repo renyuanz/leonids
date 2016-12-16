@@ -3,10 +3,11 @@ layout: post
 title: Deleting duplicate records in MySQL
 date: 2011-01-05 00:29:40.000000000 +00:00
 categories:
-- MySQL
+- Administration
 tags:
-- duplication
+- data duplication
 - mysql
+- databases
 ---
 Sometimes you have multiple records where the same data spans across multiple columns in the table and you'd like to clean up that mess by leaving only one copy per unique set of records.
 

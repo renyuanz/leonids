@@ -5,12 +5,9 @@ date: 2010-01-31 16:28:11.000000000 +00:00
 categories:
 - Linux
 tags:
-- auth
 - postfix
-- rfc
-- sasl
-- smtp
 - tls
+- smtp
 ---
 Hints for Postfix 2.6 or higher that are commonly mentioned problems or scenarios.
 

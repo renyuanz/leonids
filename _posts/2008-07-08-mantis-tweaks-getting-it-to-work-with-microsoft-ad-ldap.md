@@ -6,9 +6,7 @@ categories:
 - Linux
 tags:
 - development
-- Linux
 - mantis
-- software
 ---
 This is a short article on how to get the above Mantis version to work with Microsoft Windows Active Directory LDAP.
 Used Mantis version: 1.1.1 and PHP Version 5

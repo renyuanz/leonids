@@ -3,11 +3,9 @@ layout: post
 title: Simple authentication in Zend Framework
 date: 2010-02-09 14:56:59.000000000 +00:00
 categories:
-- Zend 
-- PHP
+- Software Development 
 tags:
-- zend_auth
-- zend_form
+- PHP
 ---
 <p>This is quick example of how to do a very simple authentication in Zend Framework. It doesn't user external database for getting the credentials, although you can make it very easily to read data in the Auth adapter from an external file or MySQL database.</p>
 <p><!--more-->So, firstly we will create our authentication adapter:<br />

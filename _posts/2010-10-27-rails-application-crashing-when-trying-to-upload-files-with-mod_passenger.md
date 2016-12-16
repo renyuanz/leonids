@@ -1,34 +1,13 @@
 ---
 layout: post
 title: Rails application crashing when trying to upload files with mod_passenger
-date: 2010-10-27 14:25:47.000000000 +00:00
+date: 2010-10-27 
 categories:
-- Linux
-- Rails
+- Administration
 tags:
-- crash
 - passenger
 - rails
 - ruby
-status: publish
-type: post
-published: true
-meta:
-  _edit_last: '6'
-  _wp_old_slug: ''
-  _sexybookmarks_shortUrl: 'File: /data/app/webapp/functions.php<br />Line: 7<br />Message:
-    Can''t connect to local MySQL server through socket ''/var/run/mysqld/mysqld.sock''
-    (11)'
-  _sexybookmarks_permaHash: 58cb1c55c5a48b6b302d5f64edebf2c1
-  _syntaxhighlighter_encoded: '1'
-author:
-  login: radek.antoniuk@gmail.com
-  email: radek.antoniuk@gmail.com
-  display_name: warden
-  first_name: r
-  last_name: a
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
 ---
 <p>If you are using Ruby on Rails with Apache (or Apache ITK) and mod_passenger and you get an error while you are trying to upload a file through Rails application, you are probably facing the problem of wrong permissions set in the webserver_private directory of passenger.<br />
 Passenger is not currently supporting ITK and is not changing the ownership of the files/dirs correctly.</p>

@@ -3,7 +3,11 @@ layout: post
 title: 'Puppet: send an email to the client when a new key is generated'
 date: 2012-09-05 23:05:16.000000000 +00:00
 categories:
+- Automation
+tags:
 - puppet
+- CI/CD
+- ssh
 ---
 Puppet is great for centralised management of SSH keys on Linux boxes. The SSH module described in the project pages does its job really well for creating a new key pair and distributing it for clients (using the keys) and servers (authorized_keys file management).
 

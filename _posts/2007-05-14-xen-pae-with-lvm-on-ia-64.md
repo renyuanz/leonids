@@ -1,26 +1,11 @@
 ---
 layout: post
 title: XEN PAE with LVM on IA-64
-date: 2007-05-14 11:25:06.000000000 +00:00
+date: 2007-05-14
 categories:
 - Linux
 tags:
-- howto linux xen virtualisation vmware
-status: publish
-type: post
-published: true
-meta:
-  _edit_last: '1'
-  _sexybookmarks_shortUrl: http://b2l.me/annnqm
-  _sexybookmarks_permaHash: 556f7bcadddd8154c9098579aa50b9d1
-author:
-  login: radek.antoniuk@gmail.com
-  email: radek.antoniuk@gmail.com
-  display_name: warden
-  first_name: r
-  last_name: a
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+- virtualisation
 ---
 <p>Quick How to set up a XEN installation . The following howto describes a way to:</p>
 <ul>

@@ -3,24 +3,10 @@ layout: post
 title: Is this a four level domain or an alias?
 date: 2007-11-16 03:51:20.000000000 +00:00
 categories:
-- Other
+- Administration
 tags:
-- dns domain network
-status: publish
-type: post
-published: true
-meta:
-  _edit_last: '1'
-  _sexybookmarks_shortUrl: http://b2l.me/anjd9k
-  _sexybookmarks_permaHash: a705c8986495175216670c335b90f361
-author:
-  login: radek.antoniuk@gmail.com
-  email: radek.antoniuk@gmail.com
-  display_name: warden
-  first_name: r
-  last_name: a
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
+- dns 
+- domains
 ---
 <p>Hey.</p>
 <p>Recently I've heard that some people tend to see domain levelling quite different than the others. <br />I found it quite an interesting thing to check, that's why I'm writing this article.</p>

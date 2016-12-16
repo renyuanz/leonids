@@ -6,6 +6,9 @@ categories:
 - Linux
 tags:
 - HowTo
+- FTP
+- NAT
+- TLS
 ---
 <p>Ever wondered how to set up a more secure FTP server?<br />
 I did. And the first thing that came to my mind was getting those username/password things encrypted.<br />

@@ -3,7 +3,10 @@ layout: post
 title: 'Yii:: Avoid to include jquery twice in AJAX rendered actions'
 date: 2012-05-25 16:23:47.000000000 +00:00
 categories:
-- Yii
+- Software Development
+tags:
+- yii
+- php
 ---
 An idea to solve that is to use ClientScript and disable the scripts that you want to avoid.
 To do that automatically and globally, you can  use a custom controller like this:

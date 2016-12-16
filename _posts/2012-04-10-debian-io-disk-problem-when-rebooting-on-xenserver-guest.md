@@ -4,7 +4,8 @@ title: Debian I/O disk problem when rebooting on XenServer guest
 date: 2012-04-10 21:04:42.000000000 +00:00
 categories:
 - Linux
-- kernel
+tags:
+- virtualization
 - xenserver
 ---
 

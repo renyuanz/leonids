@@ -4,7 +4,12 @@ title: Synchronizing Mailman lists with LDAP
 date: 2010-02-01 23:35:07.000000000 +00:00
 categories:
 - Linux
-- Postfix
+- Administration
+tags:
+- smtp
+- postfix
+- ldap
+- mailman
 ---
 
 Quite common usage scenario is a Postfix mail server with a Mailman instance for groups. Even more often the accounts for the mail are stored in an LDAP tree. And in this case a problem appears, because Mailman doesn’t have a native connection to LDAP. That’s why I needed to have an LDAP 2 Mailman script that would synchronise mailman groups with the LDAP tree. This Perl script is meant to be run from cron.

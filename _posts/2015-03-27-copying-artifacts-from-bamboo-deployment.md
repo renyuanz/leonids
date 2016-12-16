@@ -3,9 +3,12 @@ layout: post
 title: Copying Artifacts from Bamboo Deployment
 date: 2015-03-27 17:18:08.000000000 +00:00
 categories:
-- Bamboo
+- Software Development
+tags:
+- CI
 - CD
-- Linux
+- Integration
+- Delivery
 ---
 Sometime we face the situation that we need to copy the deployment results (or Artifacts) to some central repository where all deployments are stored.
 This is not a problem for Linux-to-Linux copy as we can use SCP, RSYNC or any other task.
