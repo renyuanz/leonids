@@ -13,7 +13,7 @@
         <a href="{{ site.url }}/">home</a>
         <span>/</span>
       </li>
-      {% for page in site.pages %} {% if page.title %}
+      {% for page in site.pages %} {% if page.title and page.exclude == null %}
       <li class="nav-item">
         <a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a>
         {% unless forloop.last %}
