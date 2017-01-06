@@ -19,6 +19,7 @@ markdown:          kramdown
 highlighter:       rouge
 excerpt_separator: <!--more-->
 permalink:         /articles/:year-:month/:title
+relative_permalinks: false
 
 kramdown:
   auto_ids: true
