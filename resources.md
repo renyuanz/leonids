@@ -24,6 +24,10 @@ permalink: /resources
 * [Shippable - A declarative CI/CD pipeline for the Modern IT](https://app.shippable.com)
 * [StackPoint - The Universal Control Plane for Kubernetes](https://api.stackpoint.io)
 
+#### Platform Tools
+
+* [Cloud Platform Benchmarks](https://github.com/GoogleCloudPlatform/PerfKitBenchmarker)
+
 ### Java
 
 * [Spring Boot](https://projects.spring.io/spring-boot/)
@@ -34,7 +38,9 @@ permalink: /resources
 * [BLESS - SSH Certificate Authority](https://github.com/Netflix/bless)
 * [CFSSL] - CloudFoundry's PKI and TLS toolkit
 
+### Kubernetes
 
+* 
 
 ## SSL Related Stuff
 
@@ -67,7 +73,7 @@ $ openssl crl2pkcs7 -nocrl -certfile CHAINED.pem | openssl pkcs7 -print_certs -t
 echo | openssl s_client -connect <HOST>:<PORT> 2>/dev/null | openssl x509 -noout -dates
 ```
 
-# Generating 4096 bits RSA key 
+### Generating 4096 bits RSA key 
 ```
 $ openssl req \
     -new \
@@ -78,7 +84,7 @@ $ openssl req \
     -out certificate.csr
 ```
 
-# Generating ECDSA key 
+### Generating ECDSA key 
 
 ```
 $ openssl req \
@@ -94,3 +100,13 @@ $ openssl req \
 Notes:
 * -nodes option means that the key will not be secured with a passphrase
 * -x509 option can be used if you wish to create a self-signed certificate
+
+
+
+## Web Development
+
+### Design resources
+
+* https://html5up.net/
+* 
+
