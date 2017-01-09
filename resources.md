@@ -41,7 +41,7 @@ permalink: /resources
 
 * [Lemur manages TLS certificate creation.](https://github.com/Netflix/lemur)
 * [BLESS - SSH Certificate Authority](https://github.com/Netflix/bless)
-* [CFSSL] - CloudFoundry's PKI and TLS toolkit
+* [CFSSL](https://github.com/cloudflare/cfssl) - CloudFoundry's PKI and TLS toolkit
 
 ### Kubernetes
 
@@ -112,6 +112,6 @@ Notes:
 
 ### Design resources
 
-* https://html5up.net/
-* 
+* [https://html5up.net](https://html5up.net) - Nice HTML5 ready made designs 
+
 
