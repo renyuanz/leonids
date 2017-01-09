@@ -28,6 +28,11 @@ permalink: /resources
 
 * [Cloud Platform Benchmarks](https://github.com/GoogleCloudPlatform/PerfKitBenchmarker)
 
+#### Kubernetes
+
+* [etcd cluster setup and recovery](https://github.com/coreos/etcd-operator)
+
+
 ### Java
 
 * [Spring Boot](https://projects.spring.io/spring-boot/)
