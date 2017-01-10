@@ -149,7 +149,7 @@ nsComment = "OpenSSL Generated Client Certificate"
 subjectKeyIdentifier = hash
 authorityKeyIdentifier = keyid,issuer
 keyUsage = critical, nonRepudiation, digitalSignature, keyEncipherment
-extendedKeyUsage = clientAuth, emailProtection
+extendedKeyUsage = emailProtection
 ```
 
 ### Generating 4096 bits RSA key 
