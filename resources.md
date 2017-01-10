@@ -43,10 +43,6 @@ permalink: /resources
 * [BLESS - SSH Certificate Authority](https://github.com/Netflix/bless)
 * [CFSSL](https://github.com/cloudflare/cfssl) - CloudFoundry's PKI and TLS toolkit
 
-### Kubernetes
-
-* 
-
 ## SSL Related Stuff
 
 ### Order of certificates in the bundle (.pem) file
@@ -114,4 +110,7 @@ Notes:
 
 * [https://html5up.net](https://html5up.net) - Nice HTML5 ready made designs 
 
+### JavaScript
+
+* [The Reactive Extensions for JavaScript (RxJS) 4.0](https://github.com/Reactive-Extensions/RxJS)
 
