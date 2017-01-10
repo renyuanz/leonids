@@ -4,9 +4,29 @@ title: Resources
 permalink: /resources
 ---
 
-## Useful DEVOPS Technology, Tools and Know-How
+Useful DEVOPS Technology, Tools and Know-How
+============================================
 
-### Monitoring
+* [Monitoring](#monitoring)
+* [Development](#development)
+   * [Java](#java)
+* [Platforms](#platforms)
+   * [Platform Tools](#platform-tools)
+   * [Kubernetes](#kubernetes)
+* [SSL Related Stuff](#ssl-related-stuff)
+   * [Order of certificates in the bundle (.pem) file](#order-of-certificates-in-the-bundle-pem-file)
+   * [Display all certificates in bundle (.pem) file](#display-all-certificates-in-bundle-pem-file)
+   * [Show certificate expiration date with s_client](#show-certificate-expiration-date-with-s_client)
+   * [One-Stop-Shop: Generating root CA cert and signing a cert with openssl](#one-stop-shop-generating-root-ca-cert-and-signing-a-cert-with-openssl)
+   * [Generating 4096 bits RSA key](#generating-4096-bits-rsa-key)
+   * [Generating ECDSA key](#generating-ecdsa-key)
+   * [PKI / CA Tools](#pki--ca-tools)
+* [Web Development](#web-development)
+   * [Design resources](#design-resources)
+   * [JavaScript](#javascript)
+
+
+## Monitoring
 * [Prometheus](https://github.com/prometheus/blackbox_exporter)
 * [Prometheus Blackbox exporter -  allows blackbox probing of endpoints over HTTP, HTTPS, DNS, TCP and ICMP](https://github.com/prometheus/blackbox_exporter)
 * [Prometheus Node exporter - exporter for machine metrics](https://github.com/prometheus/node_exporter)
@@ -14,35 +34,29 @@ permalink: /resources
 * [Prometheus memcached exporter](https://github.com/prometheus/memcached_exporter)
 
 
-### Development
+## Development
 
 * [Google Protocol Buffers](https://developers.google.com/protocol-buffers/)
 * [ProtoBuf for Go](https://github.com/golang/protobuf)
-
-### Platforms
-
-* [Shippable - A declarative CI/CD pipeline for the Modern IT](https://app.shippable.com)
-* [StackPoint - The Universal Control Plane for Kubernetes](https://api.stackpoint.io)
-
-#### Platform Tools
-
-* [Cloud Platform Benchmarks](https://github.com/GoogleCloudPlatform/PerfKitBenchmarker)
-* [ElasticSearch Web Admin](https://github.com/lmenezes/elasticsearch-kopf)
-
-#### Kubernetes
-
-* [etcd cluster setup and recovery](https://github.com/coreos/etcd-operator)
-
 
 ### Java
 
 * [Spring Boot](https://projects.spring.io/spring-boot/)
 
-### PKI / CA
+## Platforms
 
-* [Lemur manages TLS certificate creation.](https://github.com/Netflix/lemur)
-* [BLESS - SSH Certificate Authority](https://github.com/Netflix/bless)
-* [CFSSL](https://github.com/cloudflare/cfssl) - CloudFoundry's PKI and TLS toolkit
+* [Shippable - A declarative CI/CD pipeline for the Modern IT](https://app.shippable.com)
+* [StackPoint - The Universal Control Plane for Kubernetes](https://api.stackpoint.io)
+
+### Platform Tools
+
+* [Cloud Platform Benchmarks](https://github.com/GoogleCloudPlatform/PerfKitBenchmarker)
+* [ElasticSearch Web Admin](https://github.com/lmenezes/elasticsearch-kopf)
+
+### Kubernetes
+
+* [etcd cluster setup and recovery](https://github.com/coreos/etcd-operator)
+
 
 ## SSL Related Stuff
 
@@ -166,6 +180,11 @@ Notes:
 * -nodes option means that the key will not be secured with a passphrase
 * -x509 option can be used if you wish to create a self-signed certificate
 
+### PKI / CA Tools
+
+* [Lemur manages TLS certificate creation.](https://github.com/Netflix/lemur)
+* [BLESS - SSH Certificate Authority](https://github.com/Netflix/bless)
+* [CFSSL](https://github.com/cloudflare/cfssl) - CloudFoundry's PKI and TLS toolkit
 
 
 ## Web Development
