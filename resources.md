@@ -92,6 +92,7 @@ echo | openssl s_client -connect <HOST>:<PORT> 2>/dev/null | openssl x509 -noout
 ### One-Stop-Shop: Generating root CA cert and signing a cert with openssl
 
 root CA without password:
+
 ```
 openssl req -new -newkey rsa:4096 -days 3650 -x509 -nodes -subj "/C=PL/O=Lab CA Org/CN=Lab CA" -keyout CA.key -out CA.crt
 ```
@@ -103,16 +104,19 @@ openssl req -new -newkey rsa:4096 -days 3650 -x509 -subj "/C=PL/O=Lab CA Org/CN=
 ```
 
 Generating KEY and CSR (without passphrase for Apache/Nginx):
+
 ```
 openssl req -new -newkey rsa:4096 -nodes -subj "/C=PL/O=Client Org/CN=server-cert" -keyout server.key -out server.csr
 ```
 
 Sign for TLS Server usage, valid for 1 year:
+
 ```
 openssl x509 -req -in server.csr -CA CA.crt -CAkey CA.key -CAcreateserial -CAserial serial.txt -out server.crt -days 365 -extfile ext-tls-server
 ```
 
 Sign for TLS Client usage, valid for 1 year:
+
 ```
 openssl x509 -req -in server.csr -CA CA.crt -CAkey CA.key -CAcreateserial -CAserial serial.txt -out server.crt -days 365 -extfile ext-tls-client
 ```
@@ -120,6 +124,7 @@ openssl x509 -req -in server.csr -CA CA.crt -CAkey CA.key -CAcreateserial -CAser
 Extension files:
 
 ext-tls-client:
+
 ```
 basicConstraints = CA:FALSE
 nsCertType = client, email
@@ -131,6 +136,7 @@ extendedKeyUsage = clientAuth
 ```
 
 ext-tls-server:
+
 ```
 basicConstraints = CA:FALSE
 nsCertType = server
@@ -142,6 +148,7 @@ extendedKeyUsage = serverAuth
 ```
 
 email encryption:
+
 ```
 basicConstraints = CA:FALSE
 nsCertType = client, email
