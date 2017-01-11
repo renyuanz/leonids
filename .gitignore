@@ -2,3 +2,6 @@ _site
 .sass-cache
 _drafts
 .ruby-version
+.idea
+*.iml
+gh-md-toc

@@ -3,9 +3,9 @@
 # Site wide configuration
 ####################################
 #
-title: Leonids
-email:
-description: A simple and awesome blog theme powered by jekyll.
+title: Radek's IT Diary
+email: radek.antoniuk@quiddia.com
+description: Radek Antoniuk personal IT blog
 url: # the base hostname & protocol for your site
 
 
@@ -19,6 +19,7 @@ markdown:          kramdown
 highlighter:       rouge
 excerpt_separator: <!--more-->
 permalink:         /articles/:year-:month/:title
+relative_permalinks: false
 
 kramdown:
   auto_ids: true
@@ -33,25 +34,25 @@ kramdown:
 ####################################
 #
 owner:
-  name: Leonids
-  avatar: leonids-logo.png
-  job: "A jekyll theme"
-  bio: "A simple and awesome blog theme powered by jekyll."
+  name: Radek Antoniuk
+  avatar: https://avatars1.githubusercontent.com/u/521838?v=3&s=150
+  job: "warden"
+  bio: "IT Tech Entrepreneur personal notepad"
   email:
-  disqus-shortname:
-  twitter: #username
+  disqus-shortname: radekantoniuk
+  twitter: wardenik
   facebook: #username
   google:
     plus: #username
-    analytics:
+    analytics: UA-847583-2
     verify:
     ad-client:
     ad-slot:
   bing-verify:
-  github: #username
+  github: warden
   gitlab: #username
-  stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
-  linkedin: #username
+  stackoverflow: 255747/warden
+  linkedin: radekantoniuk
   skype: #username
   xing: #username
   instagram: #username
