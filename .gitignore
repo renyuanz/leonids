@@ -4,3 +4,4 @@ _config.yml
 _drafts
 _posts
 .ruby-version
+*.gem
