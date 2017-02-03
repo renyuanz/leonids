@@ -53,7 +53,6 @@
 
   .col {
     float: left;
-    @include box-sizing(border-box);
     display:block;
   	vertical-align:top;
   	width:100%;

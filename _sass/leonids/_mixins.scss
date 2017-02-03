@@ -1,0 +1,29 @@
+// Mixins
+
+@mixin media-query($device) {
+    @media only screen and (min-width: $device) {
+        @content;
+    }
+}
+
+/**
+ * @include transition(PROPERTY DURATION DELAY(OPTIONAL) TIMING-FINCTION);
+ */
+
+@mixin transition($transition) {
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -ms-transition: $transition;
+  transition: $transition;
+}
+
+/**
+ * Box shadow
+ * example: @include box-shadow(HORIZONTAL VERTICAL BLUR COLOR));
+ */
+
+@mixin box-shadow($shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26)) {
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  box-shadow: $shadow;
+}

@@ -3,19 +3,24 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }} | A Jekyll theme{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+
 
   <!-- CSS files -->
-  <link rel="stylesheet" href="{{ site.url }}/css/font-awesome.min.css">
-  <link rel="stylesheet" href="{{ site.url }}/css/main.css">
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/css/font-awesome.min.css" | relative_url }}">
 
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ " /feed.xml " | prepend: site.url }}" />
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+
+  {% if jekyll.environment == 'production' and site.owner.google.analytics %}
+  {% include google-analytics.html %}
+  {% endif %}
 
   <!-- Icons -->
   <!-- 16x16 -->
-  <link rel="shortcut icon" href="{{ site.url }}/favicon.ico">
+  <link rel="shortcut icon" href="{{ "/favicon.ico" | relative_url }}">
   <!-- 32x32 -->
-  <link rel="shortcut icon" href="{{ site.url }}/favicon.png">
+  <link rel="shortcut icon" href="{{ "/favicon.ico" | relative_url }}">
 </head>
