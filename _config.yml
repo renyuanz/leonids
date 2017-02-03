@@ -43,7 +43,7 @@ owner:
   facebook: #username
   google:
     plus: #username
-    analytics: UA-62251910-2
+    analytics: # edit to insert your GA script
     verify:
     ad-client:
     ad-slot:
