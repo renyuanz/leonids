@@ -3,10 +3,10 @@
 # Site wide configuration
 ####################################
 #
-title: dev_jm
-email: gmj1197@gmail.com
+title: Leonids
+email:
 description: A simple and awesome blog theme powered by jekyll.
-url: https://rjs1197.github.io/
+url: # the base hostname & protocol for your site
 
 
 #
@@ -32,12 +32,12 @@ kramdown:
 # Site Owner configuration
 ####################################
 #
-owner: Dev_jm
-  name: MyungjinKO
-  avatar: mj-logo.png
+owner:
+  name: Leonids
+  avatar: leonids-logo.png
   job: "A jekyll theme"
   bio: "A simple and awesome blog theme powered by jekyll."
-  email: gmj1197@gmail.com
+  email:
   disqus-shortname:
   twitter: #username
   facebook: #username
@@ -48,7 +48,7 @@ owner: Dev_jm
     ad-client:
     ad-slot:
   bing-verify:
-  github: rjs1197
+  github: #username
   gitlab: #username
   stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
   linkedin: #username
