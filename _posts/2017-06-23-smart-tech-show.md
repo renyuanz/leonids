@@ -25,8 +25,7 @@ comments: true
 
 ![Alt smart_tech_show1](rjs1197.github.io/img/smart_tech_show/smart_tech_show_1.png)  
 ![Alt smart_tech_show1](rjs1197.github.io/img/smart_tech_show/smart_tech_show_2.png)  
-![smart_tech_show1](https://raw.githubusercontent.com/rjs1197/rjs1197.github.io/master/img/smart_tech_show/smart_tech_show_1.png)  
-![Alt smart_tech_show1](https://raw.githubusercontent.com/rjs1197/rjs1197.github.io/master/img/smart_tech_show/smart_tech_show_1.png)  
+![smart_tech_show1](https://raw.githubusercontent.com/rjs1197/rjs1197.github.io/master/img/smart_tech_show/smart_tech_show_1.png)   
 ![smart_tech_show1](rjs1197.github.io/img/smart_tech_show/smart_tech_show_5.png)  
 ![smart_tech_show1](rjs1197.github.io/img/smart_tech_show/smart_tech_show_6.png)  
 ![smart_tech_show1](rjs1197.github.io/img/smart_tech_show/smart_tech_show_7.png)  
