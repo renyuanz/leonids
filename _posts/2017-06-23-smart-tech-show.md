@@ -23,16 +23,16 @@ comments: true
 마지막 오늘의 하이라이트였던 드론 크러쉬라고 부르는 드론 파이트.. 역시 기대이상으로 별로였다. 직접 조종해서하는 경기와 프로그래밍된 명령을 바탕으로 진행되는 경기가 있었는데 시간이 아까워 직접 조종하는 경기 2개만 보고 왔는데 기체 자체가 약해서 몇 번의 충돌 이후엔 숨이 멎는 것을 보고 두 경기만 보고 최악이라고 느낀 시간이었다.  
 (세계 최초로 열린 드론 파이트라고 하는데 왜 세계 최초인지 알 수 있었다.)
 
-![smart_tech_show](https://raw.githubusercontent.com/rjs1197/rjs1197.github.io/master/img/smart_tech_show/smart_tech_show_1.png)  
-![smart_tech_show](https://raw.githubusercontent.com/rjs1197/rjs1197.github.io/master/img/smart_tech_show/smart_tech_show_2.png)  
-![smart_tech_show](https://raw.githubusercontent.com/rjs1197/rjs1197.github.io/master/img/smart_tech_show/smart_tech_show_3.png)  
-![smart_tech_show](https://raw.githubusercontent.com/rjs1197/rjs1197.github.io/master/img/smart_tech_show/smart_tech_show_4.png)  
-![smart_tech_show](https://raw.githubusercontent.com/rjs1197/rjs1197.github.io/master/img/smart_tech_show/smart_tech_show_5.png)  
-![smart_tech_show](https://raw.githubusercontent.com/rjs1197/rjs1197.github.io/master/img/smart_tech_show/smart_tech_show_6.png)  
-![smart_tech_show](https://raw.githubusercontent.com/rjs1197/rjs1197.github.io/master/img/smart_tech_show/smart_tech_show_7.png)  
-![smart_tech_show](https://raw.githubusercontent.com/rjs1197/rjs1197.github.io/master/img/smart_tech_show/smart_tech_show_8.png)  
-![smart_tech_show](https://raw.githubusercontent.com/rjs1197/rjs1197.github.io/master/img/smart_tech_show/smart_tech_show_9.png)  
-![smart_tech_show](https://raw.githubusercontent.com/rjs1197/rjs1197.github.io/master/img/smart_tech_show/smart_tech_show_10.png)  
-  
+![smart_tech_show](https://raw.githubusercontent.com/rjs1197/rjs1197.github.io/master/img/smart_tech_show/smart_tech_show_1.png){.aligncenter}  
+![smart_tech_show](https://raw.githubusercontent.com/rjs1197/rjs1197.github.io/master/img/smart_tech_show/smart_tech_show_2.png){.aligncenter}  
+![smart_tech_show](https://raw.githubusercontent.com/rjs1197/rjs1197.github.io/master/img/smart_tech_show/smart_tech_show_3.png){.aligncenter}  
+![smart_tech_show](https://raw.githubusercontent.com/rjs1197/rjs1197.github.io/master/img/smart_tech_show/smart_tech_show_4.png){.aligncenter}  
+![smart_tech_show](https://raw.githubusercontent.com/rjs1197/rjs1197.github.io/master/img/smart_tech_show/smart_tech_show_5.png){.aligncenter}  
+![smart_tech_show](https://raw.githubusercontent.com/rjs1197/rjs1197.github.io/master/img/smart_tech_show/smart_tech_show_6.png){.aligncenter}  
+![smart_tech_show](https://raw.githubusercontent.com/rjs1197/rjs1197.github.io/master/img/smart_tech_show/smart_tech_show_7.png){.aligncenter}  
+![smart_tech_show](https://raw.githubusercontent.com/rjs1197/rjs1197.github.io/master/img/smart_tech_show/smart_tech_show_8.png){.aligncenter}  
+![smart_tech_show](https://raw.githubusercontent.com/rjs1197/rjs1197.github.io/master/img/smart_tech_show/smart_tech_show_9.png){.aligncenter}  
+![smart_tech_show](https://raw.githubusercontent.com/rjs1197/rjs1197.github.io/master/img/smart_tech_show/smart_tech_show_10.png){.aligncenter}  
+
 총평은 '내가 이걸 보려고 왔나..'이다. 매경에서 주관한다는 것에서부터 느낌을 받았어야 했는데.. 다음부턴 꼭 확인해야겠다.  
 ps. 에듀 테크는 생각보다 흥미로웠다.
