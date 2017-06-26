@@ -23,10 +23,10 @@ comments: true
 마지막 오늘의 하이라이트였던 드론 크러쉬라고 부르는 드론 파이트.. 역시 기대이상으로 별로였다. 직접 조종해서하는 경기와 프로그래밍된 명령을 바탕으로 진행되는 경기가 있었는데 시간이 아까워 직접 조종하는 경기 2개만 보고 왔는데 기체 자체가 약해서 몇 번의 충돌 이후엔 숨이 멎는 것을 보고 두 경기만 보고 최악이라고 느낀 시간이었다.  
 (세계 최초로 열린 드론 파이트라고 하는데 왜 세계 최초인지 알 수 있었다.)
 
-![smart_tech_show1](rjs1197.github.io/img/smart_tech_show/smart_tech_show_1.png)  
-![smart_tech_show1](rjs1197.github.io/img/smart_tech_show/smart_tech_show_2.png)  
-![smart_tech_show1](rjs1197.github.io/img/smart_tech_show/smart_tech_show_3.png)  
-![smart_tech_show1](rjs1197.github.io/img/smart_tech_show/smart_tech_show_4.png)  
+![Alt smart_tech_show1](rjs1197.github.io/img/smart_tech_show/smart_tech_show_1.png)  
+![Alt smart_tech_show1](rjs1197.github.io/img/smart_tech_show/smart_tech_show_2.png)  
+![smart_tech_show1](https://raw.githubusercontent.com/rjs1197/rjs1197.github.io/master/img/smart_tech_show/smart_tech_show_1.png)  
+![Alt smart_tech_show1](https://raw.githubusercontent.com/rjs1197/rjs1197.github.io/master/img/smart_tech_show/smart_tech_show_1.png)  
 ![smart_tech_show1](rjs1197.github.io/img/smart_tech_show/smart_tech_show_5.png)  
 ![smart_tech_show1](rjs1197.github.io/img/smart_tech_show/smart_tech_show_6.png)  
 ![smart_tech_show1](rjs1197.github.io/img/smart_tech_show/smart_tech_show_7.png)  
