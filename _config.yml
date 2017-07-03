@@ -3,9 +3,9 @@
 # Site wide configuration
 ####################################
 #
-title: Leonids
-email:
-description: A simple and awesome blog theme powered by jekyll.
+title: Daily_Life_of_Developer
+email: gmj1197@gmail.com
+description: My_daily_life
 url: # the base hostname & protocol for your site
 
 
@@ -33,14 +33,14 @@ kramdown:
 ####################################
 #
 owner:
-  name: Leonids
+  name: Daily_Life
   avatar: leonids-logo.png
-  job: "A jekyll theme"
-  bio: "A simple and awesome blog theme powered by jekyll."
-  email:
+  job: "Mercury_Ko"
+  bio: "My daily life as a developer"
+  email: gmj1197@gmail.com
   disqus-shortname:
   twitter: #username
-  facebook: #username
+  facebook: profile.php?id=100004139834462
   google:
     plus: #username
     analytics:
@@ -48,9 +48,9 @@ owner:
     ad-client:
     ad-slot:
   bing-verify:
-  github: #username
+  github: rjs1197
   gitlab: #username
-  stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
+  stackoverflow: 8159979/mercury-ko
   linkedin: #username
   skype: #username
   xing: #username
