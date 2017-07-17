@@ -28,7 +28,7 @@ See a [demo](http://renyuanz.github.io/leonids/) hosted on GitHub.
 
 Check out your awesome blog at `http://localhost:4000` and Cheers!
 
-## Resume Page by @Skn0tt
+## Resume Page by [@Skn0tt](https://github.com/Skn0tt)
 Leonids features a simple resume page. It is divided up into five sections: 
 
 * Bio (Edit \_data/index/careers.yml)
