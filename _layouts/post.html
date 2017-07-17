@@ -8,7 +8,7 @@ layout: default
 {% if page.image.feature %}
 <div class="post-image-feature">
   <img class="feature-image" src=
-  {% if (page.image.feature contains 'https') or (page.image.feature contains 'http') %}
+  {% if page.image.feature contains 'https' or page.image.feature contains 'http' %}
   "{{ page.image.feature }}"
   {% else %}
   "{{ site.url }}/img/{{ page.image.feature }}"
