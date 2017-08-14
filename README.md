@@ -5,12 +5,16 @@
 현재 안드로이드 개발자로 종사하고 있기 때문에 안드로이드 관련 포스팅을 주로 할 예정입니다.
 
 
-## Domain
+
+
+# Domain
 
 [JayB's Tech Blog](https://jaybkim1.github.io)
 
 
-## Contents
+
+
+# Contents
 
 어떤 컨텐츠를 다룰 것 인가?
 
@@ -20,19 +24,25 @@
 사이드: Python, 여러 종류의 웹서버와 데이터베이스, AWS, IT 업계, IT 기사 등...
 
 
-## Contacts
+
+
+# Contacts
 
 E-mail: jaybkim2@gmail.com
 
 
-## Jekyll-Theme References
+
+
+# Jekyll-Theme References
 
 [jekyll-now](https://github.com/barryclark/jekyll-now)
 
 [Leonids](http://renyuanz.github.io/leonids) is a clean Jekyll theme perfect for powering your GitHub hosted blog.
 
 
-## License
+
+
+# License
 
 ```
 The MIT License (MIT)

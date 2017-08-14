@@ -39,8 +39,8 @@ owner:
   bio: "A backend developer who loves design awesome things. Working as an Android Developer in Korea."
   email: jaybkim2@gmail.com
   disqus-shortname: jaybblog
-  #twitter: renyuan814 #username
-  #facebook: #username
+  twitter: #username
+  facebook: #username
   google:
     plus: #username
     analytics: UA-62251910-2
@@ -49,18 +49,18 @@ owner:
     ad-slot:
   bing-verify:
   github: jaybkim1 #username
-  #stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
-  #linkedin: renyuan-zou-69b7038a #username
-  #xing: #username
-  #instagram: #username
-  #lastfm: #username
-  #tumblr: #username
-  #pinterest: #username
-  #foursquare: #username
-  #steam: #username
-  #dribbble: #username
+  stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
+  linkedin: #username
+  xing: #username
+  instagram: #username
+  lastfm: #username
+  tumblr: #username
+  pinterest: #username
+  foursquare: #username
+  steam: #username
+  dribbble: #username
   youtube: #username
-  #soundcloud: #username
-  #weibo: #username
-  #flickr: #username
-  #codepen: #username
+  soundcloud: #username
+  weibo: #username
+  flickr: #username
+  codepen: #username
