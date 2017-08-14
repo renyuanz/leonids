@@ -1,45 +1,58 @@
-# Update 05/06/2016
+# JayB's Personal Tech Blog
 
-Important! It's better to download the gzipped files instead of forking the repo. I would really appreciate if you could give me a star. 😁
+개발과 관련된 내용을 정리하는 개인적인 공간입니다.
 
-This project is under MIT license, so feel free to make it your own.
+현재 안드로이드 개발자로 종사하고 있기 때문에 안드로이드 관련 포스팅을 주로 할 예정입니다.
 
-# Leonids Jekyll Themes
 
-**[Leonids](http://renyuanz.github.io/leonids)** is a clean Jekyll theme perfect for powering your GitHub hosted blog.
+## Domain
 
-## What is Leonids?
+[JayB's Tech Blog](https://jaybkim1.github.io)
 
-* Responsive templates. Looking good on mobile, tablet, and desktop.
-* Simple and clear permalink structure.
-* Support for Disqus Comments.
-* Support for multi-authors.
-* **And** the Leonids (/ˈliːənɪdz/ lee-ə-nidz) are a prolific meteor shower associated with the comet [Tempel-Tuttle](https://en.wikipedia.org/wiki/55P/Tempel%E2%80%93Tuttle).
 
-See a [demo](http://renyuanz.github.io/leonids/) hosted on GitHub.
+## Contents
 
-## Quick setup
+어떤 컨텐츠를 다룰 것 인가?
 
-`git clone https://github.com/renyuanz/leonids`
 
-`cd leonids`
+메인: Android(Java), PHP
 
-`jekyll server`
+사이드: Python, 여러 종류의 웹서버와 데이터베이스, AWS, IT 업계, IT 기사 등...
 
-Check out your awesome blog at `http://localhost:4000` and Cheers!
 
-## Resume Page by [@Skn0tt](https://github.com/Skn0tt)
-Leonids features a simple resume page. It is divided up into five sections: 
+## Contacts
 
-* Bio (Edit \_data/index/careers.yml)
-* Education (Edit \_data/index/education.yml)
-* Skills (Edit \_data/index/skills.yml)
-* Projects (Edit \_data/index/projects.yml)
-* About (Edit \_includes/sections/about.html)
+E-mail: jaybkim2@gmail.com
 
-You can put all your info into these files, and they will be featured on the resume page.
 
-## TODO
+## Jekyll-Theme References
 
-- [ ] Redesign categories page. Ref: [dribbble: blog category section By Ilja Miskov](https://dribbble.com/shots/2274792-Blog-Category-Selection)
-- [ ] Multi languages support.
+[jekyll-now](https://github.com/barryclark/jekyll-now)
+
+[Leonids](http://renyuanz.github.io/leonids) is a clean Jekyll theme perfect for powering your GitHub hosted blog.
+
+
+## License
+
+```
+The MIT License (MIT)
+
+Copyright (c) 2016 JayB Kim
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+```
