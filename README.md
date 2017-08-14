@@ -2,22 +2,21 @@
 
 개발과 관련된 내용을 정리하는 개인적인 공간입니다.
 
-현재 안드로이드 개발자로 종사하고 있기 때문에 안드로이드 관련 포스팅을 주로 할 예정입니다.
+현재 안드로이드 개발을 하고 있기 때문에 안드로이드 관련 포스팅을 주로 할 예정입니다.
 
 
 
 
-# Domain
+
+# Domain (도메인)
 
 [JayB's Tech Blog](https://jaybkim1.github.io)
 
 
 
 
-# Contents
 
-어떤 컨텐츠를 다룰 것 인가?
-
+# Contents (블로그에서 다룰 내용)
 
 메인: Android(Java), PHP
 
@@ -26,9 +25,11 @@
 
 
 
+
 # Contacts
 
 E-mail: jaybkim2@gmail.com
+
 
 
 
