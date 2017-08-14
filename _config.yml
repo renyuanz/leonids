@@ -6,7 +6,7 @@
 title: JayB
 email: jaybkim2@gmail.com
 description: JayB's Personal Tech Blog.
-url: https://jaybkim1/jaybkim1.github.io # the base hostname & protocol for your site
+url: https://jaybkim1.github.io/ # the base hostname & protocol for your site
 
 
 #
@@ -39,8 +39,8 @@ owner:
   bio: "A backend developer who loves design awesome things. Working as an Android Developer in Korea."
   email: jaybkim2@gmail.com
   disqus-shortname: jaybblog
-  twitter: #username
-  facebook: #username
+  twitter: jaybkim1 #username
+  facebook: jaybkim2 #username
   google:
     plus: #username
     analytics: UA-62251910-2

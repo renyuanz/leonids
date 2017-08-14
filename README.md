@@ -8,7 +8,7 @@
 
 
 
-# Domain (도메인)
+# Domain
 
 [JayB's Tech Blog](https://jaybkim1.github.io)
 
@@ -16,7 +16,7 @@
 
 
 
-# Contents (블로그에서 다룰 내용)
+# Contents
 
 메인: Android(Java), PHP
 
@@ -39,6 +39,7 @@ E-mail: jaybkim2@gmail.com
 [jekyll-now](https://github.com/barryclark/jekyll-now)
 
 [Leonids](http://renyuanz.github.io/leonids) is a clean Jekyll theme perfect for powering your GitHub hosted blog.
+
 
 
 
