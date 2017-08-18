@@ -7,7 +7,7 @@ title: Leonids
 email: zourenyuan@gmail.com
 description: A simple and awesome blog theme powered by jekyll.
 url: https://renyuanz.github.io/leonids # the base hostname & protocol for your site
-
+keywords: ["Programming", "PHP", "Ruby"]
 
 #
 ###################################
@@ -64,3 +64,4 @@ owner:
   weibo: #username
   flickr: #username
   codepen: #username
+  telegram: #username
