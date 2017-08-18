@@ -41,13 +41,12 @@ owner:
   disqus-shortname: jaybkim2
   facebook:  #username
   google:
-    plus: #username
+    plus: jaybkim2 #username
     analytics: UA-62251910-2
     verify:
     ad-client:
     ad-slot:
   bing-verify:
-  github: jaybkim1 #username
   stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
   linkedin: #username
   xing: #username
@@ -58,7 +57,8 @@ owner:
   foursquare: #username
   steam: #username
   dribbble: #username
-  youtube: jaybkim2 #username
+  youtube: #username
+  github: jaybkim1 #username
   soundcloud: #username
   weibo: #username
   flickr: #username
