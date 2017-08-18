@@ -38,9 +38,9 @@ E-mail: jaybkim2@gmail.com
 
 [jekyll-now](https://github.com/barryclark/jekyll-now)
 
-[Leonids](https://github.com/renyuanz/leonids)
+[Leonids](https://github.com/renyuanz/leonids) is a clean Jekyll theme perfect for powering your GitHub hosted blog.
 
-[Demo Site](http://renyuanz.github.io/leonids) is a clean Jekyll theme perfect for powering your GitHub hosted blog.
+[Demo Site](http://renyuanz.github.io/leonids)
 
 
 
