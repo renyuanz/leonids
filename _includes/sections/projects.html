@@ -2,9 +2,9 @@
 
 {% for project in site.data.index.projects %}
     <div class="row">
-            <div class="col" style="margin-bottom: 30px">
+            <div class="col" style="margin-bottom: 20px">
                 <h2 style="margin-bottom: 5px">{{ project.name }}</h2>
-                <p style="margin-bottom: 5px">{{ project.descr }}</p>
+                <p style="margin-bottom: 15px">{{ project.descr }}</p>
 
                 {% if project.github %}
                 <a href="{{ project.github }} "><i class="fa fa-fw fa-github"></i>GitHub</a>
