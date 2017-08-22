@@ -36,7 +36,7 @@ owner:
   name: JayB
   avatar: jayb.jpg
   job: "Android & PHP Developer"
-  bio: "우아함 아래 끊임없는 노력이 존재한다. <br/> 백조 같은 개발자"
+  bio: "우아함 아래 끊임없는 노력이 존재한다."
   email: jaybkim2@gmail.com
   disqus-shortname: jaybkim2
   facebook:  #username
@@ -57,7 +57,7 @@ owner:
   foursquare: #username
   steam: #username
   dribbble: #username
-  youtube: JayB Kim #username
+  youtube: #username
   github: jaybkim1 #username
   soundcloud: #username
   weibo: #username
