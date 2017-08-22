@@ -3,7 +3,7 @@
 # Site wide configuration
 ####################################
 #
-title: JayB
+title: 백조 같은 개발자
 email: jaybkim2@gmail.com
 description: JayB's Personal Tech Blog.
 url: https://jaybkim1.github.io # the base hostname & protocol for your site
@@ -36,7 +36,7 @@ owner:
   name: JayB
   avatar: jayb.jpg
   job: "Android & PHP Developer"
-  bio: "매일같이 꿈을 꾸며 인생을 그린다. 꿈꾸는 개발자"
+  bio: "우아함 아래 끊임없는 노력이 존재한다. <br/> 백조 같은 개발자"
   email: jaybkim2@gmail.com
   disqus-shortname: jaybkim2
   facebook:  #username
