@@ -1,25 +1,25 @@
-- name: 바이노럴 오디오 편집기 (Binaural Audio Editor) - 단기간 프로젝트 (14주 소요)
+- name: 바이노럴 오디오 편집기 (Binaural Audio Editor) - 단기간 프로젝트
   descr: "This android app is an audio edittor, which utilizes the technology originated from one of the largest research institutes in Korea. It enables users to edit audio to 3D (binaural) audio in real time."
   image: jayb.jpg
   github: https://github.com/jaybkim1
 
 
 
-- name: 와티 WaT-t - 개인 프로젝트 (18주 소요)
+- name: 와티 WaT-t - 개인 프로젝트
   descr: "WaT-t is an android application that I developed as a personal project. In the beginning of 2016, I wondered how live streaming apps, such as Twitch, AfreecaTV, Periscope work; what technologies would I need to develop such apps, so I began this personal project and took me 18 weeks to develop. "
   image: pong.png
   github: https://github.com/jaybkim1
 
 
 
-- name: 플픽 PlacePicker - 개인 프로젝트 (11주 소요)
+- name: 플픽 PlacePicker - 개인 프로젝트
   descr: "PlacePicker is an android application that I developed as a personal project. It offers service for those who are searching for restaurants near by in Seoul."
   image: pong.png
   github: https://github.com/jaybkim1
 
 
 
-- name: JB Fitness Community Website - 개인 프로젝트 (5주 소요)
+- name: JB Fitness Community Website - 개인 프로젝트
   descr: "JB Fitness is a community site where people who are interested in building their body share their training programs, supplements, and thoughts on articles"
   image: pong.png
   github: https://github.com/jaybkim1
