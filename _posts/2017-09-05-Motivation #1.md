@@ -1,7 +1,7 @@
 ---
 layout: post
-title: [TEDx] Lessons from Living in a Homeless Shelter: the Beauty of Working for Free
-excerpt: "Aran Kim 씨가 경험한 거저 나눔으로 인해 얻은 교훈과 능력. 많은 생각을 하게 되는 영상."
+title: Lessons from Living in a Homeless Shelter: the Beauty of Working for Free
+excerpt: "Aran Kim 씨가 경험한 거저 나눔으로 인해 얻은 교훈과 능력. 많은 생각을 하게 되는 영상"
 categories: [동기부여]
 comments: true
 ---
