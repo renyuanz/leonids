@@ -3,10 +3,10 @@
 # Site wide configuration
 ####################################
 #
-title: Leonids
-email: zourenyuan@gmail.com
-description: A simple and awesome blog theme powered by jekyll.
-url: https://renyuanz.github.io/leonids # the base hostname & protocol for your site
+title: 철학적인 개발자
+email: jaybkim2@gmail.com
+description: 안드로이드 앱, PHP, 웹 프로그래밍, 데이터베이스 그리고 IT 기술에 관한 블로그
+url: http://jaybdev.net # the base hostname & protocol for your site
 
 
 #
@@ -14,7 +14,7 @@ url: https://renyuanz.github.io/leonids # the base hostname & protocol for your 
 # Jekyll configuration
 ####################################
 #
-timezone:          Europe/Paris
+timezone:          Asia/Korea
 markdown:          kramdown
 highlighter:       rouge
 excerpt_separator: <!--more-->
@@ -33,24 +33,22 @@ kramdown:
 ####################################
 #
 owner:
-  name: Leonids
-  avatar: leonids-logo.png
-  job: "PHP & Ruby Developer"
-  bio: "A backend developer who loves design awesome things. Working for RendezvousCheznous atm in Marseille, France."
-  email: zourenyuan@gmail.com
-  disqus-shortname: renyuanzblog
-  twitter: renyuan814 #username
-  facebook: #username
+  name: JayB Kim
+  avatar: jayb.jpg
+  job: "Android & PHP Developer"
+  bio: "우아함 밑에 끊임없는 노력이 존재한다."
+  email: jaybkim2@gmail.com
+  disqus-shortname: jaybkim2
+  facebook:  #username
   google:
     plus: #username
-    analytics: UA-62251910-2
+    analytics: UA-105225167-1
     verify:
     ad-client:
     ad-slot:
   bing-verify:
-  github: renyuanz #username
   stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
-  linkedin: renyuan-zou-69b7038a #username
+  linkedin: #username
   xing: #username
   instagram: #username
   lastfm: #username
@@ -60,6 +58,7 @@ owner:
   steam: #username
   dribbble: #username
   youtube: #username
+  github: jaybkim1 #username
   soundcloud: #username
   weibo: #username
   flickr: #username

@@ -22,20 +22,20 @@
   padding: 0 30px;
   .avatar {
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 110px;
+    height: 110px;
     float: none;
   }
   .author_name {
     display: block;
-    color: #F36170;
-    font-size: 1.75em;
-    text-transform: lowercase;
+    color: #0100FF;
+    font-size: 1.77em;
+    //text-transform: lowercase; // uppercase, lowercase, capitalize
   }
   .author_job {
     display: block;
     color: $secondary;
-    font-size: 0.8em;
+    font-size: 0.9em;
     font-weight: 700;
     text-transform: uppercase;
     margin: -5px auto 10px;

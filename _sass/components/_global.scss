@@ -12,8 +12,10 @@
   padding: 0.5em 1em;
 }
 img {
-  height: auto;
+  display: block;
   max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 // Tables
