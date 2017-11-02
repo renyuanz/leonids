@@ -1,0 +1,16 @@
+# careers section data
+# if you don't have language feature(language.yml is empty), ignore "i18n" items
+- name: Google
+  link: http://www.google.com/
+  date: July 2017 - <i class="fa fa-clock-o" aria-hidden="true" title="Until Now"></i>
+  job: Programming Internship
+
+- name: Facebook
+  link: http://www.facebook.com/
+  date: May 2014 - July 2017
+  job: Web Assistant
+
+- name: SAP
+  link: https://www.sap.com/
+  date: 2010 - 2014
+  job: Software Developer

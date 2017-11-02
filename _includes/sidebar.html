@@ -11,10 +11,14 @@
     <ul class="nav-list">
       <li class="nav-item">
         <a href="{{ site.url }}/">home</a>
+        <span>/</span>
       </li>
       {% for page in site.pages %} {% if page.title %}
       <li class="nav-item">
         <a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a>
+        {% unless forloop.last %}
+          <span>/</span>
+        {% endunless %}
       </li>
       {% endif %} {% endfor %}
     </ul>

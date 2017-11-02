@@ -3,7 +3,6 @@ layout: post
 title: "Post with Large Feature Image and Text"
 excerpt: "Custom written post descriptions are the way to go... if you're not lazy."
 categories: [paragraph, feature photo]
-author: mike
 comments: true
 image:
   feature: https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?crop=entropy&dpr=2&fit=crop&fm=jpg&h=475&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1250
