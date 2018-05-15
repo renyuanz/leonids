@@ -3,11 +3,11 @@
 # Site wide configuration
 ####################################
 #
-title: Leonids
-email: zourenyuan@gmail.com
+title: Val Barros
+email: hi@barrosval.me
 description: A simple and awesome blog theme powered by jekyll.
-url: https://renyuanz.github.io/leonids # the base hostname & protocol for your site
-keywords: ["Programming", "PHP", "Ruby"]
+url: https://barrosval.me # the base hostname & protocol for your site
+keywords: ["Programming", "PHP", "Javascript", "Remote", "Nomad"]
 
 #
 ###################################
@@ -18,7 +18,8 @@ timezone:          Europe/Paris
 markdown:          kramdown
 highlighter:       rouge
 excerpt_separator: <!--more-->
-permalink:         /articles/:year-:month/:title
+# permalink:         /articles/:year-:month/:title
+permalink: pretty
 
 kramdown:
   auto_ids: true
@@ -33,35 +34,14 @@ kramdown:
 ####################################
 #
 owner:
-  name: Leonids
-  avatar: leonids-logo.png
-  job: "PHP & Ruby Developer"
-  bio: "A backend developer who loves design awesome things. Working for RendezvousCheznous atm in Marseille, France."
-  email: zourenyuan@gmail.com
-  disqus-shortname: renyuanzblog
-  twitter: renyuan814 #username
-  facebook: #username
-  google:
-    plus: #username
-    analytics: UA-62251910-2
-    verify:
-    ad-client:
-    ad-slot:
-  bing-verify:
-  github: renyuanz #username
-  stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
-  linkedin: renyuan-zou-69b7038a #username
-  xing: #username
-  instagram: #username
-  lastfm: #username
-  tumblr: #username
-  pinterest: #username
-  foursquare: #username
-  steam: #username
-  dribbble: #username
-  youtube: #username
-  soundcloud: #username
-  weibo: #username
-  flickr: #username
-  codepen: #username
-  telegram: #username
+  name: Val Barros
+  avatar: profile.jpg
+  job: "Millenium Developer"
+  bio: "$whoami? A dev that believes in the freedom and in the people's power. Naive at all."
+  email: hi@barrosval.me
+  disqus-shortname: barrosval-me
+  twitter: barros_val
+  github: valeriabarros
+  linkedin: valeriabarros 
+  instagram: barros_val
+  pinterest: barrosval

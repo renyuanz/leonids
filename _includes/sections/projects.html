@@ -1,13 +1,13 @@
-<h1><span data-i18n="skills.my_skills">Projects</span></h1>
+<h1><span data-i18n="skills.my_skills">Flags</span></h1>
 
-{% for project in site.data.index.projects %}
+{% for flag in site.data.index.flags %}
     <div class="row">
             <div class="col">
-                <h2 style="margin: 0">{{ project.name }}</h2>
-                <p style="margin: 0">{{ project.descr }}</p>
+                <h2 style="margin: 0">{{ flag.name }}</h2>
+                <p style="margin: 0">{{ flag.descr }}</p>
 
-                {% if project.github %}
-                <a href="{{ project.github }} "><i class="fa fa-fw fa-github"></i>GitHub</a>
+                {% if flag.github %}
+                <a href="{{ flag.github }} "><i class="fa fa-fw fa-github"></i>GitHub</a>
                 {% endif %}
                 {% if project.website %}
                 <a href="{{ project.website }} "><i class="fa fa-fw fa-home"></i>Homepage</a>
