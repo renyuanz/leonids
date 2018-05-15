@@ -18,7 +18,8 @@ timezone:          Europe/Paris
 markdown:          kramdown
 highlighter:       rouge
 excerpt_separator: <!--more-->
-permalink:         /articles/:year-:month/:title
+# permalink:         /articles/:year-:month/:title
+permalink: pretty
 
 kramdown:
   auto_ids: true
@@ -35,8 +36,8 @@ kramdown:
 owner:
   name: Val Barros
   avatar: profile.jpg
-  job: "Developer & Agent"
-  bio: "Born from the ground."
+  job: "Millenium Developer"
+  bio: "$whoami? A dev that believes in the freedom and in the people's power. Naive at all."
   email: hi@barrosval.me
   disqus-shortname: barrosval-me
   twitter: barros_val
