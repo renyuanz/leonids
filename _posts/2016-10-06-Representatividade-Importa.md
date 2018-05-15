@@ -1,14 +1,30 @@
 ---
 layout: post
 title: Representatividade Importa!
+excerpt: >-
+  Eu fiquei me perguntando essa semana que tipo de impacto eu gostaria de causar
+  com o que eu faço. Eu realmente sou dessas pessoas que querem mudar o mundo,
+  sabe? Com 12 anos me perguntaram o que eu queria que acontecesse quando eu
+  morresse. Eu só consegui dizer que queria ter marcado a história.
+tags:
+  - sample
+  - representatividade
+  - empoderamento
+modified: {}
+comments: true
+published: true
+---
+---
+layout: post
+title: Representatividade Importa!
 excerpt: "Eu fiquei me perguntando essa semana que tipo de impacto eu gostaria de causar com o que eu faço. Eu realmente sou dessas pessoas que querem mudar o mundo, sabe? Com 12 anos me perguntaram o que eu queria que acontecesse quando eu morresse. Eu só consegui dizer que queria ter marcado a história."
 tags: [sample, representatividade, empoderamento]
 modified: 2016-10-06
 comments: true
 ---
 
+![unsplash]({{site.baseurl}}/https://unsplash.com/photos/ahzw2Tg7IXs)
 
-https://unsplash.com/photos/ahzw2Tg7IXs
 
 Essa semana um amigo me perguntou se eu me incomodava em ser convidada para palestrar sobre mulheres na tecnologia e/ou demais coisas desse universo. Se não passava a falsa impressão de que as mulheres só eram convidadas para falar sobre isso — e que não seriam capazes de falar sobre assuntos técnicos.
 
@@ -16,7 +32,7 @@ Bom, o ponto é: Eu realmente tenho problemas para falar sobre assuntos técnico
 
 Eu confesso que já fazia um tempo que me sentia sim incomodada com isso. Eu quero mesmo ser a programadora que só fala sobre empoderamento? Que só fala sobre os problemas? Cadê a Valéria programadora que trabalha com API’s, que lida com clientes, que resolve arquitetura e que sabe liderar o bagulho? Estão ai perguntas que — espero mesmo — conseguir não apenas responder, mas demonstrar em breve.
 
-https://twitter.com/barros_val/status/751113385987670016/photo/1z
+<blockquote class="twitter-tweet"><p lang="pt" dir="ltr">Valhalla pra manter a API funcionando <a href="https://t.co/s2VlaytVbM">pic.twitter.com/s2VlaytVbM</a></p>&mdash; mãe de planta (@barros_val) <a href="https://twitter.com/barros_val/status/751113385987670016?ref_src=twsrc%5Etfw">July 7, 2016</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
 Mas tem uma coisa muito mais intríseca em mim do que a minha preocupação com essa mulher profissional que de vez em quando aparece nos eventos. Essa mulher, que vez ou outra diz não pra um evento, diz porque percebe que não vai poder ser sutil — vai precisar falar do que sabe — e vai precisar mostrar o código — Mas sabe aquela coisa de terapeuta? Meu código não tá pronto pra sair.
@@ -43,4 +59,4 @@ Tem que ser por mim.
 
 Por mim, por elas.
 
-Exported from <a href="https://medium.com">Medium</a> on May 15, 2018.</p>
+Exported from <a href="https://medium.com">Medium</a> on May 15, 2018.
