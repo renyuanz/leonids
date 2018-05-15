@@ -1,30 +1,13 @@
 ---
 layout: post
 title: Representatividade Importa!
-excerpt: >-
-  Eu fiquei me perguntando essa semana que tipo de impacto eu gostaria de causar
-  com o que eu faço. Eu realmente sou dessas pessoas que querem mudar o mundo,
-  sabe? Com 12 anos me perguntaram o que eu queria que acontecesse quando eu
-  morresse. Eu só consegui dizer que queria ter marcado a história.
-tags:
-  - sample
-  - representatividade
-  - empoderamento
-modified: {}
-comments: true
-published: true
----
----
-layout: post
-title: Representatividade Importa!
 excerpt: "Eu fiquei me perguntando essa semana que tipo de impacto eu gostaria de causar com o que eu faço. Eu realmente sou dessas pessoas que querem mudar o mundo, sabe? Com 12 anos me perguntaram o que eu queria que acontecesse quando eu morresse. Eu só consegui dizer que queria ter marcado a história."
-tags: [sample, representatividade, empoderamento]
+categories: [representatividade]
 modified: 2016-10-06
 comments: true
+image:
+  feature: birds-unsplash.jpg
 ---
-
-![unsplash]({{site.baseurl}}/https://unsplash.com/photos/ahzw2Tg7IXs)
-
 
 Essa semana um amigo me perguntou se eu me incomodava em ser convidada para palestrar sobre mulheres na tecnologia e/ou demais coisas desse universo. Se não passava a falsa impressão de que as mulheres só eram convidadas para falar sobre isso — e que não seriam capazes de falar sobre assuntos técnicos.
 
