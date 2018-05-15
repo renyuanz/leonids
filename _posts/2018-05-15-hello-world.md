@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hello world
-excerpt: "everything sucks."
+excerpt: "everything sucks - it's culture."
 modified: 2018-05-15
 tags: [intro, hello]
 comments: true
