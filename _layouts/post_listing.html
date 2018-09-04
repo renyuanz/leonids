@@ -20,9 +20,9 @@ layout: default
       {% endif %}
     </p>
     <h4>
-      <a href="{{ site.url }}{{ post.url }}" class="post-title" title="{{ post.title }}">{{ post.title }}</a>
+      <a href="{{ site.url }}{{ post.url }}" class="post-title" title="{{ post.title | escape }}">{{ post.title }}</a>
       {% if post.link %}
-      <a class="post-title-link" href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-external-link"></i></a>
+      <a class="post-title-link" href="{{ post.link }}" target="_blank" title="{{ post.title | escape }}"><i class="fa fa-external-link"></i></a>
       {% endif %}
     </h4>
 
@@ -50,7 +50,7 @@ layout: default
       {% else %}
       "{{ site.url }}/img/{{ post.image.feature }}"
       {% endif %}
-      alt="{{ post.title }} feature image">
+      alt="{{ post.title | escape }} feature image">
 
       {% if post.image.credit %}
       <span class="image-credit">Photo Credit: <a href="{{ post.image.creditlink }}">{{ post.image.credit }}</a></span>
