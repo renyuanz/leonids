@@ -65,3 +65,7 @@ owner:
   flickr: #username
   codepen: #username
   telegram: #username
+
+webrick:
+  headers:
+    Access-Control-Allow-Origin: "*"
