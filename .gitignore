@@ -1,5 +1,7 @@
 _site
 .sass-cache
-_config.yml
+.directory
+Thumbs.db
 _drafts
 .ruby-version
+Gemfile.lock
