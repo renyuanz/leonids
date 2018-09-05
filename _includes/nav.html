@@ -3,7 +3,7 @@
     <div class="col s5">
       <div class="post-nav-prev">
         {% if page.previous %}
-        <a href="{{ site.url }}{{ page.previous.url }}" title="{{ page.previous.title }}">
+        <a href="{{ site.url }}{{ page.previous.url }}" title="{{ page.previous.title | escape }}">
           <div class="post-nav-btn">
             <div class="post-nav-text"><span class="danger-text-color"><i class="fa fa-angle-left"></i> ~ </span><span class="hidden-md primary-text-color">{{ page.previous.title }}</span></div>
           </div>
@@ -21,7 +21,7 @@
     <div class="col s5 right">
       <div class="post-nav-next">
         {% if page.next %}
-        <a href="{{ site.url }}{{ page.next.url }}" title="{{ page.previous.title }}">
+        <a href="{{ site.url }}{{ page.next.url }}" title="{{ page.previous.title | escape }}">
           <div class="post-nav-btn">
             <div class="post-nav-text"><span class="hidden-md primary-text-color">{{ page.next.title }}</span><span class="success-text-color"> ~ <i class="fa fa-angle-right"></i></span></div>
           </div>
