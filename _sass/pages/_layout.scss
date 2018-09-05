@@ -25,6 +25,9 @@
     width: 100px;
     height: 100px;
     float: none;
+    @include media-query($medium-screen) {
+      margin-right: 0;
+    }
   }
   .author_name {
     display: block;
