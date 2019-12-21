@@ -3,9 +3,9 @@
 # Site wide configuration
 ####################################
 #
-title: Leonids
+title: zhiyuan4j
 email:
-description: A simple and awesome blog theme powered by jekyll.
+description: zhiyuan4j's blog, most articles is about java and related things
 url: # the base hostname & protocol for your site
 keywords: ["blog", "jekyll"]
 
@@ -14,7 +14,7 @@ keywords: ["blog", "jekyll"]
 # Jekyll configuration
 ####################################
 #
-timezone:          Europe/Paris
+#timezone:          Europe/Paris
 markdown:          kramdown
 highlighter:       rouge
 excerpt_separator: <!--more-->
@@ -33,10 +33,10 @@ kramdown:
 ####################################
 #
 owner:
-  name: Leonids
-  avatar: leonids-logo.png
-  job: "A jekyll theme"
-  bio: "A simple and awesome blog theme powered by jekyll."
+  name: zhiyuan4j
+  avatar: pig.jpg
+  job: "no life is enough"
+  bio: "If there is no other life, than this one has been enough to make it worth being born, myself a human being."
   email:
   disqus-shortname:
   twitter: #username
