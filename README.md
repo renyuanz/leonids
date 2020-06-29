@@ -1,71 +1,33 @@
-# Update 07/09/2018
+---
+layout: post
+title: "Midmost_gentleMonster"
+---
 
-I'm planning to refactor Leonids theme!!!
+# echec.github.io
 
-The goal is really simple: make documentation more intuitive and deployment simpler!!!
+Gentle Monster
+======
 
-Here is the plan:
 
-| Version | Description | Date |
-| --- | --- | --- |
-| 1.1 | Jekyll version deployable with gem | 07/15/2018 |
-| 1.2 | New features: Pagination, Prev/Next post | 07/22/2018 |
-| 2.0 | Gatsby or Vuepress version (vote in Issues) | who knows... |
 
-As the project was and will be designed to improve your writing experience, only documentation, gem, deployment process with CI relevant PRs are acceptable in the future.
+## 좋아하는 작가와 작품
+ _미디어 아트_설치:_
+* [Random International](https://vimeo.com/376351028)
+* [Lab212](https://lab212.org/oeuvres/2:art/17/Portee)
+* [김윤철](https://youtu.be/geypSqyGZ0Y)
 
-I want you to know how much I value your support.
+![김윤철 개인전 포스터](/kim.jpg)
 
-Share it to your timeline!
 
-# Update 05/06/2016
+ _미디어 아트_디지털 아트:_
+ * [Robert Henke](https://youtu.be/zMHb5ft_P6Q)
+ * [Robert Henke](https://youtu.be/WrVsj3xN3E4)  
+ * [남궁원](https://youtu.be/JvH0ukNCYeo)
 
-Important! It's better to download the gzipped files instead of forking the repo. I would really appreciate if you could give me a star. 😁
+ _독보적인 특색 가진 설치미술 작가_
+ * [이불](https://youtu.be/WhyeyI3fKY8)
 
-This project is under MIT license, so feel free to make it your own.
 
-# Leonids Jekyll Themes
+## 좋아하는 공간
 
-**[Leonids](http://renyuanz.github.io/leonids)** is a clean Jekyll theme perfect for powering your GitHub hosted blog.
-
-## What is Leonids?
-
-* Responsive templates. Looking good on mobile, tablet, and desktop.
-* Simple and clear permalink structure.
-* Support for Disqus Comments.
-* Support for multi-authors.
-* **And** the Leonids (/ˈliːənɪdz/ lee-ə-nidz) are a prolific meteor shower associated with the comet [Tempel-Tuttle](https://en.wikipedia.org/wiki/55P/Tempel%E2%80%93Tuttle).
-
-See a [demo](http://renyuanz.github.io/leonids/) hosted on GitHub.
-
-## Quick setup
-
-```
-git clone https://github.com/renyuanz/leonids
-cd leonids
-jekyll server
-```
-
-Check out your awesome blog at `http://localhost:4000` and Cheers!
-
-## Running with Docker
-
-```
-docker run --rm -it --volume=$PWD:/srv/jekyll -p 4000:4000 jekyll/jekyll:pages jekyll serve --watch --force_polling
-```
-
-## Resume Page by [@Skn0tt](https://github.com/Skn0tt)
-Leonids features a simple resume page. It is divided up into five sections:
-
-* Bio (Edit \_data/index/careers.yml)
-* Education (Edit \_data/index/education.yml)
-* Skills (Edit \_data/index/skills.yml)
-* Projects (Edit \_data/index/projects.yml)
-* About (Edit \_includes/sections/about.html)
-
-You can put all your info into these files, and they will be featured on the resume page.
-
-## TODO
-
-- [ ] Redesign categories page. Ref: [dribbble: blog category section By Ilja Miskov](https://dribbble.com/shots/2274792-Blog-Category-Selection)
-- [ ] Multi languages support.
+![인테리어](/heart.jpeg)
