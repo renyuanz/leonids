@@ -3,16 +3,13 @@
 # Site wide configuration
 ####################################
 #
-title: Leonids
-email:
-description: A simple and awesome blog theme powered by jekyll.
-url: https://midmost.github.io/echec/
+title: Gentle Monster
+email: csoheon@naver.com
+description: What the F
 keywords: ["blog", "jekyll"]
 
 theme: jekyll-theme-minimal
-url: https://midmost.github.io/PoeticCodeForNature/
-title: Heejin's works 05
-description: [A short description of your site's purpose]
+url: https://midmost.github.io/GM/
 logo: /Blighton.jpg
 
 ###################################
