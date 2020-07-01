@@ -3,11 +3,11 @@
 # Site wide configuration
 ####################################
 #
-title: Leonids
+title: SQA Compass
 email:
-description: A simple and awesome blog theme powered by jekyll.
+description: Ad-free space for Software testing related updates and news.
 url: # the base hostname & protocol for your site
-keywords: ["blog", "jekyll"]
+keywords: ["blog", "sqacompass"]
 
 #
 ###################################
@@ -33,10 +33,10 @@ kramdown:
 ####################################
 #
 owner:
-  name: Leonids
+  name: SQA Compass
   avatar: leonids-logo.png
-  job: "A jekyll theme"
-  bio: "A simple and awesome blog theme powered by jekyll."
+  job: "Software Testing Blog"
+  bio: "Ad-free space for Software testing related updates and news."
   email:
   disqus-shortname:
   twitter: #username
