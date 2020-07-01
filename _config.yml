@@ -6,7 +6,7 @@
 title: SQA Compass
 email:
 description: Ad-free space for Software testing related updates and news.
-url: "sqacompass.com" # the base hostname & protocol for your site
+url: sqacompass.com # the base hostname & protocol for your site
 keywords: ["blog", "sqacompass"]
 
 #
