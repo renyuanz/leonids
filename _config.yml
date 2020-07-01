@@ -3,7 +3,7 @@
 # Site wide configuration
 ####################################
 #
-title: SQA Compass
+title: "SQA Compass"
 email:
 description: Ad-free space for Software testing related updates and news.
 url: https://sqacompass.com # the base hostname & protocol for your site
