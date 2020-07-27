@@ -6,7 +6,11 @@ const Footer = () => {
       © {new Date().getFullYear()}, Built with
       {` `}
       <a href="https://www.gatsbyjs.org">Gatsby</a> and{" "}
-      <a href="https://github.com/renyuanz/leonids" target="_blank">
+      <a
+        href="https://github.com/renyuanz/leonids"
+        target="_blank"
+        rel="noreferrer"
+      >
         Leonids theme
       </a>
       .
