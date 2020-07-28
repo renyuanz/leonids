@@ -85,6 +85,8 @@ const Layout = ({ location, title, children }) => {
       style={{
         backgroundColor: "var(--bg)",
         color: "var(--textNormal)",
+        transition: "color 0.2s ease-out, background 0.2s ease-out",
+        minHeight: "100vh",
       }}
     >
       <div className="md:flex block">
