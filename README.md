@@ -14,9 +14,9 @@ See a [demo](http://renyuanz.github.io/leonids/) hosted on GitHub pages.
 ## Quick setup
 
 ```
-git clone https://github.com/renyuanz/leonids my-blog
+gatsby new my-blog https://github.com/renyuanz/leonids
 cd my-blog
-yarn && yarn dev
+gatsby develop
 ```
 
 Check out your awesome blog at `http://localhost:8000` and Cheers!
