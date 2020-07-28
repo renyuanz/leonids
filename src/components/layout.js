@@ -93,8 +93,8 @@ const Layout = ({ location, title, children }) => {
         <div className="w-full md:w-1/4">
           <div className="sidebar">
             <div
-              className="md:h-screen p-4 sidebar-content"
-              style={{ backgroundColor: "var(--lightBg)" }}
+              className="md:h-screen p-4 flex flex-col justify-center items-center"
+              style={{ minHeight: 200 }}
             >
               {header}
             </div>

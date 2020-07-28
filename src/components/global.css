@@ -73,14 +73,11 @@ button {
   text-align: center;
   width: 100%;
   min-height: 200px;
-  display: table;
+  background-color: var(--lightBg);
 }
 
 .sidebar-content {
   height: 100%;
-  background-color: var(--lightBg);
-  display: table-cell;
-  vertical-align: middle;
 }
 
 .main-content {
