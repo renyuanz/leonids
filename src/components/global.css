@@ -90,8 +90,6 @@ button {
   z-index: 233;
   width: 100%;
   padding: 0 20px 0;
-  -webkit-transform: translate3d(0, 0, 1px);
-  transform: translate3d(0, 0, 1px);
 }
 
 @media only screen and (min-width: 768px) {
