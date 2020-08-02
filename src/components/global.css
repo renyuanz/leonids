@@ -96,6 +96,8 @@ button {
   }
   .main-content {
     padding: 0 100px 0;
+    height: 100vh;
+    width: calc(100% - 380px);
     margin-left: 380px;
     top: 0;
   }
