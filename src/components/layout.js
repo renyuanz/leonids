@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import { ThemeToggler } from "gatsby-plugin-dark-mode"
-import { rhythm, scale } from "../utils/typography"
+import { scale } from "../utils/typography"
 
 import Footer from "./footer"
 import "./global.css"
@@ -89,23 +89,18 @@ const Layout = ({ location, title, children }) => {
         minHeight: "100vh",
       }}
     >
-      <div className="md:flex block">
-        <div className="w-full md:w-1/4">
-          <div className="sidebar">
-            <div
-              className="md:h-screen p-4 flex flex-col justify-center items-center"
-              style={{ minHeight: 200 }}
-            >
-              {header}
-            </div>
-          </div>
+      <div className="sidebar">
+        <div
+          className="md:h-screen p-4 flex flex-col justify-center items-center"
+          style={{ minHeight: 200 }}
+        >
+          {header}
         </div>
-        <div className="w-full md:w-3/4">
-          <div className="main-content relative">
-            <main>{children}</main>
-            <Footer />
-          </div>
-        </div>
+      </div>
+
+      <div className="main-content relative">
+        <main>{children}</main>
+        <Footer />
       </div>
     </div>
   )
